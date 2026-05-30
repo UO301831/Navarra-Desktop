@@ -1,0 +1,167 @@
+/* estilo.css - Navarra Desktop */
+
+
+/* ============== BASE ============== */
+
+/* Especificidad: (0,0,1) */
+body {
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+/* Especificidad: (0,0,1) - sobre fondo blanco heredado de body */
+h2 {
+    color: #8a0e1e;
+}
+
+/* Especificidad: (0,0,1) - sobre fondo blanco heredado de body */
+h3 {
+    color: #1f5f3a;
+}
+
+
+/* ============== ENLACES (estado base) ============== */
+
+/* Especificidad: (0,0,1) */
+a {
+    color: #0a4c8a;
+    text-decoration: underline;
+}
+
+/* Especificidad: (0,1,1) - color enlace visitado verificado AAA: 11.86:1 sobre #ffffff (body), 10.51:1 sobre #f4f1ea (header/footer beige) */
+a:visited {
+    color: #4a148c;
+}
+
+/* Especificidad: (0,1,1) */
+a:hover {
+    color: #8a0e1e;
+}
+
+/* Especificidad: (0,1,1) - foco visible para accesibilidad AAA por teclado */
+a:focus {
+    outline: 0.125rem solid #1f5f3a;
+    outline-offset: 0.125rem;
+}
+
+
+/* ============== HEADER ============== */
+
+/* Especificidad: (0,0,1) */
+header {
+    color: #1a1a1a;
+    background-color: #f4f1ea;
+    border-bottom: 0.25rem solid #8a0e1e; 
+}
+
+/* Especificidad: (0,0,2) */
+header h1 {
+    font-size: 1.75rem;
+}
+
+/* Especificidad: (0,0,3) */
+header h1 a {
+    color: #8a0e1e;
+    text-decoration: none;
+}
+
+/* Especificidad: (0,1,3) */
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============== MENÚ PRINCIPAL ============== */
+
+/* Especificidad: (0,0,3) - forma de "botón" sin subrayado */
+header nav a {
+    color: #0a4c8a;
+    background-color: #f4f1ea;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+/* Especificidad: (0,1,3) */
+header nav a:hover {
+    color: #ffffff;
+    background-color: #8a0e1e;
+}
+
+/* Especificidad: (0,1,0) */
+.active {
+    color: #8a0e1e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* ============== MIGAS DE NAVEGACIÓN ============== */
+
+/* Especificidad: (0,0,2) */
+body > nav {
+    color: #2c2c2c;
+    background-color: #f4f1ea;
+    font-size: 0.9rem;
+    border-bottom: 0.0625rem solid #c9c2b3;
+}
+
+/* Especificidad: (0,0,3) - quita la viñeta numérica del breadcrumb */
+body > nav ol {
+    list-style: none;
+}
+
+/* Especificidad: (0,0,6) - separador entre migas */
+body > nav ol li + li::before {
+    content: " >> ";
+    color: #8a0e1e;
+}
+
+/* Especificidad: (0,0,5) */
+body > nav ol li a {
+    color: #0a4c8a;
+    text-decoration: none;
+}
+
+/* Especificidad: (0,1,5) */
+body > nav ol li a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============== LISTAS ============== */
+
+/* Especificidad: (0,0,2) */
+dl dt {
+    font-weight: bold;
+    color: #1f5f3a;
+}
+
+
+/* ============== TABLA ============== */
+
+/* Especificidad: (0,0,1) */
+caption {
+    font-weight: bold;
+}
+
+/* Especificidad: (0,0,1) */
+th {
+    color: #ffffff;
+    background-color: #8a0e1e;
+    border: 0.0625rem solid #c9c2b3;
+}
+
+/* Especificidad: (0,0,1) */
+td {
+    color: #1a1a1a;
+    border: 0.0625rem solid #c9c2b3;
+}
+
+/* Especificidad: (0,1,2) - filas alternas; color de texto heredado de body (#1a1a1a) sobre #f4f1ea = 16.4:1 AAA */
+tbody tr:nth-child(even) {
+    background-color: #f4f1ea;
+}
+

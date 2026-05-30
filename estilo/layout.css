@@ -1,0 +1,306 @@
+/* layout.css - Navarra Desktop */
+
+/* ============== RAÍZ ============== */
+
+/* Especificidad: (0,0,1) - red de seguridad contra scroll horizontal residual */
+html {
+    overflow-x: hidden;
+}
+
+
+/* ============== ESTRUCTURA GLOBAL ============== */
+
+/* Especificidad: (0,0,1) - body como flex column para anclar el footer al fondo; overflow-wrap rompe palabras/URLs largas para evitar desbordes horizontales */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+/* Especificidad: (0,0,2) - evita desbordes horizontales por el min-width:auto de flex */
+body > * {
+    min-width: 0;
+}
+
+/* Especificidad: (0,0,1) */
+main {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* ============== TÍTULOS Y PÁRRAFOS (espaciado) ============== */
+
+/* Especificidad: (0,0,1) - margen superior amplio para separar visualmente cada sección de la anterior */
+h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.125rem;
+}
+
+/* Especificidad: (0,0,1) */
+h3 {
+    margin-top: 1.25rem;
+}
+
+/* Especificidad: (0,0,1) */
+p {
+    margin: 0.5rem 0;
+}
+
+
+/* ============== HEADER ============== */
+
+/* Especificidad: (0,0,1) */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Especificidad: (0,0,2) */
+header h1 {
+    margin: 0;
+}
+
+
+/* ============== MENÚ PRINCIPAL ============== */
+
+/* Especificidad: (0,0,2) */
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Especificidad: (0,0,3) */
+header nav a {
+    padding: 0.4rem 0.75rem;
+}
+
+
+/* ============== MIGAS DE NAVEGACIÓN ============== */
+
+/* Especificidad: (0,0,2) */
+body > nav {
+    padding: 0.5rem 1rem;
+}
+
+/* Especificidad: (0,0,3) */
+body > nav ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Especificidad: (0,0,4) */
+body > nav ol li {
+    display: inline;
+}
+
+/* Especificidad: (0,0,6) */
+body > nav ol li + li::before {
+    padding: 0 0.4rem;
+}
+
+
+/* ============== LISTAS ============== */
+
+/* Especificidad: (0,0,1) cada uno */
+ol,
+ul,
+dl {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+/* Especificidad: (0,0,2) - lista anidada sin doble margen */
+ul ul {
+    margin: 0.25rem 0 0.25rem 1rem;
+}
+
+/* Especificidad: (0,0,2) */
+dl dt {
+    margin-top: 0.5rem;
+}
+
+/* Especificidad: (0,0,2) */
+dl dd {
+    margin: 0 0 0.5rem 1.25rem;
+}
+
+
+/* ============== TABLA ============== */
+
+/* Especificidad: (0,0,1) - centrada horizontalmente con margin auto, ancho amplio pero contenido dentro del main (75rem) */
+table {
+    width: 100%;
+    max-width: 65rem;
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+/* Especificidad: (0,0,1) */
+caption {
+    caption-side: top;
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+/* Especificidad: (0,0,1) */
+th {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+}
+
+/* Especificidad: (0,0,1) */
+td {
+    padding: 0.5rem 0.75rem;
+}
+
+
+/* ============== MULTIMEDIA ADAPTABLE ============== */
+
+/* Especificidad: (0,0,1) - picture en block para respetar el ancho del contenedor, centrado horizontalmente */
+picture {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Especificidad: (0,0,1) - imagen no se fuerza a 100% para no estirar tamaños pequeños, centrada horizontalmente */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Especificidad: (0,0,1) - vídeo adaptable acotado por anchura (35rem máx) Y altura (70% del viewport) para que siempre quepa entero en pantalla en cualquier dispositivo */
+video {
+    width: 100%;
+    max-width: 35rem;
+    max-height: 70vh;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Especificidad: (0,0,1) - audio con ancho cómodo (mismo cap que el vídeo), centrado horizontalmente y con altura mínima garantizada para que la barra de controles sea siempre visible */
+audio {
+    width: 100%;
+    max-width: 35rem;
+    min-height: 2.5rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Especificidad: (0,0,1) - separación generosa entre figuras consecutivas (imagen, vídeo, audio) */
+figure {
+    margin: 2rem 0;
+}
+
+
+/* ============== FOOTER ============== */
+
+/* Especificidad: (0,0,1) */
+footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES - adaptabilidad
+   ========================================================================== */
+
+
+/* ============== TABLET / INTERMEDIO (481px - 1024px) ============== */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+    /* Especificidad: (0,0,1) - redefinida en media query: header en columna con título centrado horizontalmente */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Especificidad: (0,0,2) - redefinida en media query: menú a ancho completo y centrado */
+    header nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Especificidad: (0,0,1) - redefinida en media query: tabla a ancho completo */
+    table {
+        max-width: 100%;
+    }
+}
+
+
+/* ============== MÓVIL (<= 480px) ============== */
+@media (max-width: 480px) {
+
+    /* Especificidad: (0,0,1) - redefinida en media query: tipografía ligeramente menor */
+    body {
+        font-size: 0.95rem;
+    }
+
+    /* Especificidad: (0,0,1) - redefinida en media query: header en columna con título centrado horizontalmente */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Especificidad: (0,0,1) - redefinida en media query: padding lateral suficiente para que el contenido no toque los bordes */
+    main {
+        padding: 1rem;
+    }
+
+    /* Especificidad: (0,0,1) cada uno - redefinida en media query: listas centradas sin sangrías para móvil */
+    ol,
+    ul,
+    dl {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+        list-style-position: inside;
+    }
+
+    /* Especificidad: (0,0,2) - redefinida en media query: lista anidada sin sangría */
+    ul ul {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    /* Especificidad: (0,0,2) - redefinida en media query: definiciones sin sangría */
+    dl dd {
+        margin-left: 0;
+    }
+
+    /* Especificidad: (0,0,1) - redefinida en media query: tabla al ancho disponible */
+    table {
+        max-width: 100%;
+    }
+
+    /* Especificidad: (0,0,2) - redefinida en media query: menú en columna a toda la anchura del header */
+    header nav {
+        flex-direction: column;
+        gap: 0.25rem;
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    /* Especificidad: (0,0,2) - redefinida en media query: enlaces del menú a ancho completo y centrados */
+    header nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
