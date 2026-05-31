@@ -12,11 +12,11 @@ class Carrusel {
         ];
 
         this.descripciones = [
-            "Elizondo, capital del Valle de Baztán",
-            "Palacio Real de Olite, joya del gótico civil navarro",
-            "Mapa de situación de Navarra dentro de España",
-            "Puente románico de Puente la Reina sobre el río Arga",
-            "Tradición popular navarra (Carnavales de Ituren y Zubieta)"
+            "Imagen de Elizondo, capital del Valle de Baztán",
+            "Imagen del Palacio Real de Olite, joya del gótico civil navarro",
+            "Imagen del mapa de situación de Navarra dentro de España",
+            "Imagen del Puente románico de Puente la Reina sobre el río Arga",
+            "Imagen de la tradición popular navarra (Carnavales de Ituren y Zubieta)"
         ];
 
         this.actual = 0;
