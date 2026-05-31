@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navarra Desktop</title>
+
+    <meta name="author" content="Alejandro Requena Roncero" />
+    <meta name="description" content="Página principal de Navarra Desktop: recursos turísticos, gastronomía, rutas y meteorología de la provincia de Navarra" />
+    <meta name="keywords" content="Navarra, turismo, gastronomía, rutas, Pamplona, Bardenas, Olite" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Navarra Desktop</a></h1>
+
+        <nav>
+            <a class="active" href="index.html" title="Inicio de la aplicación Navarra Desktop">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía de Navarra">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas de Navarra">Rutas</a>
+            <a href="meteorologia.html" title="Meteorología de Navarra">Meteorología</a>
+            <a href="juego.html" title="Juego sobre Navarra">Juego</a>
+            <a href="reservas.php" title="Central de reservas de recursos turísticos">Reservas</a>
+            <a href="ayuda.html" title="Ayuda sobre la aplicación">Ayuda</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Bienvenido a Navarra Desktop</h2>
+            <p>
+                Navarra Desktop es un sitio web que recopila los principales recursos turísticos de la Comunidad Foral de Navarra: su gastronomía, sus rutas más
+                emblemáticas, la meteorología en tiempo real de su capital y una central de reservas para que puedas planificar tu visita. Explora el menú superior
+                para acceder a cada una de las secciones.
+            </p>
+        </section>
+
+        <!-- CARRUSEL: imágenes locales en multimedia/. Una de ellas debe ser el mapa de situación de la provincia. -->
+        <section>
+            <h2>Imágenes destacadas de Navarra</h2>
+            <figure>
+                <img src="multimedia/imagenes/01_carrusel_elizondo.jpg" alt="Elizondo, capital del Valle de Baztán" />
+            </figure>
+        </section>
+
+        <!-- NOTICIAS: Sección de noticias sobre Navarra -->
+        <section>
+            <h2>Noticias recientes sobre Navarra</h2>
+            <p>Cargando noticias...</p>
+        </section>
+    </main>
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/noticias.js"></script>
+    <script>
+        const carrusel = new Carrusel();
+        carrusel.iniciar();
+
+        const noticias = new Noticias("Navarra");
+        noticias.buscar();
+    </script>
+</body>
+
+</html>
