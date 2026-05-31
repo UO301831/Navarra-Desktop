@@ -37,7 +37,7 @@ main {
 
 /* ============== TÍTULOS Y PÁRRAFOS (espaciado) ============== */
 
-/* Especificidad: (0,0,1) - margen superior amplio para separar visualmente cada sección de la anterior */
+/* Especificidad: (0,0,1) */
 h2 {
     margin-top: 2rem;
     padding-bottom: 0.125rem;
@@ -84,6 +84,7 @@ header nav {
 /* Especificidad: (0,0,3) */
 header nav a {
     padding: 0.4rem 0.75rem;
+    box-sizing: border-box;
 }
 
 
