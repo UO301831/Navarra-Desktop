@@ -37,7 +37,7 @@ main {
 
 /* ============== TÍTULOS Y PÁRRAFOS (espaciado) ============== */
 
-/* Especificidad: (0,0,1) */
+/* Especificidad: (0,0,1) - margen superior amplio para separar visualmente cada sección de la anterior */
 h2 {
     margin-top: 2rem;
     padding-bottom: 0.125rem;
@@ -74,14 +74,15 @@ header h1 {
 
 /* ============== MENÚ PRINCIPAL ============== */
 
-/* Especificidad: (0,0,2) */
+/* Especificidad: (0,0,2) - usamos column-gap y row-gap longhand para poder redefinir solo row-gap en móvil sin redefinir el shorthand */
 header nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
 }
 
-/* Especificidad: (0,0,3) */
+/* Especificidad: (0,0,3) - box-sizing border-box para que el padding cuente DENTRO del width:100% en móvil y no provoque desbordes laterales */
 header nav a {
     padding: 0.4rem 0.75rem;
     box-sizing: border-box;
@@ -114,16 +115,18 @@ body > nav ol li + li::before {
 
 /* ============== LISTAS ============== */
 
-/* Especificidad: (0,0,1) cada uno */
+/* Especificidad: (0,0,1) cada uno - usamos padding-left para la sangría para poder anularla en móvil sin redefinir el margin */
 ol,
 ul,
 dl {
-    margin: 0.5rem 0 1rem 1.5rem;
+    margin: 0.5rem 0 1rem 0;
+    padding-left: 1.5rem;
 }
 
-/* Especificidad: (0,0,2) - lista anidada sin doble margen */
+/* Especificidad: (0,0,2) - lista anidada con menor margen vertical */
 ul ul {
-    margin: 0.25rem 0 0.25rem 1rem;
+    margin: 0.25rem 0;
+    padding-left: 1rem;
 }
 
 /* Especificidad: (0,0,2) */
@@ -131,9 +134,10 @@ dl dt {
     margin-top: 0.5rem;
 }
 
-/* Especificidad: (0,0,2) */
+/* Especificidad: (0,0,2) - usamos padding-left en lugar de margin-left por la misma razón */
 dl dd {
-    margin: 0 0 0.5rem 1.25rem;
+    margin: 0 0 0.5rem 0;
+    padding-left: 1.25rem;
 }
 
 
@@ -218,88 +222,64 @@ footer {
 }
 
 
-/* ==========================================================================
-   MEDIA QUERIES - adaptabilidad
-   ========================================================================== */
+/* ============== MEDIA QUERIES - adaptabilidad ============== */
 
 
-/* ============== TABLET / INTERMEDIO (481px - 1024px) ============== */
-@media (min-width: 481px) and (max-width: 1024px) {
+/* ============== PANTALLAS MEDIANAS Y PEQUEÑAS (<= 1024px) ============== */
 
-    /* Especificidad: (0,0,1) - redefinida en media query: header en columna con título centrado horizontalmente */
+/* Reglas comunes a tablet y móvil: header en columna, menú a anchura completa, tabla a anchura completa */
+@media (max-width: 1024px) {
+
+    /* Especificidad: (0,0,1) - header pasa a columna en pantallas pequeñas */
     header {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* warning del validador justificado: redefinición por media query (la base es flex-direction row implícita) */
     }
 
-    /* Especificidad: (0,0,2) - redefinida en media query: menú a ancho completo y centrado */
+    /* Especificidad: (0,0,2) - menú ocupa todo el ancho y se centra */
     header nav {
         width: 100%;
         justify-content: center;
-    }
-
-    /* Especificidad: (0,0,1) - redefinida en media query: tabla a ancho completo */
-    table {
-        max-width: 100%;
     }
 }
 
 
 /* ============== MÓVIL (<= 480px) ============== */
+
+/* Ajustes específicos de móvil: tipografía menor, menú vertical y listas sin sangría */
 @media (max-width: 480px) {
 
-    /* Especificidad: (0,0,1) - redefinida en media query: tipografía ligeramente menor */
+    /* Especificidad: (0,0,1) - tipografía ligeramente menor en móvil */
     body {
-        font-size: 0.95rem;
+        font-size: 0.95rem; /* warning del validador justificado: redefinición por media query (la base es 1rem) */
     }
 
-    /* Especificidad: (0,0,1) - redefinida en media query: header en columna con título centrado horizontalmente */
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Especificidad: (0,0,1) - redefinida en media query: padding lateral suficiente para que el contenido no toque los bordes */
-    main {
-        padding: 1rem;
-    }
-
-    /* Especificidad: (0,0,1) cada uno - redefinida en media query: listas centradas sin sangrías para móvil */
+    /* Especificidad: (0,0,1) cada uno - listas centradas y sin sangría en móvil */
     ol,
     ul,
     dl {
-        margin-left: 0;
-        padding-left: 0;
+        padding-left: 0; /* warning del validador justificado: redefinición por media query (la base es 1.5rem) */
         text-align: center;
         list-style-position: inside;
     }
 
-    /* Especificidad: (0,0,2) - redefinida en media query: lista anidada sin sangría */
+    /* Especificidad: (0,0,2) - lista anidada sin sangría en móvil */
     ul ul {
-        margin-left: 0;
-        margin-top: 0.5rem;
+        padding-left: 0; /* warning del validador justificado: redefinición por media query (la base es 1rem) */
     }
 
-    /* Especificidad: (0,0,2) - redefinida en media query: definiciones sin sangría */
+    /* Especificidad: (0,0,2) - definiciones sin sangría en móvil */
     dl dd {
-        margin-left: 0;
+        padding-left: 0; /* warning del validador justificado: redefinición por media query (la base es 1.25rem) */
     }
 
-    /* Especificidad: (0,0,1) - redefinida en media query: tabla al ancho disponible */
-    table {
-        max-width: 100%;
-    }
-
-    /* Especificidad: (0,0,2) - redefinida en media query: menú en columna a toda la anchura del header */
+    /* Especificidad: (0,0,2) - menú vertical y centrado, mayor área de pulsación */
     header nav {
         flex-direction: column;
-        gap: 0.25rem;
-        width: 100%;
-        justify-content: center;
+        row-gap: 0.25rem; /* warning del validador justificado: redefinición por media query (la base es 0.5rem) */
         align-items: stretch;
     }
 
-    /* Especificidad: (0,0,2) - redefinida en media query: enlaces del menú a ancho completo y centrados */
+    /* Especificidad: (0,0,2) - enlaces del menú a ancho completo en móvil */
     header nav a {
         width: 100%;
         text-align: center;
