@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navarra - Meteorología</title>
+
+    <meta name="author" content="Alejandro Requena Roncero" />
+    <meta name="description" content="Información meteorológica en tiempo real y previsión para 7 días de Pamplona, capital de Navarra" />
+    <meta name="keywords" content="meteorología, tiempo, previsión, Pamplona, Navarra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Navarra Desktop</a></h1>
+
+        <nav>
+            <a href="index.html" title="Inicio de la aplicación Navarra Desktop">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía de Navarra">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas de Navarra">Rutas</a>
+            <a class="active" href="meteorologia.html" title="Meteorología de Navarra">Meteorología</a>
+            <a href="juego.html" title="Juego sobre Navarra">Juego</a>
+            <a href="reservas.php" title="Central de reservas de recursos turísticos">Reservas</a>
+            <a href="ayuda.html" title="Ayuda sobre la aplicación">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Meteorología</li>
+        </ol>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Meteorología de Pamplona</h2>
+            <p>
+                En esta sección se muestra la información meteorológica de Pamplona, capital de Navarra, obtenida en tiempo real mediante el servicio web
+                de Open-Meteo. Se presentan dos bloques: las condiciones meteorológicas en este momento y la previsión para los próximos siete días.
+            </p>
+        </section>
+
+        <!-- TIEMPO ACTUAL -->
+        <section>
+            <h2>Tiempo actual</h2>
+            <p>Cargando información meteorológica...</p>
+        </section>
+
+        <!-- PREVISIÓN 7 DÍAS -->
+        <section>
+            <h2>Previsión para los próximos 7 días</h2>
+            <p>Cargando previsión meteorológica...</p>
+        </section>
+    </main>
+
+    <script src="js/meteorologia.js"></script>
+    <script>
+        const meteorologia = new Meteorologia(42.8167, -1.6458, "Pamplona");
+        meteorologia.buscarTiempoActual();
+        meteorologia.buscarPrevision();
+    </script>
+</body>
+
+</html>

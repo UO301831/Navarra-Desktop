@@ -29,13 +29,14 @@ class Carrusel {
         setInterval(this.cambiarFoto.bind(this), this.segundos);
     }
 
-    // Pinta la foto actual en el HTML (src, alt y pie de imagen).
+    // Pinta la foto actual en el HTML (src y alt).
     mostrarFoto() {
         var rutaFoto = this.fotos[this.actual];
         var textoFoto = this.descripciones[this.actual];
+        var imagen = $("figure > img");
 
-        $("figure > img").attr("src", rutaFoto);
-        $("figure > img").attr("alt", textoFoto);
+        imagen.attr("src", rutaFoto);
+        imagen.attr("alt", textoFoto);
     }
 
     // Avanza al siguiente índice; vuelve al 0 al pasar del último.
