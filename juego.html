@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navarra - Juego</title>
+
+    <meta name="author" content="Alejandro Requena Roncero" />
+    <meta name="description" content="Juego de preguntas tipo test sobre Navarra Desktop: diez preguntas con cinco opciones de respuesta cada una" />
+    <meta name="keywords" content="juego, test, preguntas, Navarra, turismo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Navarra Desktop</a></h1>
+
+        <nav>
+            <a href="index.html" title="Inicio de la aplicación Navarra Desktop">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía de Navarra">Gastronomía</a>
+            <a href="rutas.html" title="Rutas turísticas de Navarra">Rutas</a>
+            <a href="meteorologia.html" title="Meteorología de Navarra">Meteorología</a>
+            <a class="active" href="juego.html" title="Juego sobre Navarra">Juego</a>
+            <a href="reservas.php" title="Central de reservas de recursos turísticos">Reservas</a>
+            <a href="ayuda.html" title="Ayuda sobre la aplicación">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Juego</li>
+        </ol>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Juego de preguntas sobre Navarra</h2>
+            <p>
+                A continuación se presentan diez preguntas tipo test sobre la información que
+                aparece en el resto del sitio: gastronomía, rutas, meteorología, reservas y
+                ayuda. Cada pregunta tiene cinco opciones de respuesta de las que solo una es
+                correcta. Es obligatorio responder a las diez preguntas para obtener la
+                calificación final, que se mostrará al terminar en una escala de 0 a 10.
+            </p>
+        </section>
+
+        <!-- Sección donde se pintan las preguntas y la puntuación final desde juego.js -->
+        <section>
+            <p>Cargando juego...</p>
+        </section>
+    </main>
+
+    <script src="js/juego.js"></script>
+    <script>
+        const juego = new Juego();
+        juego.iniciar();
+    </script>
+</body>
+
+</html>
