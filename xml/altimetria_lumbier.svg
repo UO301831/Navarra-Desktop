@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0" width="1000" height="380" viewBox="0 0 1000 380">
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" stroke="none" stroke-width="0" />
+  <text x="500.0" y="18" font-family="Verdana" font-size="16" style="text-anchor: middle;">Altimetria — Ruta de la Foz de Lumbier, Ermita de Piedra y Arcos de Piedra</text>
+  <line x1="70" y1="330" x2="970" y2="330" stroke="#333" stroke-width="1.5" />
+  <line x1="70" y1="30" x2="70" y2="330" stroke="#333" stroke-width="1.5" />
+  <line x1="70.0" y1="30" x2="70.0" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="70.0" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.0</text>
+  <line x1="109.147455415398" y1="30" x2="109.147455415398" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="109.147455415398" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.5</text>
+  <line x1="148.294910830796" y1="30" x2="148.294910830796" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="148.294910830796" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.0</text>
+  <line x1="187.442366246194" y1="30" x2="187.442366246194" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="187.442366246194" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.5</text>
+  <line x1="226.589821661592" y1="30" x2="226.589821661592" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="226.589821661592" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.0</text>
+  <line x1="265.73727707699" y1="30" x2="265.73727707699" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="265.73727707699" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.5</text>
+  <line x1="304.884732492388" y1="30" x2="304.884732492388" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="304.884732492388" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.0</text>
+  <line x1="344.032187907786" y1="30" x2="344.032187907786" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="344.032187907786" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.5</text>
+  <line x1="383.179643323184" y1="30" x2="383.179643323184" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="383.179643323184" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.0</text>
+  <line x1="422.327098738582" y1="30" x2="422.327098738582" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="422.327098738582" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.5</text>
+  <line x1="461.47455415397997" y1="30" x2="461.47455415397997" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="461.47455415397997" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.0</text>
+  <line x1="500.622009569378" y1="30" x2="500.622009569378" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="500.622009569378" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.5</text>
+  <line x1="539.769464984776" y1="30" x2="539.769464984776" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="539.769464984776" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.0</text>
+  <line x1="578.9169204001739" y1="30" x2="578.9169204001739" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="578.9169204001739" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.5</text>
+  <line x1="618.064375815572" y1="30" x2="618.064375815572" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="618.064375815572" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.0</text>
+  <line x1="657.21183123097" y1="30" x2="657.21183123097" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="657.21183123097" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.5</text>
+  <line x1="696.359286646368" y1="30" x2="696.359286646368" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="696.359286646368" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.0</text>
+  <line x1="735.506742061766" y1="30" x2="735.506742061766" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="735.506742061766" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.5</text>
+  <line x1="774.654197477164" y1="30" x2="774.654197477164" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="774.654197477164" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.0</text>
+  <line x1="813.8016528925621" y1="30" x2="813.8016528925621" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="813.8016528925621" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.5</text>
+  <line x1="852.9491083079599" y1="30" x2="852.9491083079599" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="852.9491083079599" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.0</text>
+  <line x1="892.096563723358" y1="30" x2="892.096563723358" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="892.096563723358" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.5</text>
+  <line x1="931.244019138756" y1="30" x2="931.244019138756" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="931.244019138756" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.0</text>
+  <line x1="970.3914745541539" y1="30" x2="970.3914745541539" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="970.3914745541539" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.5</text>
+  <text x="520.0" y="368" font-family="Verdana" font-size="12" style="text-anchor: middle;">Distancia (km)</text>
+  <line x1="70" y1="338.9703237410072" x2="970" y2="338.9703237410072" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="342.9703237410072" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">400</text>
+  <line x1="70" y1="271.5242805755396" x2="970" y2="271.5242805755396" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="275.5242805755396" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">500</text>
+  <line x1="70" y1="204.07823741007195" x2="970" y2="204.07823741007195" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="208.07823741007195" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">600</text>
+  <line x1="70" y1="136.63219424460434" x2="970" y2="136.63219424460434" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="140.63219424460434" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">700</text>
+  <line x1="70" y1="69.18615107913666" x2="970" y2="69.18615107913666" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="73.18615107913666" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">800</text>
+  <text x="16" y="180.0" font-family="Verdana" font-size="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Altitud (m)</text>
+  <polygon points="70.00,330.00 76.03,319.61 89.10,320.62 97.32,321.91 112.36,324.20 120.58,322.18 138.74,312.87 154.64,315.84 162.86,308.75 174.99,298.57 183.84,288.39 187.99,284.41 199.73,266.74 210.54,256.55 214.38,249.20 228.23,227.21 249.22,195.18 258.06,180.00 265.66,166.04 284.92,128.94 292.67,120.04 309.82,90.97 337.06,66.22 362.90,39.24 368.62,41.33 374.41,57.11 391.09,39.85 393.75,44.91 400.64,68.58 401.89,56.10 404.01,69.19 409.10,72.56 417.79,56.64 422.01,35.13 426.95,30.00 430.55,41.94 432.90,36.61 438.85,54.21 453.10,97.92 472.98,144.19 486.61,163.61 516.59,186.68 531.39,200.91 550.03,213.25 559.73,218.51 570.85,227.08 575.94,229.78 587.45,245.83 608.67,265.79 613.52,272.00 622.37,296.14 625.35,298.57 631.06,318.06 653.69,328.38 710.84,318.74 717.26,272.40 729.56,321.57 745.69,321.84 755.71,304.78 761.89,324.33 785.38,327.91 799.16,330.00 802.76,328.45 807.22,324.81 814.35,312.26 825.39,321.91 831.10,321.10 868.06,320.69 884.74,321.43 918.01,320.76 938.21,320.69 958.80,319.21 970.00,318.67 970.00,330.00" fill="#cfe8ff" fill-opacity="0.85" stroke="none" />
+  <polyline points="76.03,319.61 89.10,320.62 97.32,321.91 112.36,324.20 120.58,322.18 138.74,312.87 154.64,315.84 162.86,308.75 174.99,298.57 183.84,288.39 187.99,284.41 199.73,266.74 210.54,256.55 214.38,249.20 228.23,227.21 249.22,195.18 258.06,180.00 265.66,166.04 284.92,128.94 292.67,120.04 309.82,90.97 337.06,66.22 362.90,39.24 368.62,41.33 374.41,57.11 391.09,39.85 393.75,44.91 400.64,68.58 401.89,56.10 404.01,69.19 409.10,72.56 417.79,56.64 422.01,35.13 426.95,30.00 430.55,41.94 432.90,36.61 438.85,54.21 453.10,97.92 472.98,144.19 486.61,163.61 516.59,186.68 531.39,200.91 550.03,213.25 559.73,218.51 570.85,227.08 575.94,229.78 587.45,245.83 608.67,265.79 613.52,272.00 622.37,296.14 625.35,298.57 631.06,318.06 653.69,328.38 710.84,318.74 717.26,272.40 729.56,321.57 745.69,321.84 755.71,304.78 761.89,324.33 785.38,327.91 799.16,330.00 802.76,328.45 807.22,324.81 814.35,312.26 825.39,321.91 831.10,321.10 868.06,320.69 884.74,321.43 918.01,320.76 938.21,320.69 958.80,319.21 970.00,318.67" fill="none" stroke="#0066ff" stroke-width="2.5" />
+  <text x="970" y="36" font-family="Verdana" font-size="12" style="text-anchor: end;">Longitud: 11.495 km</text>
+  <text x="970" y="54" font-family="Verdana" font-size="12" style="text-anchor: end;">Altitud: 413–858 m</text>
+</svg>
