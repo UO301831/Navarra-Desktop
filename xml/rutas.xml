@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas xmlns="https://www.uniovi.es"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://www.uniovi.es rutas.xsd">
+    <!-- ============================ RUTA 1 - Foz de Lumbier ================================ -->
+    <ruta>
+        <nombre>Ruta de la Foz de Lumbier, Ermita de Piedra y Arcos de Piedra</nombre>
+        <tipo>Paisajística</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio>2026-07-15</fechaInicio>
+        <horaInicio>08:30:00</horaInicio>
+        <duracion>6 horas 16 minutos</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Caminata circular de un día partiendo desde el poblado de Lumbier. Se recorren los principales puntos de interés. No habría problemas en avanzar para gente acostumbrada a este tipo de senderos.</descripcion>
+        <personas>Personas en buena forma física</personas>
+
+        <inicio>
+            <lugar>Hotel Iru - Bide</lugar>
+            <direccion>Av. de Bijues, s/n</direccion>
+            <coordenadas>
+                <longitud>-1.310790</longitud>
+                <latitud>42.650934</latitud>
+                <altitud unidad="m">429</altitud>
+            </coordenadas>
+        </inicio>
+
+        <referencias>
+            <referencia>https://www.visitnavarra.es/es/foz-de-lumbier</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/navarra-foz-de-lumbier-ermita-de-la-trinidad-arcos-de-piedra-trek-1d-175574249</referencia>
+            <referencia>https://lumbier.com/la-foz-de-lumbier/</referencia>
+        </referencias>
+
+        <recomendacion>7</recomendacion>
+
+        <hitos>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.311253</longitud>
+                    <latitud>42.650330</latitud>
+                    <altitud unidad="m">428.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">77</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Puente de los hierros</nombre>
+                <descripcion>Puente de hierro sobre el rio Irati, vestigio de la antigua via ferrea del Irati reconvertida en sendero peatonal. Desde el puente se obtienen las primeras vistas de las paredes calizas del desfiladero.</descripcion>
+                <coordenadas>
+                    <longitud>-1.310352</longitud>
+                    <latitud>42.648980</latitud>
+                    <altitud unidad="m">427.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">167</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO1_puente_hierros.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.309445</longitud>
+                    <latitud>42.648308</latitud>
+                    <altitud unidad="m">425.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">105</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.308312</longitud>
+                    <latitud>42.649823</latitud>
+                    <altitud unidad="m">421.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">192</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.307206</longitud>
+                    <latitud>42.650296</latitud>
+                    <altitud unidad="m">424.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">105</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.304371</longitud>
+                    <latitud>42.650245</latitud>
+                    <altitud unidad="m">438.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">232</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.302320</longitud>
+                    <latitud>42.651276</latitud>
+                    <altitud unidad="m">434.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">203</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301038</longitud>
+                    <latitud>42.651257</latitud>
+                    <altitud unidad="m">444.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">105</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.302121</longitud>
+                    <latitud>42.650108</latitud>
+                    <altitud unidad="m">459.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">155</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301280</longitud>
+                    <latitud>42.649305</latitud>
+                    <altitud unidad="m">475.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">113</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301589</longitud>
+                    <latitud>42.648882</latitud>
+                    <altitud unidad="m">480.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">53</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.299955</longitud>
+                    <latitud>42.648273</latitud>
+                    <altitud unidad="m">507.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">150</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301080</longitud>
+                    <latitud>42.647347</latitud>
+                    <altitud unidad="m">522.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">138</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Sendero de Cruces V - VIII</nombre>
+                <descripcion>Tramo elevado del recorrido en el que se localizan las cruces V a VIII de un antiguo Via Crucis talladas en piedra caliza. Ofrece amplias vistas sobre el valle de Lumbier y los campos de cultivo circundantes.</descripcion>
+                <coordenadas>
+                    <longitud>-1.300788</longitud>
+                    <latitud>42.646967</latitud>
+                    <altitud unidad="m">533.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">49</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO2_cruces.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.300460</longitud>
+                    <latitud>42.645390</latitud>
+                    <altitud unidad="m">565.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">177</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.297289</longitud>
+                    <latitud>42.646011</latitud>
+                    <altitud unidad="m">613.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">268</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.295943</longitud>
+                    <latitud>42.645773</latitud>
+                    <altitud unidad="m">635.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">113</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.295468</longitud>
+                    <latitud>42.644972</latitud>
+                    <altitud unidad="m">656.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">97</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.296602</longitud>
+                    <latitud>42.642923</latitud>
+                    <altitud unidad="m">711.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">246</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Ermita de la Trinidad</nombre>
+                <descripcion>Pequeña ermita dedicada a la Santisima Trinidad, enclavada a 724 m de altitud en una posicion privilegiada sobre el valle. Construccion de piedra caliza integrada en el entorno natural y punto de referencia de las antiguas rutas de peregrinacion de la zona.</descripcion>
+                <coordenadas>
+                    <longitud>-1.296193</longitud>
+                    <latitud>42.642087</latitud>
+                    <altitud unidad="m">724.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">99</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO3_ermita.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.293884</longitud>
+                    <latitud>42.641089</latitud>
+                    <altitud unidad="m">767.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">219</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.289848</longitud>
+                    <latitud>42.640110</latitud>
+                    <altitud unidad="m">804.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">348</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.286535</longitud>
+                    <latitud>42.638424</latitud>
+                    <altitud unidad="m">844.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">330</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.285811</longitud>
+                    <latitud>42.638035</latitud>
+                    <altitud unidad="m">841.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">73</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.285736</longitud>
+                    <latitud>42.637372</latitud>
+                    <altitud unidad="m">817.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">74</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.283141</longitud>
+                    <latitud>42.637168</latitud>
+                    <altitud unidad="m">843.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">213</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.282857</longitud>
+                    <latitud>42.636944</latitud>
+                    <altitud unidad="m">836.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">34</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Arco Cara de Elefante</nombre>
+                <descripcion>Formacion natural de roca caliza cuyo perfil recuerda la silueta de la cabeza de un elefante, esculpida por la erosion a lo largo de miles de anos. Uno de los enclaves fotograficos mas singulares de la sierra al norte de Lumbier.</descripcion>
+                <coordenadas>
+                    <longitud>-1.283756</longitud>
+                    <latitud>42.636513</latitud>
+                    <altitud unidad="m">800.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">88</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO4_arco_elefante.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.283609</longitud>
+                    <latitud>42.636614</latitud>
+                    <altitud unidad="m">819.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">16</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.283314</longitud>
+                    <latitud>42.636511</latitud>
+                    <altitud unidad="m">800.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">27</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.282631</longitud>
+                    <latitud>42.636207</latitud>
+                    <altitud unidad="m">795.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">65</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.281341</longitud>
+                    <latitud>42.635892</latitud>
+                    <altitud unidad="m">818.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">111</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.280714</longitud>
+                    <latitud>42.636037</latitud>
+                    <altitud unidad="m">850.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">54</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.279941</longitud>
+                    <latitud>42.636013</latitud>
+                    <altitud unidad="m">858.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">63</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.279446</longitud>
+                    <latitud>42.635810</latitud>
+                    <altitud unidad="m">840.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">46</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.279103</longitud>
+                    <latitud>42.635892</latitud>
+                    <altitud unidad="m">848.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">30</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Arco de la Piedra</nombre>
+                <descripcion>Arco natural de piedra caliza formado por la erosion diferencial del agua en la roca. Con una altitud de 822 m representa uno de los puntos mas elevados de la ruta y ofrece una perspectiva unica sobre el paisaje karst de la sierra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.278818</longitud>
+                    <latitud>42.635238</latitud>
+                    <altitud unidad="m">822.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">76</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO5_arco_de_piedra.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.278477</longitud>
+                    <latitud>42.633624</latitud>
+                    <altitud unidad="m">757.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">182</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.279887</longitud>
+                    <latitud>42.631592</latitud>
+                    <altitud unidad="m">688.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">254</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.281952</longitud>
+                    <latitud>42.631210</latitud>
+                    <altitud unidad="m">660.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">174</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.286542</longitud>
+                    <latitud>42.631867</latitud>
+                    <altitud unidad="m">625.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">383</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.288706</longitud>
+                    <latitud>42.631279</latitud>
+                    <altitud unidad="m">604.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">189</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.288219</longitud>
+                    <latitud>42.629170</latitud>
+                    <altitud unidad="m">586.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">238</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.287300</longitud>
+                    <latitud>42.628280</latitud>
+                    <altitud unidad="m">578.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">124</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.285696</longitud>
+                    <latitud>42.627796</latitud>
+                    <altitud unidad="m">565.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">142</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.285562</longitud>
+                    <latitud>42.627217</latitud>
+                    <altitud unidad="m">561.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">65</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.286218</longitud>
+                    <latitud>42.625984</latitud>
+                    <altitud unidad="m">538.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">147</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.289285</longitud>
+                    <latitud>42.625060</latitud>
+                    <altitud unidad="m">508.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">271</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.288572</longitud>
+                    <latitud>42.624878</latitud>
+                    <altitud unidad="m">499.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">62</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.288450</longitud>
+                    <latitud>42.623864</latitud>
+                    <altitud unidad="m">463.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">113</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.288841</longitud>
+                    <latitud>42.624049</latitud>
+                    <altitud unidad="m">459.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">38</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.289463</longitud>
+                    <latitud>42.623580</latitud>
+                    <altitud unidad="m">431.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">73</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.292962</longitud>
+                    <latitud>42.623932</latitud>
+                    <altitud unidad="m">415.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">289</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301738</longitud>
+                    <latitud>42.625109</latitud>
+                    <altitud unidad="m">430.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">730</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301979</longitud>
+                    <latitud>42.625824</latitud>
+                    <altitud unidad="m">498.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">82</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301720</longitud>
+                    <latitud>42.627224</latitud>
+                    <altitud unidad="m">425.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">157</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.301033</longitud>
+                    <latitud>42.629009</latitud>
+                    <altitud unidad="m">425.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">206</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.300314</longitud>
+                    <latitud>42.630030</latitud>
+                    <altitud unidad="m">450.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">128</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.300464</longitud>
+                    <latitud>42.630736</latitud>
+                    <altitud unidad="m">421.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">79</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.302374</longitud>
+                    <latitud>42.633037</latitud>
+                    <altitud unidad="m">416.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">300</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.303884</longitud>
+                    <latitud>42.634167</latitud>
+                    <altitud unidad="m">413.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">176</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Foz de Lumbier</nombre>
+                <descripcion>Desfiladero calizo esculpido por el rio Irati, en cuyas paredes verticales de hasta 150 m anidan importantes colonias de buitre leonado y alimoche. La antigua via ferrea del Irati, reconvertida en senda peatonal, atraviesa la garganta. Reserva Natural declarada por el Gobierno de Navarra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.304417</longitud>
+                    <latitud>42.634028</latitud>
+                    <altitud unidad="m">415.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">46</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA1_HITO6_foz_lumbier.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.303721</longitud>
+                    <latitud>42.634096</latitud>
+                    <altitud unidad="m">421.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">57</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.304473</longitud>
+                    <latitud>42.634705</latitud>
+                    <altitud unidad="m">439.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">91</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.305505</longitud>
+                    <latitud>42.635726</latitud>
+                    <altitud unidad="m">425.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">141</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.305613</longitud>
+                    <latitud>42.636376</latitud>
+                    <altitud unidad="m">426.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">73</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.309324</longitud>
+                    <latitud>42.639621</latitud>
+                    <altitud unidad="m">427.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">472</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.310208</longitud>
+                    <latitud>42.641421</latitud>
+                    <altitud unidad="m">426.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">213</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.310284</longitud>
+                    <latitud>42.645242</latitud>
+                    <altitud unidad="m">427.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">425</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.309397</longitud>
+                    <latitud>42.647468</latitud>
+                    <altitud unidad="m">427.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">258</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.310802</longitud>
+                    <latitud>42.649598</latitud>
+                    <altitud unidad="m">429.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">263</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.310754</longitud>
+                    <latitud>42.650881</latitud>
+                    <altitud unidad="m">430.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">143</distancia>
+            </hito>
+
+        </hitos>
+
+        <planimetria>xml/planimetria_lumbier.kml</planimetria>
+        <altimetria>xml/altimetria_lumbier.svg</altimetria>
+    </ruta>
+
+    <!-- ============================ RUTA 2 - Selva de Irati: Sendero Errekaidorra ================================ -->
+
+    <ruta>
+        <nombre>Sendero Errekaidorra - Cascada del Cubo</nombre>
+        <tipo>Paisajística</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio>2026-10-20</fechaInicio>
+        <horaInicio>10:00:00</horaInicio>
+        <duracion>3 horas 7 minutos</duracion>
+        <agencia>NaturaTur</agencia>
+        <descripcion>Ruta senalizada con placas amarillas Errekaidorra por el segundo hayedo-abetal mas extenso de Europa. Sube paralela al rio Urbeltza hasta la Cascada del Cubo, atraviesa una senda tematica con paneles sobre la antigua explotacion forestal del valle y se interna en territorio frances hasta Orgate. Especialmente espectacular en otono por la paleta cromatica del hayedo.</descripcion>
+        <personas>Se puede ir con ninos (primer tramo apto incluso para sillitas), recomendable calzado adecuado en la senda</personas>
+
+        <inicio>
+            <lugar>Aparcamiento Casas de Irati</lugar>
+            <direccion>Carretera NA-2012, km 24 desde Ochagavia, 31680 Ochagavia, Navarra</direccion>
+            <coordenadas>
+                <longitud>-1.105906</longitud>
+                <latitud>42.988439</latitud>
+                <altitud unidad="m">837.8</altitud>
+            </coordenadas>
+        </inicio>
+
+        <referencias>
+            <referencia>https://www.visitnavarra.es/es/-/selva-de-irati-cascada-del-cubo-sendero-errekaidorra</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Selva_de_Irati</referencia>
+            <referencia>https://momenticos1.blogspot.com/2019/10/cascada-del-cubo.html?spref=fb</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/selva-de-irati-cascada-del-cubo-40554917</referencia>
+        </referencias>
+
+        <recomendacion>10</recomendacion>
+
+        <hitos>
+
+            <hito>
+                <nombre>Aparcamiento Casas de Irati</nombre>
+                <descripcion>Punto de inicio y fin de la ruta circular, situado en las Casas de Irati a unos 24 km de Ochagavia por la carretera del collado de Tapla. Dispone de un centro de acogida e informacion al visitante y de un panel donde arranca el sendero tematico Errekaidorra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.105941</longitud>
+                    <latitud>42.988411</latitud>
+                    <altitud unidad="m">837.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">4</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA2_HITO_parking.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.104853</longitud>
+                    <latitud>42.991291</latitud>
+                    <altitud unidad="m">842.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">332</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.102365</longitud>
+                    <latitud>42.993179</latitud>
+                    <altitud unidad="m">861.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">292</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Bosque de coniferas</nombre>
+                <descripcion>Tramo del sendero que discurre entre bosques de coniferas, con abetos que conviven con las hayas caracteristicas de Irati. El camino avanza junto al rio en un entorno frondoso y umbrio, uno de los paisajes mas representativos de este hayedo-abetal pirenaico.</descripcion>
+                <coordenadas>
+                    <longitud>-1.104056</longitud>
+                    <latitud>42.994763</latitud>
+                    <altitud unidad="m">853.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">223</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA2_HITO_bosque_coniferas.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.103673</longitud>
+                    <latitud>42.996146</latitud>
+                    <altitud unidad="m">846.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">157</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.102800</longitud>
+                    <latitud>42.998024</latitud>
+                    <altitud unidad="m">852.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">221</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.102357</longitud>
+                    <latitud>42.998555</latitud>
+                    <altitud unidad="m">844.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">69</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Cascada del Cubo</nombre>
+                <descripcion>Salto de agua de forma escalonada considerado uno de los rincones mas bonitos de la Selva de Irati. Se alcanza por una pista comoda y bien senalizada que sube paralela al rio Urbeltza; luce con especial fuerza en primavera, cuando aumenta el caudal.</descripcion>
+                <coordenadas>
+                    <longitud>-1.102172</longitud>
+                    <latitud>42.999013</latitud>
+                    <altitud unidad="m">844.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">53</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA2_HITO_cascada_cubo.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.101901</longitud>
+                    <latitud>42.999916</latitud>
+                    <altitud unidad="m">871.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">103</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.100179</longitud>
+                    <latitud>43.001470</latitud>
+                    <altitud unidad="m">857.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">222</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.097539</longitud>
+                    <latitud>43.002184</latitud>
+                    <altitud unidad="m">871.9</altitud>
+                </coordenadas>
+                <distancia unidades="m">229</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.097251</longitud>
+                    <latitud>43.003022</latitud>
+                    <altitud unidad="m">869.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">96</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.094619</longitud>
+                    <latitud>43.002874</latitud>
+                    <altitud unidad="m">884.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">215</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.092571</longitud>
+                    <latitud>43.001715</latitud>
+                    <altitud unidad="m">887.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">211</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.089862</longitud>
+                    <latitud>43.002707</latitud>
+                    <altitud unidad="m">887.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">246</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.085600</longitud>
+                    <latitud>43.003796</latitud>
+                    <altitud unidad="m">868.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">367</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.086678</longitud>
+                    <latitud>43.006870</latitud>
+                    <altitud unidad="m">903.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">353</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.085163</longitud>
+                    <latitud>43.008182</latitud>
+                    <altitud unidad="m">880.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">191</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084701</longitud>
+                    <latitud>43.009863</latitud>
+                    <altitud unidad="m">904.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">191</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084734</longitud>
+                    <latitud>43.010031</latitud>
+                    <altitud unidad="m">905.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">19</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084483</longitud>
+                    <latitud>43.010985</latitud>
+                    <altitud unidad="m">934.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">108</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.083365</longitud>
+                    <latitud>43.014302</latitud>
+                    <altitud unidad="m">924.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">380</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084768</longitud>
+                    <latitud>43.013135</latitud>
+                    <altitud unidad="m">891.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">173</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.082665</longitud>
+                    <latitud>43.010297</latitud>
+                    <altitud unidad="m">927.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">359</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.082932</longitud>
+                    <latitud>43.009438</latitud>
+                    <altitud unidad="m">935.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">98</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Carbon y ceniza</nombre>
+                <descripcion>Parada interpretativa del sendero junto a una antigua carbonera. Aqui se explica como entre los siglos XVIII y XIX se producia carbon vegetal apilando la lena y cubriendola de tierra para que ardiera lentamente, asi como la elaboracion de ceniza destinada a la fabricacion de vidrio.</descripcion>
+                <coordenadas>
+                    <longitud>-1.082852</longitud>
+                    <latitud>43.008376</latitud>
+                    <altitud unidad="m">930.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">118</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA2_HITO_carbon_ceniza.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.083373</longitud>
+                    <latitud>43.007232</latitud>
+                    <altitud unidad="m">915.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">134</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084560</longitud>
+                    <latitud>43.006247</latitud>
+                    <altitud unidad="m">880.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">146</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084194</longitud>
+                    <latitud>43.005706</latitud>
+                    <altitud unidad="m">888.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">67</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084225</longitud>
+                    <latitud>43.004463</latitud>
+                    <altitud unidad="m">885.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">138</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.084817</longitud>
+                    <latitud>43.003344</latitud>
+                    <altitud unidad="m">892.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">133</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Puente de madera</nombre>
+                <descripcion>Puente de madera sobre el rio que el sendero atraviesa en el tramo de regreso hacia las Casas de Irati, en un entorno de hayedo junto al cauce que enlaza con la senda tematica de vuelta al aparcamiento.</descripcion>
+                <coordenadas>
+                    <longitud>-1.085966</longitud>
+                    <latitud>43.002572</latitud>
+                    <altitud unidad="m">874.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">127</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/RUTA2_HITO_puente_madera.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.085920</longitud>
+                    <latitud>43.002274</latitud>
+                    <altitud unidad="m">873.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">33</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.086015</longitud>
+                    <latitud>43.002040</latitud>
+                    <altitud unidad="m">887.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">27</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.086753</longitud>
+                    <latitud>43.001788</latitud>
+                    <altitud unidad="m">907.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">66</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.094934</longitud>
+                    <latitud>43.001599</latitud>
+                    <altitud unidad="m">896.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">666</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.098440</longitud>
+                    <latitud>43.001097</latitud>
+                    <altitud unidad="m">882.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">291</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.101206</longitud>
+                    <latitud>42.998437</latitud>
+                    <altitud unidad="m">903.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">372</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.101096</longitud>
+                    <latitud>42.998204</latitud>
+                    <altitud unidad="m">902.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">27</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.102290</longitud>
+                    <latitud>42.996898</latitud>
+                    <altitud unidad="m">848.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">175</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.102882</longitud>
+                    <latitud>42.995992</latitud>
+                    <altitud unidad="m">854.8</altitud>
+                </coordenadas>
+                <distancia unidades="m">112</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.101249</longitud>
+                    <latitud>42.992687</latitud>
+                    <altitud unidad="m">847.5</altitud>
+                </coordenadas>
+                <distancia unidades="m">391</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.104657</longitud>
+                    <latitud>42.990314</latitud>
+                    <altitud unidad="m">860.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">383</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.105879</longitud>
+                    <latitud>42.988405</latitud>
+                    <altitud unidad="m">844.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">234</distancia>
+            </hito>
+
+        </hitos>
+
+        <planimetria>xml/planimetria_irati.kml</planimetria>
+        <altimetria>xml/altimetria_irati.svg</altimetria>
+    </ruta>
+
+    <!-- =========================== RUTA 3 - Bardenas Reales: Castildetierra y Penaflor ================================= -->
+    <ruta>
+        <nombre>Ruta del Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo </nombre>
+        <tipo>Paisajistica y geologica</tipo>
+        <transporte>Bicicleta</transporte>
+        <fechaInicio>2026-05-10</fechaInicio>
+        <horaInicio>08:30:00</horaInicio>
+        <duracion>3 horas</duracion>
+        <agencia>Sin agencia (alquiler de bicicleta disponible en Arguedas)</agencia>
+        <descripcion>Ruta circular en bicicleta por la Bardena Blanca, Reserva de la Biosfera de la UNESCO, a traves de un paisaje semidesierto con formaciones geologicas unicas esculpidas por la erosion sobre arcillas, yesos y areniscas. Visita los dos hitos mas emblematicos del parque: el cabezo de Castildetierra y las ruinas del Castillo de Penaflor.</descripcion>
+        <personas>Adultos y adolescentes con buena forma fisica basica; no recomendable con ninos pequenos por el sol y la falta de sombra</personas>
+
+        <inicio>
+            <lugar>Centro de Informacion de las Bardenas Reales (Finca de los Aguilares)</lugar>
+            <direccion>Carretera NA-8712, km 7 desde Arguedas, 31513 Arguedas, Navarra</direccion>
+            <coordenadas>
+                <longitud>-1.4869</longitud>
+                <latitud>42.2161</latitud>
+                <altitud unidad="m">290</altitud>
+            </coordenadas>
+        </inicio>
+
+        <referencias>
+            <referencia>https://www.bardenasreales.es/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Bardenas_Reales</referencia>
+            <referencia>https://www.visitnavarra.es/es/bardenas-reales</referencia>
+            <referencia>https://es.wikiloc.com/rutas/mountain-bike/espana/navarra/arguedas</referencia>
+        </referencias>
+
+        <recomendacion>8</recomendacion>
+
+        <hitos>
+
+            <hito>
+                <nombre>Centro de Informacion de las Bardenas (Aguilares)</nombre>
+                <descripcion>Punto de inicio de la ruta. El Centro de Informacion ofrece mapas del parque, exposicion sobre la geologia y biodiversidad de las Bardenas Reales y servicio de alquiler de bicicletas. Declarado Parque Natural en 1999 y Reserva de la Biosfera por la UNESCO en 2000.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4869</longitud>
+                    <latitud>42.2161</latitud>
+                    <altitud unidad="m">290</altitud>
+                </coordenadas>
+                <distancia unidades="km">0</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/centro_informacion_aguilares.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Castildetierra</nombre>
+                <descripcion>El emblema mas fotografiado de las Bardenas Reales. Formacion geologica en forma de cabezo con cima rocosa que emerge sobre la llanura blanca, esculpida por la erosion diferencial sobre arcillas y yesos durante miles de anos. Escenario de la serie Juego de Tronos (HBO).</descripcion>
+                <coordenadas>
+                    <longitud>-1.4631</longitud>
+                    <latitud>42.2389</latitud>
+                    <altitud unidad="m">320</altitud>
+                </coordenadas>
+                <distancia unidades="km">3.5</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/castildetierra.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Tres Hermanos (monticulos de arcilla)</nombre>
+                <descripcion>Conjunto de tres cabezos de arcilla alineados que conforman uno de los grupos de formaciones geologicas mas representativos de la Bardena Blanca. Sus tonos ocres y blanquecinos contrastan con el azul del cielo navarro, creando un paisaje de marcado caracter lunar.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4505</longitud>
+                    <latitud>42.2480</latitud>
+                    <altitud unidad="m">335</altitud>
+                </coordenadas>
+                <distancia unidades="km">1.8</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/tres_hermanos.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Cabana de Aguirre</nombre>
+                <descripcion>Antigua cabana pastoril de adobe y piedra, vestigio de la actividad ganadera trashumante que historicamente dio origen a la Comunidad de las Bardenas Reales. Punto de descanso en la ruta con sombra y vistas a la meseta de El Plano.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4280</longitud>
+                    <latitud>42.2545</latitud>
+                    <altitud unidad="m">350</altitud>
+                </coordenadas>
+                <distancia unidades="km">2.1</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/cabana_aguirre.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Castillo de Penaflor</nombre>
+                <descripcion>Ruinas medievales del Castillo de Penaflor sobre un cabezo de arenisca a 386 m de altitud, el punto mas elevado de la ruta. El castillo fue baluarte defensivo del reino de Navarra en los siglos X-XII. Desde sus restos se obtiene la panoramica mas amplia de toda la Bardena Blanca.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4108</longitud>
+                    <latitud>42.2602</latitud>
+                    <altitud unidad="m">386</altitud>
+                </coordenadas>
+                <distancia unidades="km">1.9</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/castillo_penaflor.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Barranco Grande</nombre>
+                <descripcion>Impresionante barranco de erosion fluvial con paredes de mas de 20 m que muestra en seccion transversal los estratos de arcilla, yeso y arenisca de las Bardenas. En epocas de lluvia el agua esculpe nuevas formas en sus paredes. Zona de interes geologico y fotografico.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4350</longitud>
+                    <latitud>42.2398</latitud>
+                    <altitud unidad="m">305</altitud>
+                </coordenadas>
+                <distancia unidades="km">3.2</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/barranco_grande.jpg</foto>
+                </fotos>
+            </hito>
+
+            <hito>
+                <nombre>Regreso al Centro de Informacion</nombre>
+                <descripcion>Tramo final de la ruta circular de regreso al Centro de Informacion de Aguilares. El camino recorre la zona baja de la Bardena Blanca con vistas al horizonte plano caracteristico del parque. Final del recorrido con aproximadamente 16.6 km totales.</descripcion>
+                <coordenadas>
+                    <longitud>-1.4869</longitud>
+                    <latitud>42.2161</latitud>
+                    <altitud unidad="m">290</altitud>
+                </coordenadas>
+                <distancia unidades="km">5.5</distancia>
+                <fotos>
+                    <foto>multimedia/imagenes/bardenas_panorama.jpg</foto>
+                </fotos>
+                <videos>
+                    <video>multimedia/videos/bardenas_panorama.mp4</video>
+                </videos>
+            </hito>
+
+        </hitos>
+
+        <planimetria>xml/planimetria_bardenas.kml</planimetria>
+        <altimetria>xml/altimetria_bardenas.svg</altimetria>
+    </ruta>
+
+</rutas>
