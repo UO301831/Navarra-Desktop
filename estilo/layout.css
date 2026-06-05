@@ -213,6 +213,26 @@ figure {
 }
 
 
+/* ============== MAPA DINÁMICO (PLANIMETRÍA KML) ============== */
+
+/* Especificidad: (0,0,3) - el mapa dinámico de Mapbox se representa en un bloque div (permitido por el enunciado para los mapas); necesita una altura explícita para que se visualice */
+main article > div {
+    width: 100%;
+    height: 25rem;
+    margin: 1rem 0;
+}
+
+
+/* ============== ALTIMETRÍA (SVG) ADAPTABLE ============== */
+
+/* Especificidad: (0,0,2) - el gráfico SVG se adapta al ancho del contenedor manteniendo su proporción */
+figure svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 /* ============== FOOTER ============== */
 
 /* Especificidad: (0,0,1) */
@@ -283,5 +303,10 @@ footer {
     header nav a {
         width: 100%;
         text-align: center;
+    }
+
+    /* Especificidad: (0,0,3) - mapa dinámico más bajo en móvil para que quepa cómodamente en pantalla */
+    main article > div {
+        height: 18rem; /* warning del validador justificado: redefinición por media query (la base es 25rem) */
     }
 }

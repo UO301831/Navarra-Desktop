@@ -1,14 +1,13 @@
-// Clase Noticias: pide noticias al servicio web TheNewsAPI y las muestra en la sección de noticias.
-
+// Pide noticias de Navarra a un servicio web y las muestra
 class Noticias {
 
     constructor(busqueda) {
         this.busqueda = busqueda;
         this.url = "https://api.thenewsapi.com/v1/news/all";
-        this.apiKey = "9ycDTSQOjnyyfkaGbWsO0x5DjE6ZqNJ29PNEMAKe"; 
+        this.apiKey = "9ycDTSQOjnyyfkaGbWsO0x5DjE6ZqNJ29PNEMAKe";
     }
 
-    // Hace la petición AJAX al servicio web y delega la respuesta al método correspondiente.
+    // Pide las noticias al servicio web
     buscar() {
         $.ajax({
             url: this.url,
@@ -24,7 +23,7 @@ class Noticias {
         .fail(this.mostrarError.bind(this));
     }
 
-    // Pinta cada noticia recibida como un article dentro de la sección de noticias.
+    // Muestra en la página cada noticia recibida
     procesarNoticias(json) {
         var seccion = $("main > section").last();
         seccion.empty();
@@ -46,7 +45,7 @@ class Noticias {
         }
     }
 
-    // Muestra un mensaje de error si la petición al servicio web falla.
+    // Avisa si las noticias no se han podido cargar
     mostrarError() {
         var seccion = $("main > section").last();
         seccion.empty();

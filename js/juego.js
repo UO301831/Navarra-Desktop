@@ -1,5 +1,4 @@
-// Clase Juego: juego de 10 preguntas tipo test sobre Navarra Desktop.
-
+// Juego de 10 preguntas tipo test sobre la web de Navarra
 class Juego {
 
     constructor() {
@@ -20,81 +19,39 @@ class Juego {
                 correcta: 0
             },
             {
-                enunciado: "[Pregunta 4]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
+                enunciado: "¿Qué embutido típico de Navarra es un chorizo de calibre más fino de lo habitual?",
+                opciones: ["Fuet", "Chistorra", "Mortadela", "Sobrasada", "Salchichón"],
+                correcta: 1
+            },
+            {
+                enunciado: "¿De qué localidad navarra es el famoso pimiento del piquillo con Denominación de Origen?",
+                opciones: ["Pamplona", "Olite", "Lodosa", "Tudela", "Estella"],
+                correcta: 2
+            },
+            {
+                enunciado: "¿Cuál de estos quesos navarros se menciona en la sección de Gastronomía?",
+                opciones: ["Queso manchego", "Queso de Burgos", "Queso de Cabrales", "Queso de Roncal", "Queso gallego"],
+                correcta: 3
+            },
+            {
+                enunciado: "¿Qué medio de transporte se utiliza en la ruta de las Bardenas Reales?",
+                opciones: ["Bicicleta", "Avión", "Tren", "Barco", "Patines"],
                 correcta: 0
             },
             {
-                enunciado: "[Pregunta 5]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
+                enunciado: "¿Cómo se llama la formación geológica más emblemática de las Bardenas Reales que aparece como hito de la ruta?",
+                opciones: ["El Teide", "La Giralda", "El Naranjo de Bulnes", "La Concha", "Castildetierra"],
+                correcta: 4
             },
             {
-                enunciado: "[Pregunta 6]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
+                enunciado: "Según la página de Ayuda, ¿en qué formato se representa la planimetría de cada ruta sobre el mapa?",
+                opciones: ["PDF", "KML", "MP3", "DOCX", "ZIP"],
+                correcta: 1
             },
             {
-                enunciado: "[Pregunta 7]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
-            },
-            {
-                enunciado: "[Pregunta 8]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
-            },
-            {
-                enunciado: "[Pregunta 9]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
-            },
-            {
-                enunciado: "[Pregunta 10]",
-                opciones: [
-                    "[Opción A]",
-                    "[Opción B]",
-                    "[Opción C]",
-                    "[Opción D]",
-                    "[Opción E]"
-                ],
-                correcta: 0
+                enunciado: "Según la página de Ayuda, ¿qué muestra la página de Inicio?",
+                opciones: ["Un mapa del metro", "Una calculadora", "Un carrusel de imágenes y noticias de Navarra", "Un reproductor de música", "Un foro de mensajes"],
+                correcta: 2
             }
         ];
 
@@ -102,12 +59,12 @@ class Juego {
         this.aciertos = 0;
     }
 
-    // Lanza el juego mostrando la primera pregunta.
+    // Empieza el juego con la primera pregunta
     iniciar() {
         this.mostrarPregunta();
     }
 
-    // Pinta en la sección la pregunta actual con sus 5 opciones como botones.
+    // Muestra la pregunta actual con sus opciones como botones
     mostrarPregunta() {
         var seccion = document.querySelector("main > section:nth-of-type(2)");
         seccion.innerHTML = "";
@@ -134,7 +91,7 @@ class Juego {
         seccion.appendChild(lista);
     }
 
-    // Comprueba la respuesta, suma acierto si toca y avanza a la siguiente pregunta.
+    // Comprueba la respuesta y pasa a la siguiente pregunta
     responder(indice) {
         if (indice === this.preguntas[this.preguntaActual].correcta) {
             this.aciertos = this.aciertos + 1;
@@ -149,7 +106,7 @@ class Juego {
         }
     }
 
-    // Pinta la puntuación final del jugador (0 a 10).
+    // Muestra la nota final del jugador (0 a 10)
     mostrarPuntuacion() {
         var seccion = document.querySelector("main > section:nth-of-type(2)");
         seccion.innerHTML = "";

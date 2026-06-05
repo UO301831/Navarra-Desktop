@@ -1,5 +1,4 @@
-// Clase Carrusel: muestra una a una las fotos locales de Navarra cada cierto tiempo.
-
+// Carrusel que va mostrando las fotos de Navarra una a una
 class Carrusel {
 
     constructor() {
@@ -23,13 +22,13 @@ class Carrusel {
         this.segundos = 3000;
     }
 
-    // Arranca el carrusel: muestra la primera foto y programa el cambio automático.
+    // Muestra la primera foto y va cambiándola cada cierto tiempo
     iniciar() {
         this.mostrarFoto();
         setInterval(this.cambiarFoto.bind(this), this.segundos);
     }
 
-    // Pinta la foto actual en el HTML (src y alt).
+    // Pone la foto actual en la imagen de la página
     mostrarFoto() {
         var rutaFoto = this.fotos[this.actual];
         var textoFoto = this.descripciones[this.actual];
@@ -39,7 +38,7 @@ class Carrusel {
         imagen.attr("alt", textoFoto);
     }
 
-    // Avanza al siguiente índice; vuelve al 0 al pasar del último.
+    // Pasa a la siguiente foto y vuelve al principio al llegar al final
     cambiarFoto() {
         this.actual = this.actual + 1;
         if (this.actual >= this.fotos.length) {

@@ -1,4 +1,4 @@
-// Clase Meteorologia: consume el servicio web Open-Meteo y muestra el tiempo actual y la previsión para los próximos 7 días en una ciudad concreta.
+// Muestra el tiempo actual y la previsión de 7 días de una ciudad
 class Meteorologia {
 
     constructor(latitud, longitud, ciudad) {
@@ -8,7 +8,7 @@ class Meteorologia {
         this.urlBase = "https://api.open-meteo.com/v1/forecast";
     }
 
-    // Pide a la API el tiempo actua, delega el procesado a pintarTiempoActual.
+    // Pide al servicio web el tiempo de ahora mismo
     buscarTiempoActual() {
         $.ajax({
             url: this.urlBase,
@@ -25,7 +25,7 @@ class Meteorologia {
         .fail(this.mostrarErrorActual.bind(this));
     }
 
-    // Pide a la API la previsión para 7 días.
+    // Pide al servicio web la previsión de los próximos días
     buscarPrevision() {
         $.ajax({
             url: this.urlBase,
@@ -36,14 +36,14 @@ class Meteorologia {
                 longitude: this.longitud,
                 daily: "temperature_2m_max,temperature_2m_min,weathercode,sunrise,sunset,precipitation_sum,windspeed_10m_max",
                 timezone: "Europe/Madrid",
-                forecast_days: 7
+                forecast_days: 8
             }
         })
         .done(this.pintarPrevision.bind(this))
         .fail(this.mostrarErrorPrevision.bind(this));
     }
 
-    // Pinta el tiempo actual en la segunda section del main.
+    // Muestra el tiempo actual de la ciudad
     pintarTiempoActual(json) {
         var seccion = $("main > section:nth-of-type(2)");
         seccion.empty();
@@ -58,14 +58,15 @@ class Meteorologia {
         seccion.append(articulo);
     }
 
-    // Pinta la previsión de los próximos 7 días en la tercera section del main.
+    // Muestra la previsión día a día
     pintarPrevision(json) {
         var seccion = $("main > section:nth-of-type(3)");
         seccion.empty();
         seccion.append("<h2>Previsión para los próximos 7 días</h2>");
 
+        // Empezamos en 1 para saltar el día de hoy, que ya se muestra arriba
         var dias = json.daily;
-        for (var i = 0; i < dias.time.length; i++) {
+        for (var i = 1; i < dias.time.length; i++) {
             var articulo = $("<article></article>");
             articulo.append("<h3>" + dias.time[i] + "</h3>");
             articulo.append("<p>Condiciones: " + this.descripcionTiempo(dias.weathercode[i]) + "</p>");
@@ -79,7 +80,7 @@ class Meteorologia {
         }
     }
 
-    // Mensaje de error si falla la petición del tiempo actual.
+    // Avisa si falla la carga del tiempo actual
     mostrarErrorActual() {
         var seccion = $("main > section:nth-of-type(2)");
         seccion.empty();
@@ -87,7 +88,7 @@ class Meteorologia {
         seccion.append("<p>No se ha podido cargar la información meteorológica.</p>");
     }
 
-    // Mensaje de error si falla la petición de la previsión.
+    // Avisa si falla la carga de la previsión
     mostrarErrorPrevision() {
         var seccion = $("main > section:nth-of-type(3)");
         seccion.empty();
@@ -95,7 +96,7 @@ class Meteorologia {
         seccion.append("<p>No se ha podido cargar la previsión meteorológica.</p>");
     }
 
-    // Traduce el código de tiempo de Open-Meteo a una descripción en castellano.
+    // Convierte el código del tiempo en una palabra (Despejado, Lluvia...)
     descripcionTiempo(codigo) {
         if (codigo === 0) return "Despejado";
         if (codigo <= 3) return "Nublado";
