@@ -1192,12 +1192,12 @@
         <personas>Adultos y adolescentes con buena forma fisica basica; no recomendable con ninos pequenos por el sol y la falta de sombra</personas>
 
         <inicio>
-            <lugar>Centro de Informacion de las Bardenas Reales (Finca de los Aguilares)</lugar>
-            <direccion>Carretera NA-8712, km 7 desde Arguedas, 31513 Arguedas, Navarra</direccion>
+            <lugar>Aparcamiento de Arguedas (acceso noroeste)</lugar>
+            <direccion>Arguedas, 31513, Navarra</direccion>
             <coordenadas>
-                <longitud>-1.4869</longitud>
-                <latitud>42.2161</latitud>
-                <altitud unidad="m">290</altitud>
+                <longitud>-1.591405</longitud>
+                <latitud>42.173522</latitud>
+                <altitud unidad="m">264.2</altitud>
             </coordenadas>
         </inicio>
 
@@ -1205,7 +1205,7 @@
             <referencia>https://www.bardenasreales.es/</referencia>
             <referencia>https://es.wikipedia.org/wiki/Bardenas_Reales</referencia>
             <referencia>https://www.visitnavarra.es/es/bardenas-reales</referencia>
-            <referencia>https://es.wikiloc.com/rutas/mountain-bike/espana/navarra/arguedas</referencia>
+            <referencia>https://es.wikiloc.com/rutas-mountain-bike/castildeterra-monumento-al-pastor-embalse-el-ferial-yugo-circular-desde-arguedasnavarra-un-pisteo-b-58580936#wp-58580947</referencia>
         </referencias>
 
         <recomendacion>8</recomendacion>
@@ -1213,104 +1213,469 @@
         <hitos>
 
             <hito>
-                <nombre>Centro de Informacion de las Bardenas (Aguilares)</nombre>
-                <descripcion>Punto de inicio de la ruta. El Centro de Informacion ofrece mapas del parque, exposicion sobre la geologia y biodiversidad de las Bardenas Reales y servicio de alquiler de bicicletas. Declarado Parque Natural en 1999 y Reserva de la Biosfera por la UNESCO en 2000.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4869</longitud>
-                    <latitud>42.2161</latitud>
-                    <altitud unidad="m">290</altitud>
+                    <longitud>-1.574354</longitud>
+                    <latitud>42.163671</latitud>
+                    <altitud unidad="m">271.2</altitud>
                 </coordenadas>
-                <distancia unidades="km">0</distancia>
+                <distancia unidades="m">1782</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.561744</longitud>
+                    <latitud>42.168296</latitud>
+                    <altitud unidad="m">310.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1160</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.544194</longitud>
+                    <latitud>42.176889</latitud>
+                    <altitud unidad="m">278.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">1733</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.535697</longitud>
+                    <latitud>42.175547</latitud>
+                    <altitud unidad="m">305.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">716</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.529809</longitud>
+                    <latitud>42.180931</latitud>
+                    <altitud unidad="m">324.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">771</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.522373</longitud>
+                    <latitud>42.179108</latitud>
+                    <altitud unidad="m">309.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">645</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Cabanas</nombre>
+                <descripcion>Antigua cabana de pastores en estado ruinoso, una de las construcciones tradicionales diseminadas por las Bardenas Reales que servian de refugio a los ganaderos trashumantes. Se alza solitaria en el paisaje semidesertico, muy cerca del cabezo de Castildeterra.</descripcion>
+                <coordenadas>
+                    <longitud>-1.516712</longitud>
+                    <latitud>42.200708</latitud>
+                    <altitud unidad="m">288.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">2447</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/centro_informacion_aguilares.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_cabanas.jpg</foto>
                 </fotos>
             </hito>
 
             <hito>
-                <nombre>Castildetierra</nombre>
-                <descripcion>El emblema mas fotografiado de las Bardenas Reales. Formacion geologica en forma de cabezo con cima rocosa que emerge sobre la llanura blanca, esculpida por la erosion diferencial sobre arcillas y yesos durante miles de anos. Escenario de la serie Juego de Tronos (HBO).</descripcion>
+                <nombre>Castildeterra</nombre>
+                <descripcion>Formacion geologica del tipo cabezo y simbolo por excelencia de las Bardenas Reales, conocida como chimenea de hadas. Se origino por la erosion del agua, que desgasto las capas blandas de arcilla bajo otras mas duras de caliza y arenisca. El entorno semidesertico ha servido de escenario de rodajes de cine y television.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4631</longitud>
-                    <latitud>42.2389</latitud>
-                    <altitud unidad="m">320</altitud>
+                    <longitud>-1.515455</longitud>
+                    <latitud>42.209637</latitud>
+                    <altitud unidad="m">293.0</altitud>
                 </coordenadas>
-                <distancia unidades="km">3.5</distancia>
+                <distancia unidades="m">998</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/castildetierra.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_castildeterra.jpg</foto>
                 </fotos>
             </hito>
 
             <hito>
-                <nombre>Tres Hermanos (monticulos de arcilla)</nombre>
-                <descripcion>Conjunto de tres cabezos de arcilla alineados que conforman uno de los grupos de formaciones geologicas mas representativos de la Bardena Blanca. Sus tonos ocres y blanquecinos contrastan con el azul del cielo navarro, creando un paisaje de marcado caracter lunar.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4505</longitud>
-                    <latitud>42.2480</latitud>
-                    <altitud unidad="m">335</altitud>
+                    <longitud>-1.507270</longitud>
+                    <latitud>42.219393</latitud>
+                    <altitud unidad="m">292.2</altitud>
                 </coordenadas>
-                <distancia unidades="km">1.8</distancia>
+                <distancia unidades="m">1277</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.493101</longitud>
+                    <latitud>42.225260</latitud>
+                    <altitud unidad="m">298.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">1337</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.487684</longitud>
+                    <latitud>42.230256</latitud>
+                    <altitud unidad="m">309.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">712</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.475100</longitud>
+                    <latitud>42.226595</latitud>
+                    <altitud unidad="m">306.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1113</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.463607</longitud>
+                    <latitud>42.217889</latitud>
+                    <altitud unidad="m">302.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">1354</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.457536</longitud>
+                    <latitud>42.221350</latitud>
+                    <altitud unidad="m">314.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">631</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.454303</longitud>
+                    <latitud>42.229898</latitud>
+                    <altitud unidad="m">342.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">987</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.435725</longitud>
+                    <latitud>42.240718</latitud>
+                    <altitud unidad="m">344.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1946</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.429127</longitud>
+                    <latitud>42.253489</latitud>
+                    <altitud unidad="m">363.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">1520</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.419640</longitud>
+                    <latitud>42.251802</latitud>
+                    <altitud unidad="m">369.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">803</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.416247</longitud>
+                    <latitud>42.253742</latitud>
+                    <altitud unidad="m">369.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">353</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.418789</longitud>
+                    <latitud>42.266461</latitud>
+                    <altitud unidad="m">366.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1430</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.415351</longitud>
+                    <latitud>42.277097</latitud>
+                    <altitud unidad="m">372.6</altitud>
+                </coordenadas>
+                <distancia unidades="m">1216</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.418161</longitud>
+                    <latitud>42.292797</latitud>
+                    <altitud unidad="m">387.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">1761</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.422382</longitud>
+                    <latitud>42.298296</latitud>
+                    <altitud unidad="m">391.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">703</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Monumento al Pastor</nombre>
+                <descripcion>Escultura levantada en 1992 en homenaje a la ganaderia trashumante y al pastor bardenero. Se situa cerca de la zona de El Paso, por donde discurre la Canada Real de los Roncaleses que los rebanos usaban en invierno para bajar del Pirineo al valle del Ebro.</descripcion>
+                <coordenadas>
+                    <longitud>-1.417564</longitud>
+                    <latitud>42.304435</latitud>
+                    <altitud unidad="m">410.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">789</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/tres_hermanos.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_monumento_pastor.jpg</foto>
                 </fotos>
             </hito>
 
             <hito>
-                <nombre>Cabana de Aguirre</nombre>
-                <descripcion>Antigua cabana pastoril de adobe y piedra, vestigio de la actividad ganadera trashumante que historicamente dio origen a la Comunidad de las Bardenas Reales. Punto de descanso en la ruta con sombra y vistas a la meseta de El Plano.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4280</longitud>
-                    <latitud>42.2545</latitud>
-                    <altitud unidad="m">350</altitud>
+                    <longitud>-1.437890</longitud>
+                    <latitud>42.299016</latitud>
+                    <altitud unidad="m">376.8</altitud>
                 </coordenadas>
-                <distancia unidades="km">2.1</distancia>
+                <distancia unidades="m">1777</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.455056</longitud>
+                    <latitud>42.275654</latitud>
+                    <altitud unidad="m">361.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">2957</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.465666</longitud>
+                    <latitud>42.276550</latitud>
+                    <altitud unidad="m">348.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">879</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.476867</longitud>
+                    <latitud>42.271523</latitud>
+                    <altitud unidad="m">330.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1078</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.503870</longitud>
+                    <latitud>42.275126</latitud>
+                    <altitud unidad="m">392.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">2258</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.506104</longitud>
+                    <latitud>42.272073</latitud>
+                    <altitud unidad="m">422.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">386</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.535686</longitud>
+                    <latitud>42.289165</latitud>
+                    <altitud unidad="m">420.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">3088</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.551453</longitud>
+                    <latitud>42.274594</latitud>
+                    <altitud unidad="m">415.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">2075</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.564680</longitud>
+                    <latitud>42.282665</latitud>
+                    <altitud unidad="m">406.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1411</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Embalse El Ferial</nombre>
+                <descripcion>Embalse en pleno entorno semidesertico de las Bardenas que se rodea siguiendo un camino paralelo al canal. Supone un punto de agua que contrasta con la aridez del paisaje y atrae abundante avifauna, especialmente en primavera.</descripcion>
+                <coordenadas>
+                    <longitud>-1.583629</longitud>
+                    <latitud>42.286311</latitud>
+                    <altitud unidad="m">394.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">1611</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/cabana_aguirre.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_embalse_ferial.jpg</foto>
                 </fotos>
             </hito>
 
             <hito>
-                <nombre>Castillo de Penaflor</nombre>
-                <descripcion>Ruinas medievales del Castillo de Penaflor sobre un cabezo de arenisca a 386 m de altitud, el punto mas elevado de la ruta. El castillo fue baluarte defensivo del reino de Navarra en los siglos X-XII. Desde sus restos se obtiene la panoramica mas amplia de toda la Bardena Blanca.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4108</longitud>
-                    <latitud>42.2602</latitud>
-                    <altitud unidad="m">386</altitud>
+                    <longitud>-1.588181</longitud>
+                    <latitud>42.287544</latitud>
+                    <altitud unidad="m">395.7</altitud>
                 </coordenadas>
-                <distancia unidades="km">1.9</distancia>
+                <distancia unidades="m">399</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.588875</longitud>
+                    <latitud>42.286078</latitud>
+                    <altitud unidad="m">377.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">173</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.581493</longitud>
+                    <latitud>42.283200</latitud>
+                    <altitud unidad="m">375.3</altitud>
+                </coordenadas>
+                <distancia unidades="m">686</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.577236</longitud>
+                    <latitud>42.278240</latitud>
+                    <altitud unidad="m">387.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">653</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.574637</longitud>
+                    <latitud>42.257902</latitud>
+                    <altitud unidad="m">387.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">2272</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.577767</longitud>
+                    <latitud>42.244650</latitud>
+                    <altitud unidad="m">339.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">1496</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.577267</longitud>
+                    <latitud>42.226954</latitud>
+                    <altitud unidad="m">361.1</altitud>
+                </coordenadas>
+                <distancia unidades="m">1968</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.583025</longitud>
+                    <latitud>42.219618</latitud>
+                    <altitud unidad="m">359.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">944</distancia>
+            </hito>
+
+            <hito>
+                <nombre>Escultura Virgen del Yugo</nombre>
+                <descripcion>Escultura dedicada a la Virgen del Yugo situada junto a la ermita de Nuestra Senora del Yugo, sobre Arguedas. El conjunto cuenta con albergue y un area recreativa con zona verde y merendero, y constituye uno de los principales miradores de las Bardenas Reales por su posicion elevada.</descripcion>
+                <coordenadas>
+                    <longitud>-1.585941</longitud>
+                    <latitud>42.206396</latitud>
+                    <altitud unidad="m">472.7</altitud>
+                </coordenadas>
+                <distancia unidades="m">1490</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/castillo_penaflor.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_virgen_yugo.jpg</foto>
                 </fotos>
             </hito>
 
             <hito>
-                <nombre>Barranco Grande</nombre>
-                <descripcion>Impresionante barranco de erosion fluvial con paredes de mas de 20 m que muestra en seccion transversal los estratos de arcilla, yeso y arenisca de las Bardenas. En epocas de lluvia el agua esculpe nuevas formas en sus paredes. Zona de interes geologico y fotografico.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4350</longitud>
-                    <latitud>42.2398</latitud>
-                    <altitud unidad="m">305</altitud>
+                    <longitud>-1.588836</longitud>
+                    <latitud>42.187960</latitud>
+                    <altitud unidad="m">399.6</altitud>
                 </coordenadas>
-                <distancia unidades="km">3.2</distancia>
-                <fotos>
-                    <foto>multimedia/imagenes/barranco_grande.jpg</foto>
-                </fotos>
+                <distancia unidades="m">2064</distancia>
             </hito>
 
             <hito>
-                <nombre>Regreso al Centro de Informacion</nombre>
-                <descripcion>Tramo final de la ruta circular de regreso al Centro de Informacion de Aguilares. El camino recorre la zona baja de la Bardena Blanca con vistas al horizonte plano caracteristico del parque. Final del recorrido con aproximadamente 16.6 km totales.</descripcion>
                 <coordenadas>
-                    <longitud>-1.4869</longitud>
-                    <latitud>42.2161</latitud>
-                    <altitud unidad="m">290</altitud>
+                    <longitud>-1.586056</longitud>
+                    <latitud>42.185212</latitud>
+                    <altitud unidad="m">379.0</altitud>
                 </coordenadas>
-                <distancia unidades="km">5.5</distancia>
-                <fotos>
-                    <foto>multimedia/imagenes/bardenas_panorama.jpg</foto>
-                </fotos>
-                <videos>
-                    <video>multimedia/videos/bardenas_panorama.mp4</video>
-                </videos>
+                <distancia unidades="m">382</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.589502</longitud>
+                    <latitud>42.177345</latitud>
+                    <altitud unidad="m">320.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">920</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.587170</longitud>
+                    <latitud>42.173736</latitud>
+                    <altitud unidad="m">288.0</altitud>
+                </coordenadas>
+                <distancia unidades="m">445</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.589361</longitud>
+                    <latitud>42.171782</latitud>
+                    <altitud unidad="m">271.4</altitud>
+                </coordenadas>
+                <distancia unidades="m">283</distancia>
+            </hito>
+
+            <hito>
+                <coordenadas>
+                    <longitud>-1.591259</longitud>
+                    <latitud>42.173712</latitud>
+                    <altitud unidad="m">269.2</altitud>
+                </coordenadas>
+                <distancia unidades="m">266</distancia>
             </hito>
 
         </hitos>

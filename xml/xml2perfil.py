@@ -63,7 +63,7 @@ class Svg(object):
             **{"stroke-width": str(strokeWidth)}
         )
 
-    def addText(self, texto, x, y, fontFamily="Verdana", fontSize=12, extra_style=""):
+    def addText(self, texto, x, y, fontFamily="Verdana", fontSize=12, extra_style="", transform=""):
         attrs = {
             "x": str(x), "y": str(y),
             "font-family": fontFamily,
@@ -71,6 +71,8 @@ class Svg(object):
         }
         if extra_style:
             attrs["style"] = extra_style
+        if transform:
+            attrs["transform"] = transform
         t = ET.SubElement(self.raiz, "text", **attrs)
         t.text = str(texto)
 
@@ -104,7 +106,8 @@ def cargar_perfil(ruta_el):
             if dist_el.get("unidades", "m") == "km":
                 dist *= 1000.0
         dist_acum += dist
-        perfil.append((dist_acum, alt))
+        nombre_hito = (hito.findtext("nombre") or "").strip()
+        perfil.append((dist_acum, alt, nombre_hito))
 
     return nombre, perfil
 
@@ -114,8 +117,8 @@ def generar_altimetria_svg(nombre, perfil, out_path):
     ML, MR, MT, MB = 70, 30, 30, 50
     cw, ch = W - ML - MR, H - MT - MB
 
-    xs = [x for x, _ in perfil]
-    ys = [y for _, y in perfil]
+    xs = [x for x, _, _ in perfil]
+    ys = [y for _, y, _ in perfil]
     x_min, x_max = 0.0, max(xs)
     y_min, y_max = min(ys), max(ys)
     if abs(y_max - y_min) < 1e-6:
@@ -124,7 +127,7 @@ def generar_altimetria_svg(nombre, perfil, out_path):
 
     def sx(x): return ML + (x - x_min) / (x_max - x_min) * cw
     def sy(y): return MT + ch - (y - y_min) / (y_max - y_min) * ch
-    pts = [(sx(x), sy(y)) for x, y in perfil]
+    pts = [(sx(x), sy(y)) for x, y, _ in perfil]
 
     base_y = sy(y_min)
     poly = [(sx(x_min), base_y)] + pts + [(sx(x_max), base_y)]
@@ -173,6 +176,30 @@ def generar_altimetria_svg(nombre, perfil, out_path):
                    fill="#cfe8ff", opacity=0.85)
     svg.addPolyline(" ".join(f"{x:.2f},{y:.2f}" for x, y in pts),
                     stroke="#0066ff", strokeWidth=2.5, fill="none")
+
+    # Circulo gris pequeño en todos los hitos (anonimos y nombrados)
+    for px, py in pts:
+        svg.addCircle(f"{px:.2f}", f"{py:.2f}", 3,
+                      fill="#888888", stroke="none", strokeWidth=0)
+
+    # Circulo azul mayor y etiqueta para los hitos con nombre
+    label_idx = 0
+    for i, (_, _, nombre_hito) in enumerate(perfil):
+        if not nombre_hito:
+            continue
+        px, py = pts[i]
+        svg.addCircle(f"{px:.2f}", f"{py:.2f}", 5,
+                      fill="#ffffff", stroke="#0044cc", strokeWidth=1.5)
+        if label_idx % 2 == 0:
+            # Etiqueta horizontal: a la derecha y ligeramente arriba del punto
+            svg.addText(nombre_hito, f"{px + 6:.1f}", f"{py - 6:.1f}",
+                        fontSize=9, extra_style="fill: #222;")
+        else:
+            # Etiqueta vertical: rotada -90° alrededor del punto
+            svg.addText(nombre_hito, f"{px:.1f}", f"{py - 6:.1f}",
+                        fontSize=9, extra_style="fill: #222;",
+                        transform=f"rotate(-90,{px:.1f},{py:.1f})")
+        label_idx += 1
 
     svg.addText(f"Longitud: {x_max / 1000:.3f} km", W - MR, 36,
                 fontSize=12, extra_style="text-anchor: end;")

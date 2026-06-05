@@ -33,6 +33,15 @@ class ConstructorKml:
         ET.SubElement(trayecto, "altitudeMode").text = "relativeToGround"
         ET.SubElement(trayecto, "coordinates").text = "\n".join(lista_coords)
 
+    def agregar_punto_anonimo(self, lon: str, lat: str, alt: str = "0") -> None:
+        marca = ET.SubElement(self._documento, "Placemark")
+        estilo = ET.SubElement(marca, "Style")
+        ET.SubElement(ET.SubElement(estilo, "LabelStyle"), "scale").text = "0"
+        icono = ET.SubElement(estilo, "IconStyle")
+        ET.SubElement(icono, "scale").text = "0.4"
+        punto = ET.SubElement(marca, "Point")
+        ET.SubElement(punto, "coordinates").text = f"{lon},{lat},{alt}"
+
     def guardar(self, destino: Path) -> None:
         arbol = ET.ElementTree(self._raiz)
         try:
@@ -113,6 +122,10 @@ class GeneradorPlanimetria:
             if hito["nombre"]:
                 kml.agregar_marcador(
                     hito["nombre"],
+                    hito["lon"], hito["lat"], hito.get("alt", "0")
+                )
+            else:
+                kml.agregar_punto_anonimo(
                     hito["lon"], hito["lat"], hito.get("alt", "0")
                 )
 
