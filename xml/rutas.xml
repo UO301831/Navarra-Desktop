@@ -718,18 +718,18 @@
         <altimetria>xml/altimetria_lumbier.svg</altimetria>
     </ruta>
 
-    <!-- ============================ RUTA 2 - Selva de Irati: Sendero Errekaidorra ================================ -->
+    <!-- ============================ RUTA 2 - Selva de Irati: Cascada del Cubo ================================= -->
 
     <ruta>
-        <nombre>Sendero Errekaidorra - Cascada del Cubo</nombre>
+        <nombre>Selva de Irati - Cascada del Cubo</nombre>
         <tipo>Paisajística</tipo>
         <transporte>A pie</transporte>
         <fechaInicio>2026-10-20</fechaInicio>
         <horaInicio>10:00:00</horaInicio>
         <duracion>3 horas 7 minutos</duracion>
-        <agencia>NaturaTur</agencia>
-        <descripcion>Ruta senalizada con placas amarillas Errekaidorra por el segundo hayedo-abetal mas extenso de Europa. Sube paralela al rio Urbeltza hasta la Cascada del Cubo, atraviesa una senda tematica con paneles sobre la antigua explotacion forestal del valle y se interna en territorio frances hasta Orgate. Especialmente espectacular en otono por la paleta cromatica del hayedo.</descripcion>
-        <personas>Se puede ir con ninos (primer tramo apto incluso para sillitas), recomendable calzado adecuado en la senda</personas>
+        <agencia>Ninguna</agencia>
+        <descripcion>Ruta muy fácil y bonita. Dentro de esta, hay puntos donde van explicando la historia de cómo se transportaban los troncos antaño.</descripcion>
+        <personas>Se puede ir con niños y con personas de tercera edad</personas>
 
         <inicio>
             <lugar>Aparcamiento Casas de Irati</lugar>
@@ -754,7 +754,7 @@
 
             <hito>
                 <nombre>Aparcamiento Casas de Irati</nombre>
-                <descripcion>Punto de inicio y fin de la ruta circular, situado en las Casas de Irati a unos 24 km de Ochagavia por la carretera del collado de Tapla. Dispone de un centro de acogida e informacion al visitante y de un panel donde arranca el sendero tematico Errekaidorra.</descripcion>
+                <descripcion>Punto de inicio y fin de la ruta circular, situado en las Casas de Irati a unos 24 km de Ochagavia por la carretera del collado de Tapla. Dispone de un centro de acogida e informacion al visitante.</descripcion>
                 <coordenadas>
                     <longitud>-1.105941</longitud>
                     <latitud>42.988411</latitud>
@@ -1179,20 +1179,20 @@
         <altimetria>xml/altimetria_irati.svg</altimetria>
     </ruta>
 
-    <!-- =========================== RUTA 3 - Bardenas Reales: Castildetierra y Penaflor ================================= -->
+    <!-- =========================== RUTA 3 - Bardenas Reales: Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo ================================= -->
     <ruta>
         <nombre>Ruta del Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo </nombre>
         <tipo>Paisajistica y geologica</tipo>
         <transporte>Bicicleta</transporte>
         <fechaInicio>2026-05-10</fechaInicio>
         <horaInicio>08:30:00</horaInicio>
-        <duracion>3 horas</duracion>
-        <agencia>Sin agencia (alquiler de bicicleta disponible en Arguedas)</agencia>
-        <descripcion>Ruta circular en bicicleta por la Bardena Blanca, Reserva de la Biosfera de la UNESCO, a traves de un paisaje semidesierto con formaciones geologicas unicas esculpidas por la erosion sobre arcillas, yesos y areniscas. Visita los dos hitos mas emblematicos del parque: el cabezo de Castildetierra y las ruinas del Castillo de Penaflor.</descripcion>
-        <personas>Adultos y adolescentes con buena forma fisica basica; no recomendable con ninos pequenos por el sol y la falta de sombra</personas>
+        <duracion>3 horas 43 minutos</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Ruta que transita integra por pistas en buen estado. A tener en cuenta su longitud si no estamos acostumbrados a estas distancias. Varias cosas a tener en cuenta son: el viento, si sopla fuerte el Cierzo(viento de componente Noroeste) la ruta en algunas zonas se nos puede hacer algo tediosa y zonas sensibles a embarrarse donde sobre la zona desde el km 35 al 37 aprox se atraviesan pequeños toboganes sensibles a embarrarse mucho.</descripcion>
+        <personas>Personas en buena forma física</personas>
 
         <inicio>
-            <lugar>Aparcamiento de Arguedas (acceso noroeste)</lugar>
+            <lugar>Aparcamiento de Arguedas</lugar>
             <direccion>Arguedas, 31513, Navarra</direccion>
             <coordenadas>
                 <longitud>-1.591405</longitud>
@@ -1208,7 +1208,7 @@
             <referencia>https://es.wikiloc.com/rutas-mountain-bike/castildeterra-monumento-al-pastor-embalse-el-ferial-yugo-circular-desde-arguedasnavarra-un-pisteo-b-58580936#wp-58580947</referencia>
         </referencias>
 
-        <recomendacion>8</recomendacion>
+        <recomendacion>5</recomendacion>
 
         <hitos>
 
@@ -1439,7 +1439,7 @@
                 </coordenadas>
                 <distancia unidades="m">789</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/RUTA3_HITO_monumento_pastor.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_monumento_al_pastor.jpg</foto>
                 </fotos>
             </hito>
 
@@ -1534,7 +1534,7 @@
                 </coordenadas>
                 <distancia unidades="m">1611</distancia>
                 <fotos>
-                    <foto>multimedia/imagenes/RUTA3_HITO_embalse_ferial.jpg</foto>
+                    <foto>multimedia/imagenes/RUTA3_HITO_embalse_el_ferial.jpg</foto>
                 </fotos>
             </hito>
 

@@ -1,17 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Selva de Irati - Cascada del Cubo</name>
+    <name>Ruta del Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo</name>
     <Placemark>
       <name>Inicio de la ruta</name>
       <Point>
-        <coordinates>-1.105906,42.988439,837.8</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Aparcamiento Casas de Irati</name>
-      <Point>
-        <coordinates>-1.105941,42.988411,837.9</coordinates>
+        <coordinates>-1.591405,42.173522,264.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -24,7 +18,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.104853,42.991291,842.6</coordinates>
+        <coordinates>-1.574354,42.163671,271.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -37,13 +31,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.102365,42.993179,861.3</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Bosque de coniferas</name>
-      <Point>
-        <coordinates>-1.104056,42.994763,853.9</coordinates>
+        <coordinates>-1.561744,42.168296,310.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -56,7 +44,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.103673,42.996146,846.5</coordinates>
+        <coordinates>-1.544194,42.176889,278.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -69,7 +57,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.102800,42.998024,852.4</coordinates>
+        <coordinates>-1.535697,42.175547,305.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -82,13 +70,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.102357,42.998555,844.8</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Cascada del Cubo</name>
-      <Point>
-        <coordinates>-1.102172,42.999013,844.6</coordinates>
+        <coordinates>-1.529809,42.180931,324.4</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -101,7 +83,19 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.101901,42.999916,871.3</coordinates>
+        <coordinates>-1.522373,42.179108,309.6</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cabanas</name>
+      <Point>
+        <coordinates>-1.516712,42.200708,288.7</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Castildeterra</name>
+      <Point>
+        <coordinates>-1.515455,42.209637,293.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -114,7 +108,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.100179,43.001470,857.7</coordinates>
+        <coordinates>-1.507270,42.219393,292.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -127,7 +121,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.097539,43.002184,871.9</coordinates>
+        <coordinates>-1.493101,42.225260,298.6</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -140,7 +134,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.097251,43.003022,869.2</coordinates>
+        <coordinates>-1.487684,42.230256,309.6</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -153,7 +147,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.094619,43.002874,884.5</coordinates>
+        <coordinates>-1.475100,42.226595,306.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -166,7 +160,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.092571,43.001715,887.7</coordinates>
+        <coordinates>-1.463607,42.217889,302.1</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -179,7 +173,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.089862,43.002707,887.2</coordinates>
+        <coordinates>-1.457536,42.221350,314.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -192,7 +186,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.085600,43.003796,868.6</coordinates>
+        <coordinates>-1.454303,42.229898,342.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -205,7 +199,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.086678,43.006870,903.1</coordinates>
+        <coordinates>-1.435725,42.240718,344.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -218,7 +212,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.085163,43.008182,880.5</coordinates>
+        <coordinates>-1.429127,42.253489,363.1</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -231,7 +225,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084701,43.009863,904.8</coordinates>
+        <coordinates>-1.419640,42.251802,369.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -244,7 +238,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084734,43.010031,905.8</coordinates>
+        <coordinates>-1.416247,42.253742,369.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -257,7 +251,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084483,43.010985,934.7</coordinates>
+        <coordinates>-1.418789,42.266461,366.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -270,7 +264,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.083365,43.014302,924.4</coordinates>
+        <coordinates>-1.415351,42.277097,372.6</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -283,7 +277,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084768,43.013135,891.6</coordinates>
+        <coordinates>-1.418161,42.292797,387.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -296,7 +290,13 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.082665,43.010297,927.6</coordinates>
+        <coordinates>-1.422382,42.298296,391.3</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Monumento al Pastor</name>
+      <Point>
+        <coordinates>-1.417564,42.304435,410.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -309,13 +309,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.082932,43.009438,935.3</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Carbon y ceniza</name>
-      <Point>
-        <coordinates>-1.082852,43.008376,930.5</coordinates>
+        <coordinates>-1.437890,42.299016,376.8</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -328,7 +322,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.083373,43.007232,915.8</coordinates>
+        <coordinates>-1.455056,42.275654,361.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -341,7 +335,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084560,43.006247,880.6</coordinates>
+        <coordinates>-1.465666,42.276550,348.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -354,7 +348,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084194,43.005706,888.4</coordinates>
+        <coordinates>-1.476867,42.271523,330.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -367,7 +361,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084225,43.004463,885.2</coordinates>
+        <coordinates>-1.503870,42.275126,392.2</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -380,13 +374,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.084817,43.003344,892.3</coordinates>
-      </Point>
-    </Placemark>
-    <Placemark>
-      <name>Puente de madera</name>
-      <Point>
-        <coordinates>-1.085966,43.002572,874.4</coordinates>
+        <coordinates>-1.506104,42.272073,422.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -399,7 +387,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.085920,43.002274,873.1</coordinates>
+        <coordinates>-1.535686,42.289165,420.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -412,7 +400,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.086015,43.002040,887.4</coordinates>
+        <coordinates>-1.551453,42.274594,415.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -425,7 +413,13 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.086753,43.001788,907.3</coordinates>
+        <coordinates>-1.564680,42.282665,406.3</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Embalse El Ferial</name>
+      <Point>
+        <coordinates>-1.583629,42.286311,394.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -438,7 +432,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.094934,43.001599,896.8</coordinates>
+        <coordinates>-1.588181,42.287544,395.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -451,7 +445,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.098440,43.001097,882.2</coordinates>
+        <coordinates>-1.588875,42.286078,377.4</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -464,7 +458,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.101206,42.998437,903.1</coordinates>
+        <coordinates>-1.581493,42.283200,375.3</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -477,7 +471,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.101096,42.998204,902.2</coordinates>
+        <coordinates>-1.577236,42.278240,387.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -490,7 +484,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.102290,42.996898,848.1</coordinates>
+        <coordinates>-1.574637,42.257902,387.1</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -503,7 +497,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.102882,42.995992,854.8</coordinates>
+        <coordinates>-1.577767,42.244650,339.0</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -516,7 +510,7 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.101249,42.992687,847.5</coordinates>
+        <coordinates>-1.577267,42.226954,361.1</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -529,7 +523,13 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.104657,42.990314,860.4</coordinates>
+        <coordinates>-1.583025,42.219618,359.7</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Escultura Virgen del Yugo</name>
+      <Point>
+        <coordinates>-1.585941,42.206396,472.7</coordinates>
       </Point>
     </Placemark>
     <Placemark>
@@ -542,11 +542,76 @@
         </IconStyle>
       </Style>
       <Point>
-        <coordinates>-1.105879,42.988405,844.2</coordinates>
+        <coordinates>-1.588836,42.187960,399.6</coordinates>
       </Point>
     </Placemark>
     <Placemark>
-      <name>Selva de Irati - Cascada del Cubo</name>
+      <Style>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <scale>0.4</scale>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>-1.586056,42.185212,379.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <scale>0.4</scale>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>-1.589502,42.177345,320.2</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <scale>0.4</scale>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>-1.587170,42.173736,288.0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <scale>0.4</scale>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>-1.589361,42.171782,271.4</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <Style>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+        <IconStyle>
+          <scale>0.4</scale>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>-1.591259,42.173712,269.2</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ruta del Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo</name>
       <Style>
         <LineStyle>
           <color>ff1400e6</color>
@@ -556,51 +621,56 @@
       <LineString>
         <tessellate>1</tessellate>
         <altitudeMode>relativeToGround</altitudeMode>
-        <coordinates>-1.105906,42.988439,837.8
--1.105941,42.988411,837.9
--1.104853,42.991291,842.6
--1.102365,42.993179,861.3
--1.104056,42.994763,853.9
--1.103673,42.996146,846.5
--1.102800,42.998024,852.4
--1.102357,42.998555,844.8
--1.102172,42.999013,844.6
--1.101901,42.999916,871.3
--1.100179,43.001470,857.7
--1.097539,43.002184,871.9
--1.097251,43.003022,869.2
--1.094619,43.002874,884.5
--1.092571,43.001715,887.7
--1.089862,43.002707,887.2
--1.085600,43.003796,868.6
--1.086678,43.006870,903.1
--1.085163,43.008182,880.5
--1.084701,43.009863,904.8
--1.084734,43.010031,905.8
--1.084483,43.010985,934.7
--1.083365,43.014302,924.4
--1.084768,43.013135,891.6
--1.082665,43.010297,927.6
--1.082932,43.009438,935.3
--1.082852,43.008376,930.5
--1.083373,43.007232,915.8
--1.084560,43.006247,880.6
--1.084194,43.005706,888.4
--1.084225,43.004463,885.2
--1.084817,43.003344,892.3
--1.085966,43.002572,874.4
--1.085920,43.002274,873.1
--1.086015,43.002040,887.4
--1.086753,43.001788,907.3
--1.094934,43.001599,896.8
--1.098440,43.001097,882.2
--1.101206,42.998437,903.1
--1.101096,42.998204,902.2
--1.102290,42.996898,848.1
--1.102882,42.995992,854.8
--1.101249,42.992687,847.5
--1.104657,42.990314,860.4
--1.105879,42.988405,844.2</coordinates>
+        <coordinates>-1.591405,42.173522,264.2
+-1.574354,42.163671,271.2
+-1.561744,42.168296,310.3
+-1.544194,42.176889,278.7
+-1.535697,42.175547,305.0
+-1.529809,42.180931,324.4
+-1.522373,42.179108,309.6
+-1.516712,42.200708,288.7
+-1.515455,42.209637,293.0
+-1.507270,42.219393,292.2
+-1.493101,42.225260,298.6
+-1.487684,42.230256,309.6
+-1.475100,42.226595,306.3
+-1.463607,42.217889,302.1
+-1.457536,42.221350,314.7
+-1.454303,42.229898,342.2
+-1.435725,42.240718,344.3
+-1.429127,42.253489,363.1
+-1.419640,42.251802,369.2
+-1.416247,42.253742,369.3
+-1.418789,42.266461,366.3
+-1.415351,42.277097,372.6
+-1.418161,42.292797,387.2
+-1.422382,42.298296,391.3
+-1.417564,42.304435,410.0
+-1.437890,42.299016,376.8
+-1.455056,42.275654,361.3
+-1.465666,42.276550,348.0
+-1.476867,42.271523,330.3
+-1.503870,42.275126,392.2
+-1.506104,42.272073,422.3
+-1.535686,42.289165,420.0
+-1.551453,42.274594,415.7
+-1.564680,42.282665,406.3
+-1.583629,42.286311,394.3
+-1.588181,42.287544,395.7
+-1.588875,42.286078,377.4
+-1.581493,42.283200,375.3
+-1.577236,42.278240,387.7
+-1.574637,42.257902,387.1
+-1.577767,42.244650,339.0
+-1.577267,42.226954,361.1
+-1.583025,42.219618,359.7
+-1.585941,42.206396,472.7
+-1.588836,42.187960,399.6
+-1.586056,42.185212,379.0
+-1.589502,42.177345,320.2
+-1.587170,42.173736,288.0
+-1.589361,42.171782,271.4
+-1.591259,42.173712,269.2</coordinates>
       </LineString>
     </Placemark>
   </Document>

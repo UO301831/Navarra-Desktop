@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380">
+  <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" stroke="none" stroke-width="0" />
+  <text x="500.0" y="18" font-family="Verdana" font-size="16" style="text-anchor: middle;">Altimetria — Ruta del Castildetierra - Monumento del Pastor - Embalse El Ferial - Yugo</text>
+  <line x1="70" y1="330" x2="970" y2="330" stroke="#333" stroke-width="1.5" />
+  <line x1="70" y1="30" x2="70" y2="330" stroke="#333" stroke-width="1.5" />
+  <line x1="70.0" y1="30" x2="70.0" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="70.0" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.0</text>
+  <line x1="77.4819186964835" y1="30" x2="77.4819186964835" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="77.4819186964835" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.5</text>
+  <line x1="84.963837392967" y1="30" x2="84.963837392967" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="84.963837392967" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.0</text>
+  <line x1="92.4457560894505" y1="30" x2="92.4457560894505" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="92.4457560894505" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.5</text>
+  <line x1="99.92767478593399" y1="30" x2="99.92767478593399" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="99.92767478593399" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.0</text>
+  <line x1="107.40959348241749" y1="30" x2="107.40959348241749" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="107.40959348241749" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.5</text>
+  <line x1="114.891512178901" y1="30" x2="114.891512178901" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="114.891512178901" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.0</text>
+  <line x1="122.37343087538449" y1="30" x2="122.37343087538449" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="122.37343087538449" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.5</text>
+  <line x1="129.85534957186798" y1="30" x2="129.85534957186798" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="129.85534957186798" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.0</text>
+  <line x1="137.3372682683515" y1="30" x2="137.3372682683515" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="137.3372682683515" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.5</text>
+  <line x1="144.81918696483498" y1="30" x2="144.81918696483498" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="144.81918696483498" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.0</text>
+  <line x1="152.3011056613185" y1="30" x2="152.3011056613185" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="152.3011056613185" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.5</text>
+  <line x1="159.783024357802" y1="30" x2="159.783024357802" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="159.783024357802" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.0</text>
+  <line x1="167.26494305428548" y1="30" x2="167.26494305428548" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="167.26494305428548" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.5</text>
+  <line x1="174.74686175076897" y1="30" x2="174.74686175076897" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="174.74686175076897" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.0</text>
+  <line x1="182.22878044725246" y1="30" x2="182.22878044725246" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="182.22878044725246" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.5</text>
+  <line x1="189.71069914373598" y1="30" x2="189.71069914373598" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="189.71069914373598" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.0</text>
+  <line x1="197.19261784021947" y1="30" x2="197.19261784021947" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="197.19261784021947" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.5</text>
+  <line x1="204.674536536703" y1="30" x2="204.674536536703" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="204.674536536703" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.0</text>
+  <line x1="212.15645523318645" y1="30" x2="212.15645523318645" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="212.15645523318645" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.5</text>
+  <line x1="219.63837392966997" y1="30" x2="219.63837392966997" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="219.63837392966997" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.0</text>
+  <line x1="227.12029262615346" y1="30" x2="227.12029262615346" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="227.12029262615346" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.5</text>
+  <line x1="234.60221132263698" y1="30" x2="234.60221132263698" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="234.60221132263698" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.0</text>
+  <line x1="242.08413001912047" y1="30" x2="242.08413001912047" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="242.08413001912047" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.5</text>
+  <line x1="249.56604871560396" y1="30" x2="249.56604871560396" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="249.56604871560396" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">12.0</text>
+  <line x1="257.0479674120875" y1="30" x2="257.0479674120875" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="257.0479674120875" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">12.5</text>
+  <line x1="264.52988610857096" y1="30" x2="264.52988610857096" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="264.52988610857096" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">13.0</text>
+  <line x1="272.01180480505445" y1="30" x2="272.01180480505445" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="272.01180480505445" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">13.5</text>
+  <line x1="279.49372350153794" y1="30" x2="279.49372350153794" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="279.49372350153794" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">14.0</text>
+  <line x1="286.97564219802143" y1="30" x2="286.97564219802143" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="286.97564219802143" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">14.5</text>
+  <line x1="294.4575608945049" y1="30" x2="294.4575608945049" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="294.4575608945049" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">15.0</text>
+  <line x1="301.93947959098847" y1="30" x2="301.93947959098847" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="301.93947959098847" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">15.5</text>
+  <line x1="309.42139828747196" y1="30" x2="309.42139828747196" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="309.42139828747196" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">16.0</text>
+  <line x1="316.90331698395545" y1="30" x2="316.90331698395545" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="316.90331698395545" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">16.5</text>
+  <line x1="324.38523568043894" y1="30" x2="324.38523568043894" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="324.38523568043894" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">17.0</text>
+  <line x1="331.8671543769225" y1="30" x2="331.8671543769225" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="331.8671543769225" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">17.5</text>
+  <line x1="339.349073073406" y1="30" x2="339.349073073406" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="339.349073073406" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">18.0</text>
+  <line x1="346.8309917698894" y1="30" x2="346.8309917698894" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="346.8309917698894" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">18.5</text>
+  <line x1="354.3129104663729" y1="30" x2="354.3129104663729" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="354.3129104663729" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">19.0</text>
+  <line x1="361.7948291628564" y1="30" x2="361.7948291628564" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="361.7948291628564" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">19.5</text>
+  <line x1="369.27674785933993" y1="30" x2="369.27674785933993" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="369.27674785933993" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">20.0</text>
+  <line x1="376.7586665558234" y1="30" x2="376.7586665558234" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="376.7586665558234" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">20.5</text>
+  <line x1="384.2405852523069" y1="30" x2="384.2405852523069" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="384.2405852523069" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">21.0</text>
+  <line x1="391.7225039487904" y1="30" x2="391.7225039487904" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="391.7225039487904" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">21.5</text>
+  <line x1="399.20442264527395" y1="30" x2="399.20442264527395" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="399.20442264527395" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">22.0</text>
+  <line x1="406.68634134175744" y1="30" x2="406.68634134175744" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="406.68634134175744" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">22.5</text>
+  <line x1="414.16826003824093" y1="30" x2="414.16826003824093" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="414.16826003824093" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">23.0</text>
+  <line x1="421.6501787347244" y1="30" x2="421.6501787347244" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="421.6501787347244" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">23.5</text>
+  <line x1="429.1320974312079" y1="30" x2="429.1320974312079" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="429.1320974312079" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">24.0</text>
+  <line x1="436.6140161276914" y1="30" x2="436.6140161276914" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="436.6140161276914" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">24.5</text>
+  <line x1="444.0959348241749" y1="30" x2="444.0959348241749" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="444.0959348241749" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">25.0</text>
+  <line x1="451.5778535206584" y1="30" x2="451.5778535206584" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="451.5778535206584" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">25.5</text>
+  <line x1="459.0597722171419" y1="30" x2="459.0597722171419" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="459.0597722171419" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">26.0</text>
+  <line x1="466.5416909136254" y1="30" x2="466.5416909136254" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="466.5416909136254" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">26.5</text>
+  <line x1="474.0236096101089" y1="30" x2="474.0236096101089" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="474.0236096101089" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">27.0</text>
+  <line x1="481.5055283065924" y1="30" x2="481.5055283065924" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="481.5055283065924" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">27.5</text>
+  <line x1="488.98744700307594" y1="30" x2="488.98744700307594" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="488.98744700307594" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">28.0</text>
+  <line x1="496.46936569955943" y1="30" x2="496.46936569955943" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="496.46936569955943" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">28.5</text>
+  <line x1="503.95128439604287" y1="30" x2="503.95128439604287" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="503.95128439604287" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">29.0</text>
+  <line x1="511.43320309252636" y1="30" x2="511.43320309252636" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="511.43320309252636" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">29.5</text>
+  <line x1="518.9151217890098" y1="30" x2="518.9151217890098" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="518.9151217890098" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">30.0</text>
+  <line x1="526.3970404854933" y1="30" x2="526.3970404854933" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="526.3970404854933" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">30.5</text>
+  <line x1="533.8789591819769" y1="30" x2="533.8789591819769" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="533.8789591819769" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">31.0</text>
+  <line x1="541.3608778784603" y1="30" x2="541.3608778784603" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="541.3608778784603" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">31.5</text>
+  <line x1="548.8427965749439" y1="30" x2="548.8427965749439" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="548.8427965749439" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">32.0</text>
+  <line x1="556.3247152714273" y1="30" x2="556.3247152714273" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="556.3247152714273" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">32.5</text>
+  <line x1="563.8066339679109" y1="30" x2="563.8066339679109" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="563.8066339679109" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">33.0</text>
+  <line x1="571.2885526643944" y1="30" x2="571.2885526643944" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="571.2885526643944" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">33.5</text>
+  <line x1="578.7704713608779" y1="30" x2="578.7704713608779" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="578.7704713608779" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">34.0</text>
+  <line x1="586.2523900573614" y1="30" x2="586.2523900573614" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="586.2523900573614" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">34.5</text>
+  <line x1="593.734308753845" y1="30" x2="593.734308753845" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="593.734308753845" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">35.0</text>
+  <line x1="601.2162274503283" y1="30" x2="601.2162274503283" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="601.2162274503283" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">35.5</text>
+  <line x1="608.698146146812" y1="30" x2="608.698146146812" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="608.698146146812" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">36.0</text>
+  <line x1="616.1800648432953" y1="30" x2="616.1800648432953" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="616.1800648432953" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">36.5</text>
+  <line x1="623.6619835397788" y1="30" x2="623.6619835397788" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="623.6619835397788" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">37.0</text>
+  <line x1="631.1439022362624" y1="30" x2="631.1439022362624" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="631.1439022362624" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">37.5</text>
+  <line x1="638.6258209327458" y1="30" x2="638.6258209327458" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="638.6258209327458" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">38.0</text>
+  <line x1="646.1077396292294" y1="30" x2="646.1077396292294" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="646.1077396292294" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">38.5</text>
+  <line x1="653.5896583257128" y1="30" x2="653.5896583257128" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="653.5896583257128" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">39.0</text>
+  <line x1="661.0715770221964" y1="30" x2="661.0715770221964" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="661.0715770221964" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">39.5</text>
+  <line x1="668.5534957186799" y1="30" x2="668.5534957186799" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="668.5534957186799" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">40.0</text>
+  <line x1="676.0354144151634" y1="30" x2="676.0354144151634" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="676.0354144151634" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">40.5</text>
+  <line x1="683.5173331116468" y1="30" x2="683.5173331116468" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="683.5173331116468" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">41.0</text>
+  <line x1="690.9992518081303" y1="30" x2="690.9992518081303" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="690.9992518081303" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">41.5</text>
+  <line x1="698.4811705046138" y1="30" x2="698.4811705046138" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="698.4811705046138" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">42.0</text>
+  <line x1="705.9630892010973" y1="30" x2="705.9630892010973" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="705.9630892010973" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">42.5</text>
+  <line x1="713.4450078975808" y1="30" x2="713.4450078975808" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="713.4450078975808" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">43.0</text>
+  <line x1="720.9269265940643" y1="30" x2="720.9269265940643" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="720.9269265940643" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">43.5</text>
+  <line x1="728.4088452905479" y1="30" x2="728.4088452905479" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="728.4088452905479" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">44.0</text>
+  <line x1="735.8907639870313" y1="30" x2="735.8907639870313" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="735.8907639870313" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">44.5</text>
+  <line x1="743.3726826835149" y1="30" x2="743.3726826835149" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="743.3726826835149" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">45.0</text>
+  <line x1="750.8546013799984" y1="30" x2="750.8546013799984" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="750.8546013799984" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">45.5</text>
+  <line x1="758.3365200764819" y1="30" x2="758.3365200764819" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="758.3365200764819" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">46.0</text>
+  <line x1="765.8184387729654" y1="30" x2="765.8184387729654" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="765.8184387729654" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">46.5</text>
+  <line x1="773.3003574694488" y1="30" x2="773.3003574694488" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="773.3003574694488" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">47.0</text>
+  <line x1="780.7822761659323" y1="30" x2="780.7822761659323" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="780.7822761659323" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">47.5</text>
+  <line x1="788.2641948624158" y1="30" x2="788.2641948624158" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="788.2641948624158" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">48.0</text>
+  <line x1="795.7461135588993" y1="30" x2="795.7461135588993" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="795.7461135588993" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">48.5</text>
+  <line x1="803.2280322553828" y1="30" x2="803.2280322553828" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="803.2280322553828" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">49.0</text>
+  <line x1="810.7099509518664" y1="30" x2="810.7099509518664" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="810.7099509518664" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">49.5</text>
+  <line x1="818.1918696483498" y1="30" x2="818.1918696483498" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="818.1918696483498" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">50.0</text>
+  <line x1="825.6737883448334" y1="30" x2="825.6737883448334" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="825.6737883448334" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">50.5</text>
+  <line x1="833.1557070413168" y1="30" x2="833.1557070413168" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="833.1557070413168" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">51.0</text>
+  <line x1="840.6376257378004" y1="30" x2="840.6376257378004" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="840.6376257378004" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">51.5</text>
+  <line x1="848.1195444342839" y1="30" x2="848.1195444342839" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="848.1195444342839" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">52.0</text>
+  <line x1="855.6014631307673" y1="30" x2="855.6014631307673" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="855.6014631307673" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">52.5</text>
+  <line x1="863.0833818272508" y1="30" x2="863.0833818272508" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="863.0833818272508" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">53.0</text>
+  <line x1="870.5653005237343" y1="30" x2="870.5653005237343" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="870.5653005237343" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">53.5</text>
+  <line x1="878.0472192202178" y1="30" x2="878.0472192202178" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="878.0472192202178" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">54.0</text>
+  <line x1="885.5291379167013" y1="30" x2="885.5291379167013" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="885.5291379167013" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">54.5</text>
+  <line x1="893.0110566131848" y1="30" x2="893.0110566131848" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="893.0110566131848" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">55.0</text>
+  <line x1="900.4929753096683" y1="30" x2="900.4929753096683" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="900.4929753096683" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">55.5</text>
+  <line x1="907.9748940061519" y1="30" x2="907.9748940061519" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="907.9748940061519" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">56.0</text>
+  <line x1="915.4568127026353" y1="30" x2="915.4568127026353" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="915.4568127026353" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">56.5</text>
+  <line x1="922.9387313991189" y1="30" x2="922.9387313991189" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="922.9387313991189" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">57.0</text>
+  <line x1="930.4206500956022" y1="30" x2="930.4206500956022" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="930.4206500956022" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">57.5</text>
+  <line x1="937.9025687920857" y1="30" x2="937.9025687920857" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="937.9025687920857" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">58.0</text>
+  <line x1="945.3844874885693" y1="30" x2="945.3844874885693" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="945.3844874885693" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">58.5</text>
+  <line x1="952.8664061850527" y1="30" x2="952.8664061850527" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="952.8664061850527" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">59.0</text>
+  <line x1="960.3483248815363" y1="30" x2="960.3483248815363" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="960.3483248815363" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">59.5</text>
+  <line x1="967.8302435780198" y1="30" x2="967.8302435780198" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="967.8302435780198" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">60.0</text>
+  <line x1="975.3121622745033" y1="30" x2="975.3121622745033" y2="330" stroke="#e6e6e6" stroke-width="1" />
+  <text x="975.3121622745033" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">60.5</text>
+  <text x="520.0" y="368" font-family="Verdana" font-size="12" style="text-anchor: middle;">Distancia (km)</text>
+  <line x1="70" y1="358.30466830466827" x2="970" y2="358.30466830466827" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="362.30466830466827" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">250</text>
+  <line x1="70" y1="284.5945945945946" x2="970" y2="284.5945945945946" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="288.5945945945946" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">300</text>
+  <line x1="70" y1="210.88452088452087" x2="970" y2="210.88452088452087" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="214.88452088452087" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">350</text>
+  <line x1="70" y1="137.17444717444715" x2="970" y2="137.17444717444715" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="141.17444717444715" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">400</text>
+  <line x1="70" y1="63.46437346437341" x2="970" y2="63.46437346437341" stroke="#efefef" stroke-width="1" />
+  <text x="62" y="67.46437346437341" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">450</text>
+  <text x="16" y="180.0" font-family="Verdana" font-size="12" style="text-anchor: middle;" transform="rotate(-90,16,180.0)">Altitud (m)</text>
+  <polygon points="70.00,330.00 96.67,327.05 114.02,269.41 139.96,316.00 150.67,277.22 162.21,248.62 171.86,270.44 208.48,301.25 223.41,294.91 242.52,296.09 262.52,286.66 273.18,270.44 289.83,275.31 310.09,281.50 319.54,262.92 334.31,222.38 363.43,219.29 386.17,191.57 398.19,182.58 403.47,182.43 424.87,186.86 443.06,177.57 469.41,156.04 479.93,150.00 491.74,122.43 518.33,171.38 562.58,194.23 575.73,213.83 591.86,239.93 625.65,148.67 631.43,104.30 677.64,107.69 708.69,114.03 729.80,127.89 753.91,145.58 759.88,143.51 762.47,170.49 772.73,173.59 782.50,155.31 816.50,156.19 838.89,227.10 868.34,194.52 882.46,196.58 904.76,30.00 935.64,137.76 941.36,168.13 955.13,254.82 961.78,302.29 966.02,326.76 970.00,330.00 970.00,330.00" fill="#cfe8ff" fill-opacity="0.85" stroke="none" />
+  <polyline points="96.67,327.05 114.02,269.41 139.96,316.00 150.67,277.22 162.21,248.62 171.86,270.44 208.48,301.25 223.41,294.91 242.52,296.09 262.52,286.66 273.18,270.44 289.83,275.31 310.09,281.50 319.54,262.92 334.31,222.38 363.43,219.29 386.17,191.57 398.19,182.58 403.47,182.43 424.87,186.86 443.06,177.57 469.41,156.04 479.93,150.00 491.74,122.43 518.33,171.38 562.58,194.23 575.73,213.83 591.86,239.93 625.65,148.67 631.43,104.30 677.64,107.69 708.69,114.03 729.80,127.89 753.91,145.58 759.88,143.51 762.47,170.49 772.73,173.59 782.50,155.31 816.50,156.19 838.89,227.10 868.34,194.52 882.46,196.58 904.76,30.00 935.64,137.76 941.36,168.13 955.13,254.82 961.78,302.29 966.02,326.76 970.00,330.00" fill="none" stroke="#0066ff" stroke-width="2.5" />
+  <circle cx="96.67" cy="327.05" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="114.02" cy="269.41" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="139.96" cy="316.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="150.67" cy="277.22" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="162.21" cy="248.62" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="171.86" cy="270.44" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="208.48" cy="301.25" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="223.41" cy="294.91" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="242.52" cy="296.09" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="262.52" cy="286.66" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="273.18" cy="270.44" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="289.83" cy="275.31" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="310.09" cy="281.50" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="319.54" cy="262.92" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="334.31" cy="222.38" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="363.43" cy="219.29" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="386.17" cy="191.57" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="398.19" cy="182.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="403.47" cy="182.43" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="424.87" cy="186.86" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="443.06" cy="177.57" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="469.41" cy="156.04" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="479.93" cy="150.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="491.74" cy="122.43" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="518.33" cy="171.38" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="562.58" cy="194.23" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="575.73" cy="213.83" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="591.86" cy="239.93" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="625.65" cy="148.67" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="631.43" cy="104.30" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="677.64" cy="107.69" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="708.69" cy="114.03" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="729.80" cy="127.89" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="753.91" cy="145.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="759.88" cy="143.51" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="762.47" cy="170.49" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="772.73" cy="173.59" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="782.50" cy="155.31" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="816.50" cy="156.19" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="838.89" cy="227.10" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="868.34" cy="194.52" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="882.46" cy="196.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="904.76" cy="30.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="935.64" cy="137.76" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="941.36" cy="168.13" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="955.13" cy="254.82" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="961.78" cy="302.29" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="966.02" cy="326.76" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="970.00" cy="330.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="208.48" cy="301.25" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="214.5" y="295.3" font-family="Verdana" font-size="9" style="fill: #222;">Cabanas</text>
+  <circle cx="223.41" cy="294.91" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="223.4" y="288.9" font-family="Verdana" font-size="9" style="fill: #222;" transform="rotate(-90,223.4,294.9)">Castildeterra</text>
+  <circle cx="491.74" cy="122.43" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="497.7" y="116.4" font-family="Verdana" font-size="9" style="fill: #222;">Monumento al Pastor</text>
+  <circle cx="753.91" cy="145.58" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="753.9" y="139.6" font-family="Verdana" font-size="9" style="fill: #222;" transform="rotate(-90,753.9,145.6)">Embalse El Ferial</text>
+  <circle cx="904.76" cy="30.00" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="910.8" y="24.0" font-family="Verdana" font-size="9" style="fill: #222;">Escultura Virgen del Yugo</text>
+  <text x="970" y="36" font-family="Verdana" font-size="12" style="text-anchor: end;">Longitud: 60.145 km</text>
+  <text x="970" y="54" font-family="Verdana" font-size="12" style="text-anchor: end;">Altitud: 269–473 m</text>
+</svg>

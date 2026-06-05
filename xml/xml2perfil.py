@@ -13,7 +13,6 @@ class Svg(object):
             "svg",
             {
                 "xmlns": "http://www.w3.org/2000/svg",
-                "version": "2.0",
                 "width": str(width),
                 "height": str(height),
                 "viewBox": viewBox or f"0 0 {width} {height}",
@@ -170,7 +169,8 @@ def generar_altimetria_svg(nombre, perfil, out_path):
                     extra_style="text-anchor: end; fill: #444;")
         y_tick += paso_y
     svg.addText("Altitud (m)", 16, MT + ch / 2, fontSize=12,
-                extra_style="writing-mode: tb; glyph-orientation-vertical: 0;")
+                extra_style="text-anchor: middle;",
+                transform=f"rotate(-90,16,{MT + ch / 2})")
 
     svg.addPolygon(" ".join(f"{x:.2f},{y:.2f}" for x, y in poly),
                    fill="#cfe8ff", opacity=0.85)

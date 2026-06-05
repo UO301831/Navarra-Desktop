@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Navarra - Rutas</title>
+
+    <meta name="author" content="Alejandro Requena Roncero" />
+    <meta name="description" content="Rutas turísticas de Navarra cargadas desde XML: información de cada ruta, hitos, planimetría en mapa (KML) y altimetría (SVG)" />
+    <meta name="keywords" content="rutas, senderismo, Navarra, KML, SVG, mapas, hitos, turismo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Mapbox GL JS para la planimetría (mapa dinámico) -->
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Navarra Desktop</a></h1>
+
+        <nav>
+            <a href="index.html" title="Inicio de la aplicación Navarra Desktop">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomía de Navarra">Gastronomía</a>
+            <a class="active" href="rutas.html" title="Rutas turísticas de Navarra">Rutas</a>
+            <a href="meteorologia.html" title="Meteorología de Navarra">Meteorología</a>
+            <a href="juego.html" title="Juego sobre Navarra">Juego</a>
+            <a href="reservas.php" title="Central de reservas de recursos turísticos">Reservas</a>
+            <a href="ayuda.html" title="Ayuda sobre la aplicación">Ayuda</a>
+        </nav>
+    </header>
+
+    <nav>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Rutas</li>
+        </ol>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Rutas turísticas de Navarra</h2>
+            <p>
+                En esta sección se presentan las rutas turísticas de Navarra cargadas desde el archivo rutas.xml. Para cada ruta se muestra toda su
+                información y la de sus hitos, su planimetría sobre un mapa dinámico (a partir del archivo KML) y su altimetría como gráfico (a partir del archivo SVG).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alejandro Requena Roncero — Universidad de Oviedo</p>
+    </footer>
+
+    <script src="js/rutas.js"></script>
+    <script>
+        $(function () {
+            const rutas = new Rutas("xml/rutas.xml");
+            rutas.cargar();
+        });
+    </script>
+</body>
+
+</html>

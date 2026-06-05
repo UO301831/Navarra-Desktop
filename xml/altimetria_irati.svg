@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" version="2.0" width="1000" height="380" viewBox="0 0 1000 380">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="380" viewBox="0 0 1000 380">
   <rect x="0" y="0" width="100%" height="100%" fill="#ffffff" stroke="none" stroke-width="0" />
-  <text x="500.0" y="18" font-family="Verdana" font-size="16" style="text-anchor: middle;">Altimetria — Sendero Errekaidorra - Cascada del Cubo</text>
+  <text x="500.0" y="18" font-family="Verdana" font-size="16" style="text-anchor: middle;">Altimetria — Selva de Irati - Cascada del Cubo</text>
   <line x1="70" y1="330" x2="970" y2="330" stroke="#333" stroke-width="1.5" />
   <line x1="70" y1="30" x2="70" y2="330" stroke="#333" stroke-width="1.5" />
   <line x1="70.0" y1="30" x2="70.0" y2="330" stroke="#e6e6e6" stroke-width="1" />
@@ -55,9 +55,63 @@
   <text x="62" y="142.72689938398344" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">900</text>
   <line x1="70" y1="77.12525667351116" x2="970" y2="77.12525667351116" stroke="#efefef" stroke-width="1" />
   <text x="62" y="81.12525667351116" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">920</text>
-  <text x="16" y="180.0" font-family="Verdana" font-size="12" style="writing-mode: tb; glyph-orientation-vertical: 0;">Altitud (m)</text>
+  <text x="16" y="180.0" font-family="Verdana" font-size="12" style="text-anchor: middle;" transform="rotate(-90,16,180.0)">Altitud (m)</text>
   <polygon points="70.00,330.00 70.42,330.00 105.36,315.52 136.09,257.93 159.56,280.72 176.08,303.51 199.34,285.34 206.60,308.75 212.18,309.36 223.02,227.13 246.38,269.01 270.48,225.28 280.58,233.59 303.21,186.47 325.41,176.61 351.30,178.15 389.93,235.44 427.07,129.18 447.17,198.79 467.28,123.94 469.28,120.86 480.64,31.85 520.63,63.57 538.84,164.60 576.62,53.72 586.93,30.00 599.35,44.78 613.45,90.06 628.82,198.48 635.87,174.46 650.39,184.31 664.39,162.44 677.75,217.58 681.23,221.58 684.07,177.54 691.01,116.24 761.10,148.58 791.73,193.55 830.87,129.18 833.72,131.95 852.13,298.58 863.92,277.95 905.07,300.43 945.37,260.70 970.00,310.60 970.00,330.00" fill="#cfe8ff" fill-opacity="0.85" stroke="none" />
   <polyline points="70.42,330.00 105.36,315.52 136.09,257.93 159.56,280.72 176.08,303.51 199.34,285.34 206.60,308.75 212.18,309.36 223.02,227.13 246.38,269.01 270.48,225.28 280.58,233.59 303.21,186.47 325.41,176.61 351.30,178.15 389.93,235.44 427.07,129.18 447.17,198.79 467.28,123.94 469.28,120.86 480.64,31.85 520.63,63.57 538.84,164.60 576.62,53.72 586.93,30.00 599.35,44.78 613.45,90.06 628.82,198.48 635.87,174.46 650.39,184.31 664.39,162.44 677.75,217.58 681.23,221.58 684.07,177.54 691.01,116.24 761.10,148.58 791.73,193.55 830.87,129.18 833.72,131.95 852.13,298.58 863.92,277.95 905.07,300.43 945.37,260.70 970.00,310.60" fill="none" stroke="#0066ff" stroke-width="2.5" />
+  <circle cx="70.42" cy="330.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="105.36" cy="315.52" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="136.09" cy="257.93" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="159.56" cy="280.72" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="176.08" cy="303.51" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="199.34" cy="285.34" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="206.60" cy="308.75" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="212.18" cy="309.36" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="223.02" cy="227.13" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="246.38" cy="269.01" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="270.48" cy="225.28" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="280.58" cy="233.59" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="303.21" cy="186.47" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="325.41" cy="176.61" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="351.30" cy="178.15" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="389.93" cy="235.44" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="427.07" cy="129.18" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="447.17" cy="198.79" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="467.28" cy="123.94" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="469.28" cy="120.86" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="480.64" cy="31.85" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="520.63" cy="63.57" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="538.84" cy="164.60" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="576.62" cy="53.72" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="586.93" cy="30.00" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="599.35" cy="44.78" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="613.45" cy="90.06" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="628.82" cy="198.48" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="635.87" cy="174.46" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="650.39" cy="184.31" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="664.39" cy="162.44" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="677.75" cy="217.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="681.23" cy="221.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="684.07" cy="177.54" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="691.01" cy="116.24" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="761.10" cy="148.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="791.73" cy="193.55" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="830.87" cy="129.18" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="833.72" cy="131.95" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="852.13" cy="298.58" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="863.92" cy="277.95" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="905.07" cy="300.43" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="945.37" cy="260.70" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="970.00" cy="310.60" r="3" fill="#888888" stroke="none" stroke-width="0" />
+  <circle cx="70.42" cy="330.00" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="76.4" y="324.0" font-family="Verdana" font-size="9" style="fill: #222;">Aparcamiento Casas de Irati</text>
+  <circle cx="159.56" cy="280.72" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="159.6" y="274.7" font-family="Verdana" font-size="9" style="fill: #222;" transform="rotate(-90,159.6,280.7)">Bosque de coniferas</text>
+  <circle cx="212.18" cy="309.36" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="218.2" y="303.4" font-family="Verdana" font-size="9" style="fill: #222;">Cascada del Cubo</text>
+  <circle cx="599.35" cy="44.78" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="599.3" y="38.8" font-family="Verdana" font-size="9" style="fill: #222;" transform="rotate(-90,599.3,44.8)">Carbon y ceniza</text>
+  <circle cx="677.75" cy="217.58" r="5" fill="#ffffff" stroke="#0044cc" stroke-width="1.5" />
+  <text x="683.8" y="211.6" font-family="Verdana" font-size="9" style="fill: #222;">Puente de madera</text>
   <text x="970" y="36" font-family="Verdana" font-size="12" style="text-anchor: end;">Longitud: 8.552 km</text>
   <text x="970" y="54" font-family="Verdana" font-size="12" style="text-anchor: end;">Altitud: 838–935 m</text>
 </svg>
