@@ -6,52 +6,28 @@
   <line x1="70" y1="30" x2="70" y2="330" stroke="#333" stroke-width="1.5" />
   <line x1="70.0" y1="30" x2="70.0" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="70.0" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.0</text>
-  <line x1="109.147455415398" y1="30" x2="109.147455415398" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="109.147455415398" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">0.5</text>
   <line x1="148.294910830796" y1="30" x2="148.294910830796" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="148.294910830796" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.0</text>
-  <line x1="187.442366246194" y1="30" x2="187.442366246194" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="187.442366246194" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">1.5</text>
   <line x1="226.589821661592" y1="30" x2="226.589821661592" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="226.589821661592" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.0</text>
-  <line x1="265.73727707699" y1="30" x2="265.73727707699" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="265.73727707699" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">2.5</text>
   <line x1="304.884732492388" y1="30" x2="304.884732492388" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="304.884732492388" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.0</text>
-  <line x1="344.032187907786" y1="30" x2="344.032187907786" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="344.032187907786" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">3.5</text>
   <line x1="383.179643323184" y1="30" x2="383.179643323184" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="383.179643323184" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.0</text>
-  <line x1="422.327098738582" y1="30" x2="422.327098738582" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="422.327098738582" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">4.5</text>
   <line x1="461.47455415397997" y1="30" x2="461.47455415397997" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="461.47455415397997" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.0</text>
-  <line x1="500.622009569378" y1="30" x2="500.622009569378" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="500.622009569378" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">5.5</text>
   <line x1="539.769464984776" y1="30" x2="539.769464984776" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="539.769464984776" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.0</text>
-  <line x1="578.9169204001739" y1="30" x2="578.9169204001739" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="578.9169204001739" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">6.5</text>
   <line x1="618.064375815572" y1="30" x2="618.064375815572" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="618.064375815572" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.0</text>
-  <line x1="657.21183123097" y1="30" x2="657.21183123097" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="657.21183123097" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">7.5</text>
   <line x1="696.359286646368" y1="30" x2="696.359286646368" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="696.359286646368" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.0</text>
-  <line x1="735.506742061766" y1="30" x2="735.506742061766" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="735.506742061766" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">8.5</text>
   <line x1="774.654197477164" y1="30" x2="774.654197477164" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="774.654197477164" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.0</text>
-  <line x1="813.8016528925621" y1="30" x2="813.8016528925621" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="813.8016528925621" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">9.5</text>
   <line x1="852.9491083079599" y1="30" x2="852.9491083079599" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="852.9491083079599" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.0</text>
-  <line x1="892.096563723358" y1="30" x2="892.096563723358" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="892.096563723358" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">10.5</text>
   <line x1="931.244019138756" y1="30" x2="931.244019138756" y2="330" stroke="#e6e6e6" stroke-width="1" />
   <text x="931.244019138756" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.0</text>
-  <line x1="970.3914745541539" y1="30" x2="970.3914745541539" y2="330" stroke="#e6e6e6" stroke-width="1" />
-  <text x="970.3914745541539" y="348" font-family="Verdana" font-size="11" style="text-anchor: middle; fill: #444;">11.5</text>
   <text x="520.0" y="368" font-family="Verdana" font-size="12" style="text-anchor: middle;">Distancia (km)</text>
   <line x1="70" y1="338.9703237410072" x2="970" y2="338.9703237410072" stroke="#efefef" stroke-width="1" />
   <text x="62" y="342.9703237410072" font-family="Verdana" font-size="11" style="text-anchor: end; fill: #444;">400</text>

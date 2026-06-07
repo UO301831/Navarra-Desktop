@@ -5,6 +5,19 @@ import math
 XML_PATH = Path(__file__).parent / "rutas.xml"
 
 
+def calcular_intervalo(total, divisiones):
+    """Devuelve un intervalo redondeado (1, 2, 2.5 o 5 x 10^n) para situar
+    aproximadamente el numero de divisiones indicado en un eje."""
+    if total <= 0:
+        return 1.0
+    aproximado = total / divisiones
+    base = 10 ** math.floor(math.log10(aproximado))
+    for multiplo in (1, 2, 2.5, 5):
+        if base * multiplo >= aproximado:
+            return base * multiplo
+    return base * 10
+
+
 class Svg(object):
 
     def __init__(self, width=800, height=400, viewBox=None, bg=None):
@@ -139,8 +152,8 @@ def generar_altimetria_svg(nombre, perfil, out_path):
     svg.addLine(ML, MT + ch, ML + cw, MT + ch, stroke="#333", strokeWidth=1.5)
     svg.addLine(ML, MT, ML, MT + ch, stroke="#333", strokeWidth=1.5)
 
-    paso_x = 500.0
-    n_x = int(math.ceil(x_max / paso_x))
+    paso_x = calcular_intervalo(x_max, 20)
+    n_x = int(math.floor(x_max / paso_x))
     for i in range(n_x + 1):
         m = i * paso_x
         x = sx(m)
