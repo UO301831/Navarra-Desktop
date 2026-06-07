@@ -215,11 +215,16 @@ figure {
 
 /* ============== MAPA DINÁMICO (PLANIMETRÍA KML) ============== */
 
-/* Especificidad: (0,0,3) - el mapa dinámico de Mapbox se representa en un bloque div (permitido por el enunciado para los mapas); necesita una altura explícita para que se visualice */
+/* Especificidad: (0,0,3) - el mapa dinámico se representa en un bloque div (permitido por el enunciado para los mapas); necesita una altura explícita para que se visualice */
 main article > div {
     width: 100%;
     height: 25rem;
     margin: 1rem 0;
+}
+
+/* Especificidad: (0,0,4) - el lienzo de OpenLayers se muestra como bloque para ocupar el div del mapa sin huecos */
+main article > div canvas {
+    display: block;
 }
 
 
@@ -259,6 +264,12 @@ footer {
     header nav {
         width: 100%;
         justify-content: center;
+    }
+
+    /* Especificidad: (0,0,1) - en pantallas pequeñas la tabla se vuelve desplazable en horizontal para que no se corte */
+    table {
+        display: block;
+        overflow-x: auto;
     }
 }
 

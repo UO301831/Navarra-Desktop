@@ -1,6 +1,3 @@
-// Pega aquí tu API key de Mapbox
-const TOKEN_MAPBOX = "pk.eyJ1IjoidW8zMDE4MzEiLCJhIjoiY21xMTdvcTY0MDhzbDJ0czk1dThlbjhpaCJ9.Zaz7F76acdg7kG-8-JEjPQ";
-
 // Carga rutas.xml y crea cada ruta
 class Rutas {
 
@@ -70,7 +67,7 @@ class Ruta {
         return articulo;
     }
 
-    // Datos generales de la ruta (tipo, transporte, duración...)
+    // Datos generales de la ruta
     construirDatosGenerales() {
         const seccion = $("<section></section>");
         seccion.append("<h3>Información general</h3>");
@@ -165,7 +162,7 @@ class Ruta {
             const fuente = $(elemento).text().trim();
             const imagen = $("<img />")
                 .attr("src", fuente)
-                .attr("alt", "Fotografía de " + (nombre !== "" ? nombre : "un hito de la ruta") + " (" + (indice + 1) + ")");
+                .attr("alt", "Fotografía de " + (nombre !== "" ? nombre : "un hito de la ruta"));
             figuras = figuras.add($("<figure></figure>").append(imagen));
         });
         return figuras;
@@ -236,7 +233,7 @@ class Ruta {
 }
 
 
-// Lee el KML y lo dibuja sobre un mapa de Mapbox
+// Lee el KML y lo dibuja sobre un mapa de OpenLayers (OpenStreetMap)
 class MapaRuta {
 
     constructor(urlKml, divMapa) {
@@ -289,67 +286,69 @@ class MapaRuta {
         return puntos;
     }
 
-    // Crea el mapa de Mapbox con la línea y los marcadores de la ruta
+    // Crea el mapa de OpenLayers con la línea y los marcadores de la ruta
     crearMapa(linea, marcadores) {
-        mapboxgl.accessToken = TOKEN_MAPBOX;
+        const caracteristicas = [];
 
+        if (linea.length > 0) {
+            const puntos = linea.map((coordenada) => ol.proj.fromLonLat(coordenada));
+            const trazado = new ol.Feature({ geometry: new ol.geom.LineString(puntos) });
+            trazado.setStyle(new ol.style.Style({
+                stroke: new ol.style.Stroke({ color: "#8a0e1e", width: 4 })
+            }));
+            caracteristicas.push(trazado);
+        }
+
+        marcadores.forEach((marcador) => {
+            const punto = new ol.Feature({
+                geometry: new ol.geom.Point(ol.proj.fromLonLat(marcador.coordenada))
+            });
+            punto.setStyle(new ol.style.Style({
+                image: new ol.style.Circle({
+                    radius: 6,
+                    fill: new ol.style.Fill({ color: "#8a0e1e" }),
+                    stroke: new ol.style.Stroke({ color: "#ffffff", width: 2 })
+                }),
+                text: new ol.style.Text({
+                    text: marcador.nombre,
+                    offsetY: -14,
+                    fill: new ol.style.Fill({ color: "#1a1a1a" }),
+                    stroke: new ol.style.Stroke({ color: "#ffffff", width: 3 })
+                })
+            }));
+            caracteristicas.push(punto);
+        });
+
+        const capa = new ol.layer.Vector({ source: new ol.source.Vector({ features: caracteristicas }) });
         const centro = linea.length > 0
             ? linea[0]
             : (marcadores.length > 0 ? marcadores[0].coordenada : [-1.65, 42.81]);
 
-        const mapa = new mapboxgl.Map({
-            container: this.divMapa,
-            style: "mapbox://styles/mapbox/outdoors-v12",
-            center: centro,
-            zoom: 12
+        const mapa = new ol.Map({
+            target: this.divMapa,
+            layers: [
+                new ol.layer.Tile({ source: new ol.source.OSM() }),
+                capa
+            ],
+            view: new ol.View({ center: ol.proj.fromLonLat(centro), zoom: 12 }),
+            controls: []
         });
-        mapa.addControl(new mapboxgl.NavigationControl());
 
-        mapa.on("load", () => {
-            if (linea.length > 0) {
-                mapa.addSource("ruta", {
-                    type: "geojson",
-                    data: { type: "Feature", geometry: { type: "LineString", coordinates: linea } }
-                });
-                mapa.addLayer({
-                    id: "ruta",
-                    type: "line",
-                    source: "ruta",
-                    layout: { "line-join": "round", "line-cap": "round" },
-                    paint: { "line-color": "#8a0e1e", "line-width": 4 }
-                });
-            }
-
-            marcadores.forEach((marcador) => {
-                new mapboxgl.Marker({ element: this.crearPunto() })
-                    .setLngLat(marcador.coordenada)
-                    .setPopup(new mapboxgl.Popup().setText(marcador.nombre))
-                    .addTo(mapa);
-            });
-
-            this.encuadrar(mapa, linea.length > 0 ? linea : marcadores.map((m) => m.coordenada));
-        });
-    }
-
-    // Crea el punto (marcador) que se ve en el mapa
-    crearPunto() {
-        const punto = document.createElement("div");
-        punto.style.width = "14px";
-        punto.style.height = "14px";
-        punto.style.borderRadius = "50%";
-        punto.style.backgroundColor = "#8a0e1e";
-        punto.style.border = "2px solid #ffffff";
-        return punto;
-    }
-
-    // Ajusta el mapa para que se vea toda la ruta
-    encuadrar(mapa, puntos) {
-        if (puntos.length === 0) {
-            return;
+        // Ajusta la vista para que se vea toda la ruta
+        const extension = capa.getSource().getExtent();
+        if (extension && isFinite(extension[0])) {
+            mapa.getView().fit(extension, { padding: [30, 30, 30, 30], maxZoom: 15 });
         }
-        const limites = new mapboxgl.LngLatBounds(puntos[0], puntos[0]);
-        puntos.forEach((punto) => limites.extend(punto));
-        mapa.fitBounds(limites, { padding: 30, maxZoom: 15 });
+
+        this.anadirCreditos();
+    }
+
+    // Añade la atribución de OpenStreetMap debajo del mapa
+    anadirCreditos() {
+        const creditos = $("<p></p>");
+        creditos.append("Cartografía © ");
+        creditos.append($("<a></a>").attr("href", "https://www.openstreetmap.org/copyright").text("colaboradores de OpenStreetMap"));
+        $(this.divMapa).after(creditos);
     }
 }
 

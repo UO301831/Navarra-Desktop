@@ -55,13 +55,27 @@ class Juego {
             }
         ];
 
-        this.preguntaActual = 0;
-        this.aciertos = 0;
+        // Recupera el progreso guardado para mantener el estado al cambiar de página
+        var estado = JSON.parse(localStorage.getItem("juegoNavarra"));
+        this.preguntaActual = estado ? estado.preguntaActual : 0;
+        this.aciertos = estado ? estado.aciertos : 0;
     }
 
-    // Empieza el juego con la primera pregunta
+    // Guarda el estado actual del juego en el navegador
+    guardarEstado() {
+        localStorage.setItem("juegoNavarra", JSON.stringify({
+            preguntaActual: this.preguntaActual,
+            aciertos: this.aciertos
+        }));
+    }
+
+    // Empieza el juego mostrando la pregunta donde se quedó (o la final si ya terminó)
     iniciar() {
-        this.mostrarPregunta();
+        if (this.preguntaActual < this.preguntas.length) {
+            this.mostrarPregunta();
+        } else {
+            this.mostrarPuntuacion();
+        }
     }
 
     // Muestra la pregunta actual con sus opciones como botones
@@ -98,6 +112,7 @@ class Juego {
         }
 
         this.preguntaActual = this.preguntaActual + 1;
+        this.guardarEstado();
 
         if (this.preguntaActual < this.preguntas.length) {
             this.mostrarPregunta();
@@ -122,5 +137,15 @@ class Juego {
         var nota = document.createElement("p");
         nota.textContent = "Tu calificación es: " + this.aciertos + " / 10.";
         seccion.appendChild(nota);
+
+        var reiniciar = document.createElement("button");
+        reiniciar.textContent = "Volver a jugar";
+        reiniciar.addEventListener("click", () => {
+            localStorage.removeItem("juegoNavarra");
+            this.preguntaActual = 0;
+            this.aciertos = 0;
+            this.mostrarPregunta();
+        });
+        seccion.appendChild(reiniciar);
     }
 }

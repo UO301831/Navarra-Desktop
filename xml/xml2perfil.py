@@ -172,8 +172,10 @@ def generar_altimetria_svg(nombre, perfil, out_path):
                 extra_style="text-anchor: middle;",
                 transform=f"rotate(-90,16,{MT + ch / 2})")
 
-    svg.addPolygon(" ".join(f"{x:.2f},{y:.2f}" for x, y in poly),
-                   fill="#cfe8ff", opacity=0.85)
+    # Poli-linea cerrada: perfil + base, repitiendo el primer punto para cerrarla
+    poly_cerrada = poly + [poly[0]]
+    svg.addPolyline(" ".join(f"{x:.2f},{y:.2f}" for x, y in poly_cerrada),
+                    stroke="none", strokeWidth=0, fill="#cfe8ff")
     svg.addPolyline(" ".join(f"{x:.2f},{y:.2f}" for x, y in pts),
                     stroke="#0066ff", strokeWidth=2.5, fill="none")
 

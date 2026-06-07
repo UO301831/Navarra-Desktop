@@ -177,3 +177,12 @@ tbody tr:nth-child(even) {
     background-color: #f4f1ea; /* texto oscuro sobre beige, contraste AAA */
 }
 
+
+/* ============== ATRIBUCIÓN DEL MAPA (PLANIMETRÍA) ============== */
+
+/* Especificidad: (0,0,4) - el párrafo de atribución de OpenStreetMap es el que va justo tras el div del mapa; se muestra discreto pero legible */
+main article > div + p {
+    font-size: 0.8rem;
+    color: #595959; /* gris discreto sobre el fondo blanco del body, contraste AAA (7:1) */
+}
+
