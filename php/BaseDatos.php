@@ -1,7 +1,7 @@
 <?php
 // Clase que se encarga de la conexion con la base de datos
 class BaseDatos {
-    const SERVIDOR = "localhost";
+    const SERVIDOR = "127.0.0.1";
     const USUARIO = "DBUSER2026";
     const PASSWORD = "DBPWD2026";
     const NOMBRE = "UO301831_DB";
