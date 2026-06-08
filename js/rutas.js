@@ -16,9 +16,23 @@ class Rutas {
     procesar(xml) {
         const contenedor = $("main");
 
+        // Encabezado y lista de enlaces a cada ruta, colocados antes de las rutas
+        const lista = $("<ul></ul>");
+        contenedor.append("<h3>Índice de las rutas</h3>");
+        contenedor.append(lista);
+
         $(xml).find("ruta").each((indice, elemento) => {
             const ruta = new Ruta($(elemento));
-            contenedor.append(ruta.construir());
+            const articulo = ruta.construir();
+            contenedor.append(articulo);
+
+            // Enlace que lleva hasta esta ruta
+            const enlace = $("<a></a>").attr("href", "#").text(ruta.leer("nombre"));
+            enlace.on("click", (evento) => {
+                evento.preventDefault();
+                articulo[0].scrollIntoView();
+            });
+            lista.append($("<li></li>").append(enlace));
 
             new MapaRuta(ruta.urlPlanimetria(), ruta.divMapa()).cargar();
             new Altimetria(ruta.urlAltimetria(), ruta.figuraSvg()).cargar();

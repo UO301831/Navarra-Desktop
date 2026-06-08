@@ -4,54 +4,54 @@ class Juego {
     constructor() {
         this.preguntas = [
             {
-                enunciado: "¿Cuántos días de previsión meteorológica muestra la página de Meteorología?",
-                opciones: ["3 días", "5 días", "7 días", "8 días", "14 días"],
+                enunciado: "¿Sobre qué provincia de España trata este sitio web?",
+                opciones: ["Madrid", "Sevilla", "Asturias", "Navarra", "Valencia"],
                 correcta: 3
             },
             {
-                enunciado: "¿Qué función ofrece la página de Reservas según la sección de Ayuda?",
-                opciones: ["Comprar entradas de fútbol", "Reservar vuelos a Pamplona", "Gestionar reservas de recursos turísticos", "Reservar libros de la biblioteca", "Reservar mesas en restaurantes únicamente"],
-                correcta: 2
-            },
-            {
-                enunciado: "¿Cuál de estas recetas con Piquillo de Lodosa aparece en la tabla de gastronomía?",
-                opciones: ["Croquetas de pollo y pimientos del Piquillo de Lodosa", "Tortilla de patata con Piquillo", "Pizza de Piquillo", "Empanada de Piquillo", "Hamburguesa de Piquillo"],
-                correcta: 0
-            },
-            {
-                enunciado: "¿Qué embutido típico de Navarra es un chorizo de calibre más fino de lo habitual según la página de Gastronomía?",
-                opciones: ["Fuet", "Chistorra", "Mortadela", "Sobrasada", "Salchichón"],
+                enunciado: "¿Qué capital de provincia se cita en la página de Meteorología?",
+                opciones: ["Tudela", "Pamplona", "Lodosa", "Estella", "Olite"],
                 correcta: 1
             },
             {
-                enunciado: "¿De qué localidad navarra es el famoso pimiento del piquillo con Denominación de Origen según la página de Gastronomía?",
-                opciones: ["Pamplona", "Olite", "Lodosa", "Tudela", "Estella"],
-                correcta: 2
-            },
-            {
-                enunciado: "¿Cuál de estos quesos navarros se menciona en la sección de Gastronomía?",
-                opciones: ["Queso manchego", "Queso de Burgos", "Queso de Cabrales", "Queso de Roncal", "Queso gallego"],
-                correcta: 3
-            },
-            {
-                enunciado: "¿Qué medio de transporte se utiliza en la ruta de las Bardenas Reales?",
-                opciones: ["Bicicleta", "Coche", "Tren", "Moto", "Patines"],
-                correcta: 0
-            },
-            {
-                enunciado: "¿Cómo se llama la formación geológica más emblemática de las Bardenas Reales que aparece como hito de la ruta?",
-                opciones: ["El Teide", "La Giralda", "El Naranjo de Bulnes", "La Concha", "Castildetierra"],
+                enunciado: "¿Cuántas preguntas tiene este juego?",
+                opciones: ["5", "7", "8", "12", "10"],
                 correcta: 4
             },
             {
-                enunciado: "Según la página de Ayuda, ¿en qué formato se representa la planimetría de cada ruta sobre el mapa?",
-                opciones: ["PDF", "KML", "MP3", "DOCX", "ZIP"],
+                enunciado: "¿Cuántos días de previsión meteorológica muestra la página de Meteorología?",
+                opciones: ["8 días", "3 días", "5 días", "7 días", "14 días"],
+                correcta: 0
+            },
+            {
+                enunciado: "¿Qué embutido típico de Navarra aparece como imagen en la página de Gastronomía?",
+                opciones: ["El fuet", "La sobrasada", "La chistorra", "La mortadela", "El salchichón"],
+                correcta: 2
+            },
+            {
+                enunciado: "¿De qué localidad navarra es el famoso pimiento del piquillo que aparece en Gastronomía?",
+                opciones: ["Pamplona", "Tudela", "Roncal", "Estella", "Lodosa"],
+                correcta: 4
+            },
+            {
+                enunciado: "¿Qué queso navarro se menciona en la página de Gastronomía?",
+                opciones: ["Queso manchego", "Queso de Roncal", "Queso de Burgos", "Queso de Cabrales", "Queso gallego"],
                 correcta: 1
             },
             {
-                enunciado: "Según la página de Ayuda, ¿qué muestra la página de Inicio?",
-                opciones: ["Un mapa del metro", "Una calculadora", "Un carrusel de imágenes y noticias de Navarra", "Un reproductor de música", "Un foro de mensajes"],
+                enunciado: "¿Qué verdura típica de Navarra aparece en las recetas de la página de Gastronomía?",
+                opciones: ["La zanahoria", "La lechuga", "El tomate", "El espárrago", "La cebolla"],
+                correcta: 3
+            },
+            {
+                enunciado: "¿Cuál de estas rutas turísticas aparece en la sección de Rutas?",
+                opciones: ["Selva Negra", "Bosque de Sherwood", "Selva de Irati - Cascada del Cubo", "Parque del Retiro", "Selva del Amazonas"],
                 correcta: 2
+            },
+            {
+                enunciado: "¿Para qué sirve la página de Reservas del sitio web según la sección de Ayuda?",
+                opciones: ["Comprar entradas de fútbol", "Reservar vuelos a Pamplona", "Reservar libros de la biblioteca", "Pedir comida a domicilio", "Reservar recursos turísticos de Navarra"],
+                correcta: 4
             }
         ];
 
