@@ -5,33 +5,63 @@ require_once __DIR__ . "/BaseDatos.php";
 class Reserva {
 
     // Crea una reserva para un rango de fechas y un numero de personas.
-    // Descuenta las personas de las plazas del recurso. Devuelve false si no quedan plazas
+    // Solo se permite si ningun dia del rango supera la capacidad (plazas) del recurso.
+    // Devuelve false si algun dia esta lleno.
     public function crear($idUsuario, $idRecurso, $fechaInicio, $fechaFin, $numPersonas, $presupuesto) {
         $bd = new BaseDatos();
         $conexion = $bd->getConexion();
         $conexion->begin_transaction();
 
-        // Resta las plazas solo si hay suficientes disponibles para esas personas
-        $restar = $conexion->prepare(
-            "UPDATE recurso SET plazas = plazas - ? WHERE id_recurso = ? AND plazas >= ?"
-        );
-        $restar->bind_param("iii", $numPersonas, $idRecurso, $numPersonas);
-        $restar->execute();
-
-        if ($restar->affected_rows === 0) {
+        // Capacidad del recurso. Bloqueamos la fila para evitar reservas simultaneas
+        $cap = $conexion->prepare("SELECT plazas FROM recurso WHERE id_recurso = ? FOR UPDATE");
+        $cap->bind_param("i", $idRecurso);
+        $cap->execute();
+        $recurso = $cap->get_result()->fetch_assoc();
+        if (!$recurso) {
             $conexion->rollback();
             $bd->cerrar();
             return false;
         }
+        $capacidad = (int) $recurso["plazas"];
 
-        // Guardamos la reserva con sus fechas y personas
+        // Reservas confirmadas que solapan con el rango pedido
+        $solapan = $conexion->prepare(
+            "SELECT fecha_inicio, fecha_fin, num_personas FROM reserva
+             WHERE id_recurso = ? AND estado = 'confirmada' AND fecha_inicio <= ? AND fecha_fin >= ?"
+        );
+        $solapan->bind_param("iss", $idRecurso, $fechaFin, $fechaInicio);
+        $solapan->execute();
+        $resultado = $solapan->get_result();
+        $reservas = [];
+        while ($fila = $resultado->fetch_assoc()) {
+            $reservas[] = $fila;
+        }
+
+        // Cada dia del rango: las personas ya reservadas + las nuevas no pueden superar la capacidad
+        $dia = new DateTime($fechaInicio);
+        $fin = new DateTime($fechaFin);
+        while ($dia <= $fin) {
+            $hoy = $dia->format("Y-m-d");
+            $ocupadas = 0;
+            foreach ($reservas as $rsv) {
+                if ($rsv["fecha_inicio"] <= $hoy && $rsv["fecha_fin"] >= $hoy) {
+                    $ocupadas += (int) $rsv["num_personas"];
+                }
+            }
+            if ($ocupadas + $numPersonas > $capacidad) {
+                $conexion->rollback();
+                $bd->cerrar();
+                return false;
+            }
+            $dia->modify("+1 day");
+        }
+
+        // Hay sitio todos los dias: guardamos la reserva
         $guardar = $conexion->prepare(
             "INSERT INTO reserva (id_usuario, id_recurso, fecha_reserva, fecha_inicio, fecha_fin, num_personas, presupuesto, estado)
              VALUES (?, ?, NOW(), ?, ?, ?, ?, 'confirmada')"
         );
         $guardar->bind_param("iissid", $idUsuario, $idRecurso, $fechaInicio, $fechaFin, $numPersonas, $presupuesto);
-
-        // Si no se pudo guardar la reserva, deshacemos tambien la resta de plazas
         if (!$guardar->execute()) {
             $conexion->rollback();
             $bd->cerrar();
@@ -67,36 +97,17 @@ class Reserva {
         return $reservas;
     }
 
-    // Anula una reserva del usuario y devuelve sus personas a las plazas del recurso
+    // Anula una reserva del usuario (libera esos dias al dejar de contar como confirmada)
     public function anular($idReserva, $idUsuario) {
         $bd = new BaseDatos();
-        $conexion = $bd->getConexion();
-
-        // Buscamos la reserva (tiene que ser del usuario y estar confirmada)
-        $consulta = $conexion->prepare(
-            "SELECT id_recurso, num_personas FROM reserva
-             WHERE id_reserva = ? AND id_usuario = ? AND estado = 'confirmada'"
+        $anular = $bd->getConexion()->prepare(
+            "UPDATE reserva SET estado = 'anulada' WHERE id_reserva = ? AND id_usuario = ? AND estado = 'confirmada'"
         );
-        $consulta->bind_param("ii", $idReserva, $idUsuario);
-        $consulta->execute();
-        $reserva = $consulta->get_result()->fetch_assoc();
-        if (!$reserva) {
-            $bd->cerrar();
-            return false;
-        }
-
-        // Marcamos la reserva como anulada
-        $anular = $conexion->prepare("UPDATE reserva SET estado = 'anulada' WHERE id_reserva = ?");
-        $anular->bind_param("i", $idReserva);
+        $anular->bind_param("ii", $idReserva, $idUsuario);
         $anular->execute();
-
-        // Sumamos otra vez las personas a las plazas del recurso
-        $devolver = $conexion->prepare("UPDATE recurso SET plazas = plazas + ? WHERE id_recurso = ?");
-        $devolver->bind_param("ii", $reserva["num_personas"], $reserva["id_recurso"]);
-        $devolver->execute();
-
+        $ok = $anular->affected_rows > 0;
         $bd->cerrar();
-        return true;
+        return $ok;
     }
 }
 ?>

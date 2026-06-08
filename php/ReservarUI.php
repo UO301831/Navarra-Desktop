@@ -58,7 +58,7 @@ class ReservarUI {
                     if ($reserva->crear($this->sesion->getId(), $this->id, $this->fechaInicio, $this->fechaFin, $this->numPersonas, $this->presupuesto)) {
                         $this->confirmada = true;
                     } else {
-                        $this->mensaje = "No quedan plazas suficientes para ese número de personas.";
+                        $this->mensaje = "No hay plazas disponibles para esas fechas.";
                     }
                 } else {
                     $this->mostrarPresupuesto = true;
@@ -152,7 +152,7 @@ class ReservarUI {
             <h2>Reservar: <?php echo htmlspecialchars($this->recurso["nombre"]); ?></h2>
             <p>Localidad: <?php echo htmlspecialchars($this->recurso["localidad"]); ?> — Precio por persona y día: <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> €</p>
             <p>Disponible del <?php echo $this->formatearFecha($winInicio); ?> al <?php echo $this->formatearFecha($winFin); ?></p>
-            <p>Plazas disponibles: <?php echo $this->recurso["plazas"]; ?></p>
+            <p>Capacidad: <?php echo $this->recurso["plazas"]; ?> personas al día</p>
         </section>
 
 <?php if ($this->confirmada): ?>

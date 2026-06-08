@@ -87,7 +87,7 @@ class RecursosUI {
             <h3><?php echo htmlspecialchars($r["nombre"]); ?></h3>
             <p>Tipo: <?php echo htmlspecialchars($r["tipo"]); ?> — Localidad: <?php echo htmlspecialchars($r["localidad"]); ?></p>
             <p>Disponible del <?php echo $this->formatearFecha($r["fecha_inicio"]); ?> al <?php echo $this->formatearFecha($r["fecha_fin"]); ?></p>
-            <p>Plazas: <?php echo $r["plazas"]; ?> — Precio por persona y día: <?php echo number_format($r["precio"], 2, ",", "."); ?> €</p>
+            <p>Capacidad: <?php echo $r["plazas"]; ?> personas al día — Precio por persona y día: <?php echo number_format($r["precio"], 2, ",", "."); ?> €</p>
             <p><?php echo htmlspecialchars($r["descripcion"]); ?></p>
 <?php if ($r["plazas"] > 0): ?>
             <p><a href="ReservarUI.php?id=<?php echo $r["id_recurso"]; ?>">Reservar</a></p>
