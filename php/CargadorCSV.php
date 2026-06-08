@@ -1,8 +1,6 @@
 <?php
-require_once __DIR__ . "/BaseDatos.php";
-
 // Carga los datos de los archivos .csv en las tablas de la base de datos.
-// No se enlaza desde el menú: herramienta para inicializar la base de datos.
+// Es una herramienta de inicializacion (la usa el Instalador); no se enlaza desde el menu.
 class CargadorCSV {
 
     private $conexion;
@@ -31,14 +29,4 @@ class CargadorCSV {
         fclose($fichero);
     }
 }
-
-// Carga todos los csv en orden (primero las tablas sin claves foraneas)
-$bd = new BaseDatos();
-$cargador = new CargadorCSV($bd->getConexion());
-$cargador->cargarTabla("tipo_recurso", __DIR__ . "/tipo_recurso.csv");
-$cargador->cargarTabla("localidad", __DIR__ . "/localidad.csv");
-$cargador->cargarTabla("recurso", __DIR__ . "/recurso.csv");
-$bd->cerrar();
-
-echo "Base de datos inicializada con los datos de los archivos CSV.";
 ?>
