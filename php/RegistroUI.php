@@ -2,7 +2,7 @@
 require_once __DIR__ . "/Usuario.php";
 
 // Pagina de registro de nuevos usuarios de la central de reservas
-class PaginaRegistro {
+class RegistroUI {
 
     private $mensaje = "";
     private $registrado = false;
@@ -80,7 +80,7 @@ class PaginaRegistro {
 <?php if ($this->mensaje !== ""): ?>
             <p><?php echo $this->mensaje; ?></p>
 <?php endif; ?>
-            <form action="registro.php" method="post">
+            <form action="RegistroUI.php" method="post">
                 <p>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required="required" />
@@ -120,6 +120,6 @@ class PaginaRegistro {
 }
 
 // Arranque de la pagina
-$pagina = new PaginaRegistro();
+$pagina = new RegistroUI();
 $pagina->ejecutar();
 ?>

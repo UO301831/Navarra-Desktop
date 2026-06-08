@@ -3,7 +3,7 @@ require_once __DIR__ . "/Sesion.php";
 require_once __DIR__ . "/Recurso.php";
 
 // Pagina que lista los recursos turisticos disponibles para reservar
-class PaginaRecursos {
+class RecursosUI {
 
     private $sesion;
     private $listado = [];
@@ -85,7 +85,7 @@ class PaginaRecursos {
             <p>Plazas: <?php echo $r["plazas"]; ?> — Precio por plaza: <?php echo number_format($r["precio"], 2, ",", "."); ?> €</p>
             <p><?php echo htmlspecialchars($r["descripcion"]); ?></p>
 <?php if ($r["plazas"] > 0): ?>
-            <p><a href="reservar.php?id=<?php echo $r["id_recurso"]; ?>">Reservar</a></p>
+            <p><a href="ReservarUI.php?id=<?php echo $r["id_recurso"]; ?>">Reservar</a></p>
 <?php else: ?>
             <p>Sin plazas disponibles</p>
 <?php endif; ?>
@@ -104,6 +104,6 @@ class PaginaRecursos {
 }
 
 // Arranque de la pagina
-$pagina = new PaginaRecursos();
+$pagina = new RecursosUI();
 $pagina->ejecutar();
 ?>

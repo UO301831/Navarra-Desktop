@@ -3,7 +3,7 @@ require_once __DIR__ . "/Sesion.php";
 require_once __DIR__ . "/Reserva.php";
 
 // Pagina que lista las reservas del usuario y permite anularlas
-class PaginaMisReservas {
+class MisReservasUI {
 
     private $sesion;
     private $listado = [];
@@ -25,7 +25,7 @@ class PaginaMisReservas {
         // Si el usuario pulsa "Anular", anulamos esa reserva
         if (isset($_POST["anular"])) {
             $reserva->anular(intval($_POST["anular"]), $this->sesion->getId());
-            header("Location: misreservas.php");
+            header("Location: MisReservasUI.php");
             exit;
         }
 
@@ -83,7 +83,7 @@ class PaginaMisReservas {
         <section>
             <h2>Mis reservas</h2>
 <?php if (count($this->listado) === 0): ?>
-            <p>Todavía no tienes ninguna reserva. <a href="recursos.php">Ver recursos turísticos</a>.</p>
+            <p>Todavía no tienes ninguna reserva. <a href="RecursosUI.php">Ver recursos turísticos</a>.</p>
 <?php else: ?>
             <table>
                 <caption>Listado de tus reservas</caption>
@@ -107,7 +107,7 @@ class PaginaMisReservas {
                         <td><?php echo htmlspecialchars($res["estado"]); ?></td>
                         <td>
 <?php if ($res["estado"] === "confirmada"): ?>
-                            <form action="misreservas.php" method="post">
+                            <form action="MisReservasUI.php" method="post">
                                 <input type="hidden" name="anular" value="<?php echo $res["id_reserva"]; ?>" />
                                 <input type="submit" value="Anular" />
                             </form>
@@ -134,6 +134,6 @@ class PaginaMisReservas {
 }
 
 // Arranque de la pagina
-$pagina = new PaginaMisReservas();
+$pagina = new MisReservasUI();
 $pagina->ejecutar();
 ?>

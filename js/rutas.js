@@ -346,8 +346,8 @@ class MapaRuta {
     // Añade la atribución de OpenStreetMap debajo del mapa
     anadirCreditos() {
         const creditos = $("<p></p>");
-        creditos.append("Cartografía © ");
-        creditos.append($("<a></a>").attr("href", "https://www.openstreetmap.org/copyright").text("colaboradores de OpenStreetMap"));
+        creditos.append("© ");
+        creditos.append($("<a></a>").attr("href", "https://www.openstreetmap.org/copyright").text("OpenStreetMap"));
         $(this.divMapa).after(creditos);
     }
 }

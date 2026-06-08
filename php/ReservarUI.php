@@ -4,7 +4,7 @@ require_once __DIR__ . "/Recurso.php";
 require_once __DIR__ . "/Reserva.php";
 
 // Pagina que gestiona la reserva de un recurso: presupuesto y confirmacion
-class PaginaReservar {
+class ReservarUI {
 
     private $sesion;
     private $recurso;
@@ -34,7 +34,7 @@ class PaginaReservar {
 
         // Si el recurso no existe volvemos al listado
         if (!$this->recurso) {
-            header("Location: recursos.php");
+            header("Location: RecursosUI.php");
             exit;
         }
 
@@ -102,7 +102,7 @@ class PaginaReservar {
         <ol>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../reservas.php">Reservas</a></li>
-            <li><a href="recursos.php">Recursos turísticos</a></li>
+            <li><a href="RecursosUI.php">Recursos turísticos</a></li>
             <li>Reservar</li>
         </ol>
     </nav>
@@ -118,25 +118,25 @@ class PaginaReservar {
         <section>
             <h2>Reserva confirmada</h2>
             <p>Has reservado <?php echo $this->numPlazas; ?> plaza(s). Presupuesto total: <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €.</p>
-            <p><a href="misreservas.php">Ver mis reservas</a></p>
+            <p><a href="MisReservasUI.php">Ver mis reservas</a></p>
         </section>
 <?php elseif ($this->mostrarPresupuesto): ?>
         <section>
             <h2>Presupuesto</h2>
             <p><?php echo $this->numPlazas; ?> plaza(s) × <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> € = <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €</p>
-            <form action="reservar.php" method="post">
+            <form action="ReservarUI.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $this->id; ?>" />
                 <input type="hidden" name="num_plazas" value="<?php echo $this->numPlazas; ?>" />
                 <input type="hidden" name="confirmar" value="1" />
                 <p><input type="submit" value="Confirmar reserva" /></p>
             </form>
-            <p><a href="recursos.php">Volver a los recursos</a></p>
+            <p><a href="RecursosUI.php">Volver a los recursos</a></p>
         </section>
 <?php elseif ($this->recurso["plazas"] < 1): ?>
         <section>
             <h2>Sin plazas disponibles</h2>
             <p>Lo sentimos, este recurso ya no tiene plazas disponibles.</p>
-            <p><a href="recursos.php">Volver a los recursos</a></p>
+            <p><a href="RecursosUI.php">Volver a los recursos</a></p>
         </section>
 <?php else: ?>
         <section>
@@ -144,11 +144,11 @@ class PaginaReservar {
 <?php if ($this->mensaje !== ""): ?>
             <p><?php echo $this->mensaje; ?></p>
 <?php endif; ?>
-            <form action="reservar.php" method="post">
+            <form action="ReservarUI.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $this->id; ?>" />
                 <p>
                     <label for="num_plazas">Número de plazas (máximo <?php echo $this->recurso["plazas"]; ?>):</label>
-                    <input type="number" id="num_plazas" name="num_plazas" min="1" max="<?php echo $this->recurso["plazas"]; ?>" required="required" />
+                    <input type="number" id="num_plazas" name="num_plazas" min="1" max="<?php echo $this->recurso["plazas"]; ?>" value="1" required="required" />
                 </p>
                 <p><input type="submit" value="Calcular presupuesto" /></p>
             </form>
@@ -167,6 +167,6 @@ class PaginaReservar {
 }
 
 // Arranque de la pagina
-$pagina = new PaginaReservar();
+$pagina = new ReservarUI();
 $pagina->ejecutar();
 ?>

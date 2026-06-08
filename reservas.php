@@ -89,8 +89,8 @@ class PaginaReservas {
         <section>
             <h2>Hola, <?php echo htmlspecialchars($this->sesion->getNombre()); ?></h2>
             <ul>
-                <li><a href="php/recursos.php">Ver recursos turísticos y reservar</a></li>
-                <li><a href="php/misreservas.php">Consultar mis reservas</a></li>
+                <li><a href="php/RecursosUI.php">Ver recursos turísticos y reservar</a></li>
+                <li><a href="php/MisReservasUI.php">Consultar mis reservas</a></li>
                 <li><a href="reservas.php?logout=1">Cerrar sesión</a></li>
             </ul>
         </section>
@@ -113,7 +113,7 @@ class PaginaReservas {
                     <input type="submit" value="Entrar" />
                 </p>
             </form>
-            <p><a href="php/registro.php">¿No tienes cuenta? Regístrate</a></p>
+            <p><a href="php/RegistroUI.php">¿No tienes cuenta? Regístrate</a></p>
         </section>
 <?php endif; ?>
     </main>

@@ -238,6 +238,30 @@ figure svg {
 }
 
 
+/* ============== TARJETAS DE RECURSOS Y RUTAS (article) ============== */
+
+/* Especificidad: (0,0,2) - separación y relleno interno de cada tarjeta */
+main article {
+    padding: 1rem 1.25rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+}
+
+
+/* ============== FORMULARIOS ============== */
+
+/* Especificidad: (0,0,1) - relleno cómodo en los campos */
+input {
+    padding: 0.4rem 0.6rem;
+    box-sizing: border-box;
+}
+
+/* Especificidad: (0,1,1) - el botón de envío con algo más de relleno horizontal */
+input[type="submit"] {
+    padding: 0.5rem 1.2rem;
+}
+
+
 /* ============== FOOTER ============== */
 
 /* Especificidad: (0,0,1) */

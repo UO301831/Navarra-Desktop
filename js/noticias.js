@@ -16,7 +16,8 @@ class Noticias {
             data: {
                 api_token: this.apiKey,
                 search: this.busqueda,
-                language: "es"
+                language: "es",
+                sort: "published_on"
             }
         })
         .done(this.procesarNoticias.bind(this))

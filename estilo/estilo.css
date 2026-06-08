@@ -183,6 +183,53 @@ tbody tr:nth-child(even) {
 /* Especificidad: (0,0,4) - el párrafo de atribución de OpenStreetMap es el que va justo tras el div del mapa; se muestra discreto pero legible */
 main article > div + p {
     font-size: 0.8rem;
-    color: #595959; /* gris discreto sobre el fondo blanco del body, contraste AAA (7:1) */
+    color: #595959;
+    background-color: transparent; /* gris sobre el fondo blanco heredado de la tarjeta (main article), contraste AAA (7:1) */
+}
+
+
+/* ============== TARJETAS DE RECURSOS Y RUTAS (article) ============== */
+
+/* Especificidad: (0,0,2) - cada recurso/ruta se presenta como una tarjeta: texto oscuro sobre blanco, contraste AAA */
+main article {
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border-top: 0.0625rem solid #c9c2b3;
+    border-right: 0.0625rem solid #c9c2b3;
+    border-bottom: 0.0625rem solid #c9c2b3;
+    border-left: 0.25rem solid #8a0e1e;
+    border-radius: 0.25rem;
+}
+
+
+/* ============== FORMULARIOS ============== */
+
+/* Especificidad: (0,0,1) - campos de formulario: texto oscuro sobre blanco, contraste AAA */
+input {
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 0.0625rem solid #595959;
+    border-radius: 0.25rem;
+}
+
+/* Especificidad: (0,1,1) - el botón de envío se diferencia con fondo granate y texto blanco, contraste AAA */
+input[type="submit"] {
+    color: #ffffff;
+    background-color: #8a0e1e;
+    border-color: #6d0a17;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Especificidad: (0,2,1) */
+input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #6d0a17; /* granate más oscuro al pasar el ratón, contraste AAA con el texto blanco */
+}
+
+/* Especificidad: (0,1,1) - foco visible para accesibilidad AAA por teclado */
+input:focus {
+    outline: 0.125rem solid #1f5f3a;
+    outline-offset: 0.125rem;
 }
 

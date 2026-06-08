@@ -4,31 +4,53 @@ require_once __DIR__ . "/BaseDatos.php";
 // Clase para crear, listar y anular las reservas de los usuarios
 class Reserva {
 
-    // Crea una reserva y resta las plazas. Devuelve false si ya no quedan plazas
+    // Crea o amplia una reserva juntandola si ya existe. Devuelve false si no quedan plazas
     public function crear($idUsuario, $idRecurso, $numPlazas, $presupuesto) {
         $bd = new BaseDatos();
         $conexion = $bd->getConexion();
+        $conexion->begin_transaction();
 
-        // Solo resta las plazas si el recurso tiene suficientes disponibles
+        // Resta las plazas solo si hay suficientes disponibles
         $restar = $conexion->prepare(
             "UPDATE recurso SET plazas = plazas - ? WHERE id_recurso = ? AND plazas >= ?"
         );
         $restar->bind_param("iii", $numPlazas, $idRecurso, $numPlazas);
         $restar->execute();
 
-        // Si no se cambio ninguna fila es que no habia plazas suficientes
         if ($restar->affected_rows === 0) {
+            $conexion->rollback();
             $bd->cerrar();
             return false;
         }
 
-        // Guardamos la reserva en la base de datos
-        $insertar = $conexion->prepare(
-            "INSERT INTO reserva (id_usuario, id_recurso, fecha_reserva, num_plazas, presupuesto, estado)
-             VALUES (?, ?, NOW(), ?, ?, 'confirmada')"
+        // Si el usuario ya tiene una reserva confirmada de este recurso, las juntamos
+        $buscar = $conexion->prepare(
+            "SELECT id_reserva FROM reserva WHERE id_usuario = ? AND id_recurso = ? AND estado = 'confirmada'"
         );
-        $insertar->bind_param("iiid", $idUsuario, $idRecurso, $numPlazas, $presupuesto);
-        $insertar->execute();
+        $buscar->bind_param("ii", $idUsuario, $idRecurso);
+        $buscar->execute();
+        $existente = $buscar->get_result()->fetch_assoc();
+
+        if ($existente) {
+            $guardar = $conexion->prepare(
+                "UPDATE reserva SET num_plazas = num_plazas + ?, presupuesto = presupuesto + ?, fecha_reserva = NOW() WHERE id_reserva = ?"
+            );
+            $guardar->bind_param("idi", $numPlazas, $presupuesto, $existente["id_reserva"]);
+        } else {
+            $guardar = $conexion->prepare(
+                "INSERT INTO reserva (id_usuario, id_recurso, fecha_reserva, num_plazas, presupuesto, estado) VALUES (?, ?, NOW(), ?, ?, 'confirmada')"
+            );
+            $guardar->bind_param("iiid", $idUsuario, $idRecurso, $numPlazas, $presupuesto);
+        }
+
+        // Si no se pudo guardar la reserva, deshacemos tambien la resta de plazas
+        if (!$guardar->execute()) {
+            $conexion->rollback();
+            $bd->cerrar();
+            return false;
+        }
+
+        $conexion->commit();
         $bd->cerrar();
         return true;
     }
