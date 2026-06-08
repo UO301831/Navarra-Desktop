@@ -3,14 +3,17 @@ require_once __DIR__ . "/Sesion.php";
 require_once __DIR__ . "/Recurso.php";
 require_once __DIR__ . "/Reserva.php";
 
-// Pagina que gestiona la reserva de un recurso: presupuesto y confirmacion
+// Pagina que gestiona la reserva de un recurso por fechas: presupuesto y confirmacion
 class ReservarUI {
 
     private $sesion;
     private $recurso;
     private $id = 0;
     private $mensaje = "";
-    private $numPlazas = 0;
+    private $fechaInicio = "";
+    private $fechaFin = "";
+    private $numPersonas = 1;
+    private $dias = 0;
     private $presupuesto = 0;
     private $mostrarPresupuesto = false;
     private $confirmada = false;
@@ -21,7 +24,6 @@ class ReservarUI {
 
     // Comprueba la sesion, calcula presupuesto o crea la reserva y muestra la pagina
     public function ejecutar() {
-        // Solo se puede reservar si hay sesion iniciada
         if (!$this->sesion->estaLogueado()) {
             header("Location: ../reservas.php");
             exit;
@@ -32,38 +34,72 @@ class ReservarUI {
         $recursoObj = new Recurso();
         $this->recurso = $recursoObj->obtener($this->id);
 
-        // Si el recurso no existe volvemos al listado
         if (!$this->recurso) {
             header("Location: RecursosUI.php");
             exit;
         }
 
-        if (isset($_POST["confirmar"])) {
-            // El usuario confirma: intentamos crear la reserva
-            $this->numPlazas = intval($_POST["num_plazas"]);
-            $this->presupuesto = $this->recurso["precio"] * $this->numPlazas;
-            $reserva = new Reserva();
-            if ($reserva->crear($this->sesion->getId(), $this->id, $this->numPlazas, $this->presupuesto)) {
-                $this->confirmada = true;
+        // Si se ha enviado el formulario, validamos y calculamos el presupuesto
+        if (isset($_POST["fecha_inicio"], $_POST["fecha_fin"], $_POST["num_personas"])) {
+            $this->fechaInicio = $_POST["fecha_inicio"];
+            $this->fechaFin = $_POST["fecha_fin"];
+            $this->numPersonas = intval($_POST["num_personas"]);
+
+            $error = $this->validar();
+            if ($error !== "") {
+                $this->mensaje = $error;
             } else {
-                $this->mensaje = "Ya no quedan plazas suficientes para este recurso.";
-            }
-        } elseif (isset($_POST["num_plazas"])) {
-            // El usuario elige plazas: calculamos el presupuesto
-            $this->numPlazas = intval($_POST["num_plazas"]);
-            if ($this->numPlazas < 1 || $this->numPlazas > $this->recurso["plazas"]) {
-                $this->mensaje = "Indica un número de plazas entre 1 y " . $this->recurso["plazas"] . ".";
-            } else {
-                $this->presupuesto = $this->recurso["precio"] * $this->numPlazas;
-                $this->mostrarPresupuesto = true;
+                $this->dias = $this->calcularDias();
+                $this->presupuesto = $this->recurso["precio"] * $this->dias * $this->numPersonas;
+
+                if (isset($_POST["confirmar"])) {
+                    // El usuario confirma: intentamos crear la reserva
+                    $reserva = new Reserva();
+                    if ($reserva->crear($this->sesion->getId(), $this->id, $this->fechaInicio, $this->fechaFin, $this->numPersonas, $this->presupuesto)) {
+                        $this->confirmada = true;
+                    } else {
+                        $this->mensaje = "No quedan plazas suficientes para ese número de personas.";
+                    }
+                } else {
+                    $this->mostrarPresupuesto = true;
+                }
             }
         }
 
         $this->mostrar();
     }
 
+    // Numero de dias de la reserva (ambos extremos incluidos)
+    private function calcularDias() {
+        $inicio = new DateTime($this->fechaInicio);
+        $fin = new DateTime($this->fechaFin);
+        return $inicio->diff($fin)->days + 1;
+    }
+
+    // Comprueba las fechas y el numero de personas; devuelve "" si todo es correcto
+    private function validar() {
+        $winInicio = substr($this->recurso["fecha_inicio"], 0, 10);
+        $winFin = substr($this->recurso["fecha_fin"], 0, 10);
+
+        if ($this->fechaInicio === "" || $this->fechaFin === "") {
+            return "Indica la fecha de inicio y la fecha de fin.";
+        }
+        if ($this->fechaFin < $this->fechaInicio) {
+            return "La fecha de fin no puede ser anterior a la de inicio.";
+        }
+        if ($this->fechaInicio < $winInicio || $this->fechaFin > $winFin) {
+            return "Las fechas deben estar dentro de la disponibilidad del recurso (" . $winInicio . " a " . $winFin . ").";
+        }
+        if ($this->numPersonas < 1 || $this->numPersonas > $this->recurso["plazas"]) {
+            return "El número de personas debe estar entre 1 y " . $this->recurso["plazas"] . ".";
+        }
+        return "";
+    }
+
     // Dibuja la pagina completa
     public function mostrar() {
+        $winInicio = substr($this->recurso["fecha_inicio"], 0, 10);
+        $winFin = substr($this->recurso["fecha_fin"], 0, 10);
 ?>
 <!DOCTYPE HTML>
 <html lang="es">
@@ -110,23 +146,27 @@ class ReservarUI {
     <main>
         <section>
             <h2>Reservar: <?php echo htmlspecialchars($this->recurso["nombre"]); ?></h2>
-            <p>Localidad: <?php echo htmlspecialchars($this->recurso["localidad"]); ?> — Precio por plaza: <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> €</p>
+            <p>Localidad: <?php echo htmlspecialchars($this->recurso["localidad"]); ?> — Precio por persona y día: <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> €</p>
+            <p>Disponible del <?php echo $winInicio; ?> al <?php echo $winFin; ?></p>
             <p>Plazas disponibles: <?php echo $this->recurso["plazas"]; ?></p>
         </section>
 
 <?php if ($this->confirmada): ?>
         <section>
             <h2>Reserva confirmada</h2>
-            <p>Has reservado <?php echo $this->numPlazas; ?> plaza(s). Presupuesto total: <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €.</p>
+            <p>Has reservado del <?php echo $this->fechaInicio; ?> al <?php echo $this->fechaFin; ?> (<?php echo $this->dias; ?> día(s)) para <?php echo $this->numPersonas; ?> persona(s).</p>
+            <p>Presupuesto total: <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €.</p>
             <p><a href="MisReservasUI.php">Ver mis reservas</a></p>
         </section>
 <?php elseif ($this->mostrarPresupuesto): ?>
         <section>
             <h2>Presupuesto</h2>
-            <p><?php echo $this->numPlazas; ?> plaza(s) × <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> € = <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €</p>
+            <p><?php echo $this->dias; ?> día(s) × <?php echo $this->numPersonas; ?> persona(s) × <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> € = <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €</p>
             <form action="ReservarUI.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $this->id; ?>" />
-                <input type="hidden" name="num_plazas" value="<?php echo $this->numPlazas; ?>" />
+                <input type="hidden" name="fecha_inicio" value="<?php echo htmlspecialchars($this->fechaInicio); ?>" />
+                <input type="hidden" name="fecha_fin" value="<?php echo htmlspecialchars($this->fechaFin); ?>" />
+                <input type="hidden" name="num_personas" value="<?php echo $this->numPersonas; ?>" />
                 <input type="hidden" name="confirmar" value="1" />
                 <p><input type="submit" value="Confirmar reserva" /></p>
             </form>
@@ -140,15 +180,23 @@ class ReservarUI {
         </section>
 <?php else: ?>
         <section>
-            <h2>Elige las plazas</h2>
+            <h2>Elige las fechas</h2>
 <?php if ($this->mensaje !== ""): ?>
             <p><?php echo $this->mensaje; ?></p>
 <?php endif; ?>
             <form action="ReservarUI.php" method="post">
                 <input type="hidden" name="id" value="<?php echo $this->id; ?>" />
                 <p>
-                    <label for="num_plazas">Número de plazas (máximo <?php echo $this->recurso["plazas"]; ?>):</label>
-                    <input type="number" id="num_plazas" name="num_plazas" min="1" max="<?php echo $this->recurso["plazas"]; ?>" value="1" required="required" />
+                    <label for="fecha_inicio">Fecha de inicio:</label>
+                    <input type="date" id="fecha_inicio" name="fecha_inicio" min="<?php echo $winInicio; ?>" max="<?php echo $winFin; ?>" value="<?php echo htmlspecialchars($this->fechaInicio); ?>" required="required" />
+                </p>
+                <p>
+                    <label for="fecha_fin">Fecha de fin:</label>
+                    <input type="date" id="fecha_fin" name="fecha_fin" min="<?php echo $winInicio; ?>" max="<?php echo $winFin; ?>" value="<?php echo htmlspecialchars($this->fechaFin); ?>" required="required" />
+                </p>
+                <p>
+                    <label for="num_personas">Número de personas (máximo <?php echo $this->recurso["plazas"]; ?>):</label>
+                    <input type="number" id="num_personas" name="num_personas" min="1" max="<?php echo $this->recurso["plazas"]; ?>" value="<?php echo $this->numPersonas; ?>" required="required" />
                 </p>
                 <p><input type="submit" value="Calcular presupuesto" /></p>
             </form>

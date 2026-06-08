@@ -90,8 +90,8 @@ class MisReservasUI {
                 <thead>
                     <tr>
                         <th scope="col">Recurso</th>
-                        <th scope="col">Fecha de la reserva</th>
-                        <th scope="col">Plazas</th>
+                        <th scope="col">Fechas</th>
+                        <th scope="col">Personas</th>
                         <th scope="col">Presupuesto</th>
                         <th scope="col">Estado</th>
                         <th scope="col">Acción</th>
@@ -101,8 +101,8 @@ class MisReservasUI {
 <?php foreach ($this->listado as $res): ?>
                     <tr>
                         <th scope="row"><?php echo htmlspecialchars($res["recurso"]); ?></th>
-                        <td><?php echo $res["fecha_reserva"]; ?></td>
-                        <td><?php echo $res["num_plazas"]; ?></td>
+                        <td>Del <?php echo $res["fecha_inicio"]; ?> al <?php echo $res["fecha_fin"]; ?></td>
+                        <td><?php echo $res["num_personas"]; ?></td>
                         <td><?php echo number_format($res["presupuesto"], 2, ",", "."); ?> €</td>
                         <td><?php echo htmlspecialchars($res["estado"]); ?></td>
                         <td>

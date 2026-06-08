@@ -47,14 +47,18 @@ CREATE TABLE recurso (
     FOREIGN KEY (id_localidad) REFERENCES localidad(id_localidad)
 );
 
--- Reservas realizadas por los usuarios sobre los recursos
+-- Reservas realizadas por los usuarios sobre los recursos.
+-- Cada reserva es para un rango de fechas (fecha_inicio a fecha_fin) y un numero
+-- de personas; el presupuesto se calcula como precio * dias * personas.
 CREATE TABLE reserva (
     id_reserva INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT NOT NULL,
     id_recurso INT NOT NULL,
     fecha_reserva DATETIME NOT NULL,
-    num_plazas INT NOT NULL,
-    presupuesto DECIMAL(8,2) NOT NULL,
+    fecha_inicio DATE NOT NULL,
+    fecha_fin DATE NOT NULL,
+    num_personas INT NOT NULL,
+    presupuesto DECIMAL(10,2) NOT NULL,
     estado VARCHAR(20) NOT NULL DEFAULT 'confirmada',
     FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario),
     FOREIGN KEY (id_recurso) REFERENCES recurso(id_recurso)
