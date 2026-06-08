@@ -35,6 +35,10 @@ class MisReservasUI {
         $this->mostrar();
     }
 
+    private function formatearFecha($fecha) {
+        return DateTime::createFromFormat("Y-m-d", substr($fecha, 0, 10))->format("d/m/Y");
+    }
+
     // Dibuja la pagina completa
     public function mostrar() {
 ?>
@@ -101,7 +105,7 @@ class MisReservasUI {
 <?php foreach ($this->listado as $res): ?>
                     <tr>
                         <th scope="row"><?php echo htmlspecialchars($res["recurso"]); ?></th>
-                        <td>Del <?php echo $res["fecha_inicio"]; ?> al <?php echo $res["fecha_fin"]; ?></td>
+                        <td>Del <?php echo $this->formatearFecha($res["fecha_inicio"]); ?> al <?php echo $this->formatearFecha($res["fecha_fin"]); ?></td>
                         <td><?php echo $res["num_personas"]; ?></td>
                         <td><?php echo number_format($res["presupuesto"], 2, ",", "."); ?> €</td>
                         <td><?php echo htmlspecialchars($res["estado"]); ?></td>

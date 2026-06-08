@@ -5,8 +5,8 @@ class Juego {
         this.preguntas = [
             {
                 enunciado: "¿Cuántos días de previsión meteorológica muestra la página de Meteorología?",
-                opciones: ["3 días", "5 días", "7 días", "10 días", "14 días"],
-                correcta: 2
+                opciones: ["3 días", "5 días", "7 días", "8 días", "14 días"],
+                correcta: 3
             },
             {
                 enunciado: "¿Qué función ofrece la página de Reservas según la sección de Ayuda?",
@@ -19,12 +19,12 @@ class Juego {
                 correcta: 0
             },
             {
-                enunciado: "¿Qué embutido típico de Navarra es un chorizo de calibre más fino de lo habitual?",
+                enunciado: "¿Qué embutido típico de Navarra es un chorizo de calibre más fino de lo habitual según la página de Gastronomía?",
                 opciones: ["Fuet", "Chistorra", "Mortadela", "Sobrasada", "Salchichón"],
                 correcta: 1
             },
             {
-                enunciado: "¿De qué localidad navarra es el famoso pimiento del piquillo con Denominación de Origen?",
+                enunciado: "¿De qué localidad navarra es el famoso pimiento del piquillo con Denominación de Origen según la página de Gastronomía?",
                 opciones: ["Pamplona", "Olite", "Lodosa", "Tudela", "Estella"],
                 correcta: 2
             },
@@ -35,7 +35,7 @@ class Juego {
             },
             {
                 enunciado: "¿Qué medio de transporte se utiliza en la ruta de las Bardenas Reales?",
-                opciones: ["Bicicleta", "Avión", "Tren", "Barco", "Patines"],
+                opciones: ["Bicicleta", "Coche", "Tren", "Moto", "Patines"],
                 correcta: 0
             },
             {

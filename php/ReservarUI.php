@@ -69,6 +69,10 @@ class ReservarUI {
         $this->mostrar();
     }
 
+        private function formatearFecha($fecha) {
+        return DateTime::createFromFormat("Y-m-d", substr($fecha, 0, 10))->format("d/m/Y");
+    }
+
     // Numero de dias de la reserva (ambos extremos incluidos)
     private function calcularDias() {
         $inicio = new DateTime($this->fechaInicio);
@@ -147,14 +151,14 @@ class ReservarUI {
         <section>
             <h2>Reservar: <?php echo htmlspecialchars($this->recurso["nombre"]); ?></h2>
             <p>Localidad: <?php echo htmlspecialchars($this->recurso["localidad"]); ?> — Precio por persona y día: <?php echo number_format($this->recurso["precio"], 2, ",", "."); ?> €</p>
-            <p>Disponible del <?php echo $winInicio; ?> al <?php echo $winFin; ?></p>
+            <p>Disponible del <?php echo $this->formatearFecha($winInicio); ?> al <?php echo $this->formatearFecha($winFin); ?></p>
             <p>Plazas disponibles: <?php echo $this->recurso["plazas"]; ?></p>
         </section>
 
 <?php if ($this->confirmada): ?>
         <section>
             <h2>Reserva confirmada</h2>
-            <p>Has reservado del <?php echo $this->fechaInicio; ?> al <?php echo $this->fechaFin; ?> (<?php echo $this->dias; ?> día(s)) para <?php echo $this->numPersonas; ?> persona(s).</p>
+            <p>Has reservado del <?php echo $this->formatearFecha($this->fechaInicio); ?> al <?php echo $this->formatearFecha($this->fechaFin); ?></p>
             <p>Presupuesto total: <?php echo number_format($this->presupuesto, 2, ",", "."); ?> €.</p>
             <p><a href="MisReservasUI.php">Ver mis reservas</a></p>
         </section>

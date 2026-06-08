@@ -27,6 +27,11 @@ class RecursosUI {
         $this->mostrar();
     }
 
+    // Convierte fecha de YYYY-MM-DD (o YYYY-MM-DD HH:MM:SS) a DD/MM/YYYY
+    private function formatearFecha($fecha) {
+        return DateTime::createFromFormat("Y-m-d", substr($fecha, 0, 10))->format("d/m/Y");
+    }
+
     // Dibuja la pagina completa
     public function mostrar() {
 ?>
@@ -81,7 +86,7 @@ class RecursosUI {
         <article>
             <h3><?php echo htmlspecialchars($r["nombre"]); ?></h3>
             <p>Tipo: <?php echo htmlspecialchars($r["tipo"]); ?> — Localidad: <?php echo htmlspecialchars($r["localidad"]); ?></p>
-            <p>Disponible del <?php echo substr($r["fecha_inicio"], 0, 10); ?> al <?php echo substr($r["fecha_fin"], 0, 10); ?></p>
+            <p>Disponible del <?php echo $this->formatearFecha($r["fecha_inicio"]); ?> al <?php echo $this->formatearFecha($r["fecha_fin"]); ?></p>
             <p>Plazas: <?php echo $r["plazas"]; ?> — Precio por persona y día: <?php echo number_format($r["precio"], 2, ",", "."); ?> €</p>
             <p><?php echo htmlspecialchars($r["descripcion"]); ?></p>
 <?php if ($r["plazas"] > 0): ?>
