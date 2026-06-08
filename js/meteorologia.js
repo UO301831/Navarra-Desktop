@@ -51,7 +51,7 @@ class Meteorologia {
 
         var tiempo = json.current;
         var articulo = $("<article></article>");
-        articulo.append("<h3>" + tiempo.time.replace("T", " ") + "</h3>");
+        articulo.append("<h3>" + this.formatearFecha(tiempo.time) + " " + tiempo.time.split("T")[1] + "</h3>");
         articulo.append("<p>Condiciones: " + this.descripcionTiempo(tiempo.weather_code) + "</p>");
         articulo.append("<p>Momento del día: " + (tiempo.is_day === 1 ? "Día" : "Noche") + "</p>");
         articulo.append("<p>Temperatura: " + tiempo.temperature_2m + " °C</p>");
@@ -75,7 +75,7 @@ class Meteorologia {
         var dias = json.daily;
         for (var i = 1; i < dias.time.length; i++) {
             var articulo = $("<article></article>");
-            articulo.append("<h3>" + dias.time[i] + "</h3>");
+            articulo.append("<h3>" + this.formatearFecha(dias.time[i]) + "</h3>");
             articulo.append("<p>Condiciones: " + this.descripcionTiempo(dias.weather_code[i]) + "</p>");
             articulo.append("<p>Temperatura máxima: " + dias.temperature_2m_max[i] + " °C</p>");
             articulo.append("<p>Temperatura mínima: " + dias.temperature_2m_min[i] + " °C</p>");
@@ -106,6 +106,12 @@ class Meteorologia {
         seccion.empty();
         seccion.append("<h2>Previsión para los próximos 7 días</h2>");
         seccion.append("<p>No se ha podido cargar la previsión meteorológica.</p>");
+    }
+
+    // Convierte una fecha ISO (YYYY-MM-DD...) al formato d/m/año
+    formatearFecha(iso) {
+        var partes = iso.split("T")[0].split("-");
+        return partes[2] + "/" + partes[1] + "/" + partes[0];
     }
 
     // Convierte el código del tiempo en una palabra (Despejado, Lluvia...)
